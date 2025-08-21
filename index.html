@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="印象的なヒーロー画像から始まる、シンプルでおしゃれなランディングページの下書きテンプレート。" />
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0ea5e9" />
+  
+  <!-- Open Graph / Twitter (必要に応じて編集) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="サイトタイトル | キャッチコピー" />
+  <meta property="og:description" content="あなたのサービスの価値を端的に伝えるサブコピー。" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts（任意）-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <title>サイトタイトル | キャッチコピー</title>
+
+  <style>
+    :root {
+      --bg: #0b1220;           /* 背景(ダーク) */
+      --fg: #0f172a;           /* 背景(ライト) */
+      --text: #0b1324;         /* テキスト(ライト) */
+      --text-dim: #475569;     /* テキスト薄 */
+      --brand: #0ea5e9;        /* メインカラー */
+      --brand-2: #22c55e;      /* アクセント */
+      --card: #ffffff;         /* カード背景 */
+      --shadow: 0 10px 25px rgba(2, 6, 23, 0.12);
+      --radius: 16px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #0b1220;
+        --text: #e5e7eb;
+        --text-dim: #9ca3af;
+        --card: #0f172a;
+        --shadow: 0 10px 25px rgba(0,0,0,0.35);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Poppins', sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 60%, #eef2ff 100%);
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: radial-gradient(1200px 600px at 50% -10%, #0b1220 0%, #020617 60%, #000 100%); }
+    }
+
+    /* アクセシビリティ */
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    :focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; border-radius: 8px; }
+
+    /* コンテナ */
+    .container {
+      width: min(1100px, 92vw);
+      margin: 0 auto;
+    }
+
+    /* スキップリンク */
+    .skip-link {
+      position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;
+    }
+    .skip-link:focus { left: 16px; top: 16px; width: auto; height: auto; padding: 8px 12px; background: var(--brand); color: #fff; border-radius: 8px; z-index: 9999; }
+
+    /* ヘッダー */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(255,255,255,0.6);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(2,6,23,0.06);
+    }
+    @media (prefers-color-scheme: dark) {
+      header { background: rgba(2,6,23,0.55); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0;
+    }
+    .brand {
+      display: inline-flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .2px; color: var(--text);
+    }
+    .brand .logo { width: 28px; height: 28px; border-radius: 10px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); box-shadow: var(--shadow); }
+
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; align-items: center; }
+    nav a { font-weight: 500; color: var(--text-dim); }
+    nav a:hover { color: var(--text); }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 12px 16px; border-radius: 999px; border: 1px solid rgba(2,6,23,.08);
+      background: linear-gradient(180deg, #ffffff, #f8fafc);
+      box-shadow: var(--shadow);
+      color: var(--text); font-weight: 600; letter-spacing: .2px;
+      transition: transform .15s ease, box-shadow .15s ease, background .3s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: linear-gradient(135deg, var(--brand), #38bdf8); color: #fff; border-color: transparent; }
+    .btn-primary:hover { filter: brightness(1.05); }
+
+    /* モバイルメニュー */
+    .menu-toggle { display: none; }
+    @media (max-width: 760px) {
+      .menu-toggle { display: inline-flex; }
+      nav ul { display: none; position: absolute; right: 16px; top: 64px; background: var(--card); padding: 12px; border-radius: 12px; box-shadow: var(--shadow); flex-direction: column; width: 220px; border: 1px solid rgba(2,6,23,.06); }
+      nav ul.open { display: flex; }
+    }
+
+    /* ヒーロー */
+    .hero {
+      position: relative; min-height: 72vh; display: grid; place-items: center; overflow: clip; isolation: isolate;
+      border-bottom-left-radius: 28px; border-bottom-right-radius: 28px;
+    }
+    .hero__bg {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: saturate(1.05) contrast(1.05);
+      transform: scale(1.02);
+    }
+    .hero::before {
+      content: ""; position: absolute; inset: 0; background:
+        radial-gradient(1200px 500px at 70% -10%, rgba(14,165,233,.45), rgba(14,165,233,0) 60%),
+        linear-gradient(180deg, rgba(2,6,23,.15), rgba(2,6,23,.55));
+      mix-blend-mode: multiply; pointer-events: none;
+    }
+    .hero .container { position: relative; z-index: 2; text-align: center; color: #fff; }
+    .eyebrow { display: inline-block; padding: 6px 10px; border-radius: 999px; background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.2); backdrop-filter: blur(6px); font-size: 14px; letter-spacing: .2px; }
+    h1 {
+      font-family: 'Poppins', system-ui, sans-serif; font-weight: 700; letter-spacing: .3px; line-height: 1.15;
+      font-size: clamp(32px, 4vw, 56px); margin: 16px 0 8px;
+      text-shadow: 0 8px 30px rgba(0,0,0,.35);
+    }
+    .sub {
+      font-size: clamp(16px, 2.2vw, 20px); opacity: .95; max-width: 800px; margin: 0 auto 22px; line-height: 1.8;
+      text-shadow: 0 6px 20px rgba(0,0,0,.35);
+    }
+    .hero-actions { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+
+    /* セクション共通 */
+    section { padding: 64px 0; }
+    .section-title { font-size: clamp(22px, 2.8vw, 32px); margin: 0 0 18px; letter-spacing: .2px; }
+    .section-lead { color: var(--text-dim); margin-bottom: 28px; }
+
+    /* カードグリッド */
+    .grid { display: grid; gap: 18px; }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    @media (max-width: 960px) { .grid-3 { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 640px) { .grid-3 { grid-template-columns: 1fr; } }
+
+    .card {
+      background: var(--card); border: 1px solid rgba(2,6,23,.06); border-radius: var(--radius); box-shadow: var(--shadow);
+      padding: 20px; transition: transform .2s ease, box-shadow .2s ease; overflow: hidden; position: relative;
+    }
+    .card:hover { transform: translateY(-3px); }
+    .icon {
+      width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center; background: linear-gradient(135deg, rgba(14,165,233,.15), rgba(34,197,94,.15)); border: 1px solid rgba(2,6,23,.06);
+    }
+
+    /* 2カラム */
+    .cols { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items: center; }
+    @media (max-width: 900px) { .cols { grid-template-columns: 1fr; } }
+    .mock {
+      aspect-ratio: 16/10; background: linear-gradient(180deg, #e2e8f0, #f8fafc); border: 1px solid rgba(2,6,23,.06);
+      border-radius: 16px; box-shadow: var(--shadow); position: relative; overflow: hidden;
+    }
+    @media (prefers-color-scheme: dark) { .mock { background: linear-gradient(180deg, #0b1220, #0f172a); } }
+
+    /* CTA */
+    .cta {
+      background: radial-gradient(600px 200px at 10% 0%, rgba(14,165,233,.15), rgba(14,165,233,0) 70%),
+                  radial-gradient(600px 200px at 90% 0%, rgba(34,197,94,.15), rgba(34,197,94,0) 70%),
+                  linear-gradient(180deg, #ffffff, #f8fafc);
+      border-top: 1px solid rgba(2,6,23,.06);
+      border-bottom: 1px solid rgba(2,6,23,.06);
+    }
+    @media (prefers-color-scheme: dark) {
+      .cta { background: radial-gradient(600px 200px at 10% 0%, rgba(14,165,233,.18), rgba(14,165,233,0) 70%),
+                      radial-gradient(600px 200px at 90% 0%, rgba(34,197,94,.18), rgba(34,197,94,0) 70%),
+                      linear-gradient(180deg, #0b1220, #020617); }
+    }
+
+    /* フッター */
+    footer { padding: 44px 0; color: var(--text-dim); }
+    .footer-grid { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 18px; }
+    @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr; text-align: center; } }
+    .sns { display: flex; gap: 12px; }
+    .sns a { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 10px; background: var(--card); border: 1px solid rgba(2,6,23,.06); box-shadow: var(--shadow); }
+
+    /* アニメーション（Intersection Observer） */
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* 省エネ対応 */
+    @media (prefers-reduced-motion: reduce) {
+      .btn, .card { transition: none; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">本文へスキップ</a>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="トップへ戻る">
+        <span class="logo" aria-hidden="true"></span>
+        <span>SiteName</span>
+      </a>
+      <button class="btn menu-toggle" aria-label="メニューを開閉" aria-expanded="false" aria-controls="menu-list">≡</button>
+      <nav>
+        <ul id="menu-list" role="menu">
+          <li role="none"><a role="menuitem" href="#features">特徴</a></li>
+          <li role="none"><a role="menuitem" href="#about">概要</a></li>
+          <li role="none"><a role="menuitem" href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ヒーロー：一番上に美しい風景画像 -->
+  <section class="hero" aria-label="印象的な風景">
+    <img class="hero__bg" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2000&auto=format&fit=crop" alt="美しい風景（山と湖）" />
+    <div class="container">
+      <span class="eyebrow">ようこそ</span>
+      <h1>あなたの価値を、最初の一秒で伝える。</h1>
+      <p class="sub">美しいビジュアルと読みやすいレイアウトで、訪問者に「伝わる体験」を。軽量・レスポンシブ・アクセシブルな、公開前の下書きテンプレートです。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">無料相談を申し込む</a>
+        <a class="btn" href="#features">特徴を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <section id="features" class="container reveal" aria-labelledby="features-title">
+      <h2 id="features-title" class="section-title">特徴</h2>
+      <p class="section-lead">運用しやすく、すぐに使える要素を厳選。色・画像・文言を差し替えるだけで公開可能です。</p>
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <!-- sparkles icon -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 3l1.5 3.5L10 8l-3.5 1.5L5 13l-1.5-3.5L0 8l3.5-1.5L5 3zM19 11l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5zM12 1l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3z" fill="currentColor"/></svg>
+          </div>
+          <h3>軽量・高速</h3>
+          <p>外部ライブラリ最小限。CLS/INPを意識した設計で読み込みも軽快です。</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <!-- devices icon -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 5h12a2 2 0 012 2v6a2 2 0 01-2 2H3a2 2 0 01-2-2V7a2 2 0 012-2zm16 4h2a2 2 0 012 2v6a2 2 0 01-2 2h-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>レスポンシブ</h3>
+          <p>あらゆるデバイスで整った見た目。モバイルのナビもワンクリック。</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <!-- shield-check icon -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.4 9.1-8 10-4.6-.9-8-5-8-10V7l8-4z" stroke="currentColor" stroke-width="2"/><path d="M8.5 12.5l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>アクセシブル</h3>
+          <p>色コントラスト・フォーカス・キーボード操作に配慮。読みやすさを最優先。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container reveal" aria-labelledby="about-title">
+      <div class="cols">
+        <div>
+          <h2 id="about-title" class="section-title">このテンプレートについて</h2>
+          <p class="section-lead">HTML/CSS/少量のJSのみで構成。静的ホスティングにそのままアップできます。色・フォント・セクション構成は  <code>:root</code> のカスタムプロパティで簡単に調整可能です。</p>
+          <ul>
+            <li>上部のヒーロー画像：<code>.hero__bg</code> の <code>src</code> をお好きなURLに変更</li>
+            <li>ブランドカラー：<code>--brand</code> / <code>--brand-2</code></li>
+            <li>OG画像：<code>&lt;meta property="og:image"&gt;</code> を差し替え</li>
+          </ul>
+          <p>※ 商用公開時は画像のライセンスをご確認ください。</p>
+        </div>
+        <div class="mock" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="cta reveal" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">まずはご相談ください</h2>
+        <p class="section-lead">「とりあえず下書きから」でもOK。公開まで一緒に仕上げていきましょう。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:you@example.com" aria-label="メールを送る">メールで問い合わせる</a>
+          <a class="btn" href="#" aria-label="資料をダウンロード">資料ダウンロード</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <small>© <span id="y"></span> Your Company. All rights reserved.</small>
+      <div class="sns" aria-label="ソーシャルリンク">
+        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="X(Twitter)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 4L8.5 19.5M4 4l16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+        <a href="#" aria-label="LINE"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 3c5 0 9 3.3 9 7.5S17 18 12 18c-.6 0-1.2 0-1.8-.1L6 21l.8-3.6C5 16.1 3 13.6 3 10.5 3 6.3 7 3 12 3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 年表示
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // モバイルメニュー
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('menu-list');
+    toggle?.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+
+    // スムーススクロール（同一ページ内）
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id && id.length > 1) {
+          e.preventDefault();
+          document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
+          menu?.classList.remove('open');
+          toggle?.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    // スクロール時アニメーション
+    const io = new IntersectionObserver((entries) => {
+      for (const el of entries) {
+        if (el.isIntersecting) { el.target.classList.add('in'); io.unobserve(el.target); }
+      }
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>
