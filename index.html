@@ -239,8 +239,8 @@
       <span class="eyebrow">いまこの瞬間に全力を注げ！</span>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://www14.assist-web.jp/ipsim/">Assist</a>
-        <a class="btn btn-primary" href="https://capricious-chinchilla-c87.notion.site/2339fb38aff7812b996ecfedf0eed494">時間入力</a>
-        <a class="btn btn-primary" href="https://capricious-chinchilla-c87.notion.site/2339fb38aff781b0b0b8c525969366b7">やったこと</a>
+        <a class="btn btn-primary" href="https://capricious-chinchilla-c87.notion.site/2339fb38aff7812b996ecfedf0eed494">時間</a>
+        <a class="btn btn-primary" href="https://capricious-chinchilla-c87.notion.site/2339fb38aff781b0b0b8c525969366b7">内容</a>
         <a class="btn btn-primary" href="https://drive.google.com/drive/folders/153wFc-PrEnIIlIFbwwskTwes_qah87EZ">Drive</a>
       </div>
     </div>
@@ -270,8 +270,25 @@
         </article>
         <article class="card">
           <div class="icon" aria-hidden="true">
-            <!-- Pencil (tip bottom-left, single inner line, thin stroke) -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"viewBox="0 0 24 24" fill="none" stroke="currentColor"stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"aria-hidden="true" role="img"><g transform="rotate(-45 12 12)"><!-- 本体（角丸長方形） --><rect x="4" y="9" width="12" height="6" rx="2"/><!-- ペン先（三角形） --><path d="M16 9l5 3-5 3z"/><!-- フェルール（消しゴム側） --><rect x="3" y="9" width="2" height="6" rx="1"/><!-- 内部ライン 1本 --><line x1="9" y1="10" x2="9" y2="14"/></g></svg>
+            
+<!-- Pencil (tip bottom-left, single inner line, corrected rotation) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true" role="img">
+  <!-- -45°で斜めにした後、180°回転でペン先を左下に -->
+  <g transform="rotate(135 12 12)">
+    <!-- 本体 -->
+    <rect x="4" y="9" width="12" height="6" rx="2"/>
+    <!-- ペン先 -->
+    <path d="M16 9l5 3-5 3z"/>
+    <!-- フェルール（消しゴム側） -->
+    <rect x="3" y="9" width="2" height="6" rx="1"/>
+    <!-- 内側の線 1本 -->
+    <line x1="9" y1="10" x2="9" y2="14"/>
+  </g>
+</svg>
+
           </div>
           <h3>通常授業</h3>
           <p>授業時間 = 2時間25分</p>
