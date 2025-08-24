@@ -207,17 +207,30 @@
     .u-chip {
       display: inline-block;
       padding: 0.3em 0.8em;
-      background: rgba(34, 197, 94, 0.65); /* #22c55e(= --brand-2) を65%透過 */
-      color: #0b3d1a;                      /* 濃い緑でコントラスト確保 */
+      background: rgba(34, 197, 94, 0.65); /* 半透明黄緑 */
+      color: #eaffea;                      /* 明るめ緑文字 */
       border-radius: 0.5em;
-      -webkit-backdrop-filter: blur(4px);  /* iOS Safari */
+      -webkit-backdrop-filter: blur(4px);
       backdrop-filter: blur(4px);
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       font-weight: 600;
+      text-shadow:
+        -1px -1px 1px rgba(0,0,0,0.30),
+         1px -1px 1px rgba(0,0,0,0.30),
+        -1px  1px 1px rgba(0,0,0,0.30),
+         1px  1px 1px rgba(0,0,0,0.30);
     }
-    
-    /* 既存 .sub は影が強いので、チップ内だけは影を弱める（任意） */
-      .u-chip { text-shadow: 0 2px 4px rgba(0,0,0,.2); }
+
+    /* iPad横長（例: 幅 ≥ 768px）で少し強め */
+    @media (min-width: 768px) and (orientation: landscape) {
+      .u-chip {
+        text-shadow:
+          -1px -1px 1px rgba(0,0,0,0.4),
+           1px -1px 1px rgba(0,0,0,0.4),
+          -1px  1px 1px rgba(0,0,0,0.4),
+           1px  1px 1px rgba(0,0,0,0.4);
+      }
+    }
 
   </style>
 </head>
