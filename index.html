@@ -204,22 +204,22 @@
     }
     
     /* 読みにくいテキスト用 (ここから始まるあなたの物語)：半透明“黄緑”チップ */
-    .u-chip {
-      display: inline-block;
-      padding: 0.3em 0.8em;
-      background: rgba(34, 197, 94, 0.65); /* 半透明黄緑 */
-      color: #eaffea;                      /* 明るめ緑文字 */
-      border-radius: 0.5em;
-      -webkit-backdrop-filter: blur(4px);
-      backdrop-filter: blur(4px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      font-weight: 600;
-      text-shadow:
-        -1px -1px 1px rgba(0,0,0,0.30),
-         1px -1px 1px rgba(0,0,0,0.30),
-        -1px  1px 1px rgba(0,0,0,0.30),
-         1px  1px 1px rgba(0,0,0,0.30);
-    }
+.u-chip {
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  background: rgba(56, 189, 248, 0.65); /* 湖の青に近い水色を65%透過 */
+  color: #eaffea;                       /* 文字は明るい緑系で可読性を確保 */
+  border-radius: 0.5em;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-weight: 600;
+  text-shadow:
+    -1px -1px 1px rgba(0,0,0,0.35),
+     1px -1px 1px rgba(0,0,0,0.35),
+    -1px  1px 1px rgba(0,0,0,0.35),
+     1px  1px 1px rgba(0,0,0,0.35);
+}
 
     /* iPad横長（例: 幅 ≥ 768px）で少し強め */
     @media (min-width: 768px) and (orientation: landscape) {
