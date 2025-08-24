@@ -202,6 +202,23 @@
       .btn, .card { transition: none; }
       .reveal { opacity: 1; transform: none; }
     }
+    
+    /* 読みにくいテキスト用 (ここから始まるあなたの物語)：半透明“黄緑”チップ */
+    .u-chip {
+      display: inline-block;
+      padding: 0.3em 0.8em;
+      background: rgba(34, 197, 94, 0.65); /* #22c55e(= --brand-2) を65%透過 */
+      color: #0b3d1a;                      /* 濃い緑でコントラスト確保 */
+      border-radius: 0.5em;
+      -webkit-backdrop-filter: blur(4px);  /* iOS Safari */
+      backdrop-filter: blur(4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      font-weight: 600;
+    }
+    
+    /* 既存 .sub は影が強いので、チップ内だけは影を弱める（任意） */
+      .u-chip { text-shadow: 0 2px 4px rgba(0,0,0,.2); }
+
   </style>
 </head>
 <body>
@@ -234,7 +251,7 @@
     <img class="hero__bg" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2000&auto=format&fit=crop" alt="美しい風景（山と湖）" />
     <div class="container">
       <h1>ipsim</h1>
-      <p class="sub">ここから始まるあなたの物語</p>
+      <p class="sub"><span class="u-chip">ここから始まるあなたの物語</span></p>
       <span class="eyebrow">今日からでも遅くない</span>
       <span class="eyebrow">明日からではもう遅い</span>
       <span class="eyebrow">いまこの瞬間に全力を注げ！</span>
