@@ -441,15 +441,14 @@
         <article class="card">
           <div class="icon" aria-hidden="true">
 
-            <!-- 左下→右上 斜め3本線（上下間隔1.5倍） -->
-<svg width="160" height="160" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <g transform="translate(64,64) rotate(-45)" stroke="currentColor" stroke-width="8" stroke-linecap="round" fill="none">
-    <!-- 中央の線（長い） -->
-    <line x1="-48" y1="0" x2="48" y2="0" />
-    <!-- 上の線（中央の60%） -->
-    <line x1="-28.8" y1="-21" x2="28.8" y2="-21" />
-    <!-- 下の線（中央の60%） -->
-    <line x1="-28.8" y1="21"  x2="28.8" y2="21"  />
+<!-- 左下→右上 斜め3本線（中央長／上下=60%・間隔1.5倍）22x22 -->
+<svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <g transform="translate(12,12) rotate(-45)" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none">
+    <!-- 中央（長い）: 半長=9 -->
+    <line x1="-9" y1="0" x2="9" y2="0" />
+    <!-- 上下（60%）: 半長=5.4 / 間隔=±3.94 -->
+    <line x1="-5.4" y1="-3.94" x2="5.4" y2="-3.94" />
+    <line x1="-5.4" y1="3.94"  x2="5.4" y2="3.94"  />
   </g>
 </svg>
             
