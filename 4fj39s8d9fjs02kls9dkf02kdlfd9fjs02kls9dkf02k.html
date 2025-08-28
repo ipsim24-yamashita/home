@@ -234,27 +234,30 @@
       }
     }
 
-  /* カレンダー埋め込み */
-    .calendar-wrapper {
-  position: relative;
-  padding-bottom: 75%; /* 縦横比 4:3 に調整 */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  margin: 2em auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  border-radius: 12px;
-}
+    /* カレンダー埋め込み */
+      .calendar-wrapper {
+    position: relative;
+    padding-bottom: 75%; /* 縦横比 4:3 に調整 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 2em auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border-radius: 12px;
+  }
 
-.calendar-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+  .calendar-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-    
+  /* iPhone対策：reveal演出を完全オフ */
+  .reveal,
+  .reveal.in { opacity: 1 !important; transform: none !important; }
+
   </style>
 </head>
 <body>
