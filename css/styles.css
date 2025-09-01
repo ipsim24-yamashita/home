@@ -307,3 +307,11 @@ footer {
   display: flex;
   gap: 12px;
 }
+
+.card {
+  background: #fff;
+  border: 1px solid rgba(2, 6, 23, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(2, 6, 23, 0.12);
+  padding: 20px;
+}
