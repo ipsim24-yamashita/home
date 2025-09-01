@@ -27,9 +27,6 @@
         height: 100%;
         object-fit: cover; /* 画像をトリミングしてエリアにフィット */
         object-position: center 50%;
-        /* ↑ 表示位置を調整 
-          center 30% = 横中央、縦方向は画像の30%の位置を基準
-         (top / bottom / left / right / px / % で自由に調整可能) */
       }
 
       /* カバー全体のエリア */
@@ -46,9 +43,6 @@
         height: 100%;
         object-fit: cover; /* 画像をトリミングしてエリアにフィット */
         object-position: center 25%;
-        /* ↑ 表示位置を調整 
-          center 30% = 横中央、縦方向は画像の30%の位置を基準
-         (top / bottom / left / right / px / % で自由に調整可能) */
       }
 
       body {
@@ -279,16 +273,10 @@
       }
 
       /* Tomorrow Theme */
-      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-      /* Tomorrow Comment */
       .hljs-comment,
       .hljs-quote {
         color: #8e908c;
       }
-
-      /* Tomorrow Red */
       .hljs-variable,
       .hljs-template-variable,
       .hljs-tag,
@@ -299,8 +287,6 @@
       .hljs-deletion {
         color: #c82829;
       }
-
-      /* Tomorrow Orange */
       .hljs-number,
       .hljs-built_in,
       .hljs-builtin-name,
@@ -311,43 +297,32 @@
       .hljs-link {
         color: #f5871f;
       }
-
-      /* Tomorrow Yellow */
       .hljs-attribute {
         color: #eab700;
       }
-
-      /* Tomorrow Green */
       .hljs-string,
       .hljs-symbol,
       .hljs-bullet,
       .hljs-addition {
         color: #718c00;
       }
-
-      /* Tomorrow Blue */
       .hljs-title,
       .hljs-section {
         color: #4271ae;
       }
-
-      /* Tomorrow Purple */
       .hljs-keyword,
       .hljs-selector-tag {
         color: #8959a8;
       }
-
       .hljs {
         display: block;
         overflow-x: auto;
         color: #4d4d4c;
         padding: 0.5em;
       }
-
       .hljs-emphasis {
         font-style: italic;
       }
-
       .hljs-strong {
         font-weight: bold;
       }
@@ -355,13 +330,11 @@
       /*
       * Markdown PDF CSS
       */
-
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
           "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
         padding: 0 12px;
       }
-
       pre {
         background-color: #f8f8f8;
         border: 1px solid #cccccc;
@@ -370,65 +343,47 @@
         white-space: pre-wrap;
         overflow-wrap: break-word;
       }
-
       pre:not(.hljs) {
         padding: 23px;
         line-height: 19px;
       }
-
       blockquote {
         background: rgba(127, 127, 127, 0.1);
         border-color: rgba(0, 122, 204, 0.5);
       }
-
       .emoji {
         height: 1.4em;
       }
-
       code {
         font-size: 14px;
         line-height: 19px;
       }
-
-      /* for inline code */
       :not(pre):not(.hljs) > code {
-        color: #c9ae75; /* Change the old color so it seems less like an error */
+        color: #c9ae75;
         font-size: inherit;
       }
 
-      /* Page Break : use <div class="page"/> to insert page break
--------------------------------------------------------- */
+      /* Page Break */
       .page {
         page-break-after: always;
       }
 
       /* ====== iPad mini 横向きで見やすく拡大 ====== */
-
-      /* まずは全体の基準フォントを可変に */
       :root {
-        --base-font: clamp(
-          16px,
-          1.8vw,
-          22px
-        ); /* 画面幅に応じて16〜22pxに自動調整 */
+        --base-font: clamp(16px, 1.8vw, 22px);
         --line-height: 1.75;
       }
-      /* 既存の VSCode 変数に上書き（このページのCSSがそれを参照しているため） */
       :root {
         --vscode-markdown-font-size: var(--base-font);
         --vscode-markdown-line-height: calc(
           var(--base-font) * var(--line-height)
         );
       }
-
-      /* 本文の余白と行間を少しゆったりに */
       body {
         font-size: var(--vscode-markdown-font-size);
         line-height: var(--vscode-markdown-line-height);
-        padding: 0 clamp(16px, 4vw, 56px); /* 横の余白も自動調整 */
+        padding: 0 clamp(16px, 4vw, 56px);
       }
-
-      /* タイトル類は相対拡大（小画面でも大きすぎになりにくい） */
       h1 {
         font-size: 1.8em;
       }
@@ -440,8 +395,6 @@
         font-size: 1.25em;
         margin-top: 1.1em;
       }
-
-      /* 表の可読性をUP */
       table {
         font-size: 1em;
       }
@@ -451,19 +404,15 @@
       table > tbody > tr > td {
         padding: clamp(6px, 1.1vw, 14px) clamp(8px, 1.4vw, 18px);
       }
-
-      /* コードや引用も少し大きめに */
       pre,
       code,
       blockquote {
         font-size: 0.95em;
       }
-
-      /* カバー画像を「幅いっぱい・比率維持」で拡大しやすく */
       .cover {
         width: 100%;
         height: auto;
-        aspect-ratio: 16 / 4; /* 元の横長感を維持して伸縮 */
+        aspect-ratio: 16 / 4;
         overflow: hidden;
         position: relative;
       }
@@ -474,19 +423,14 @@
         object-position: center 60%;
         display: block;
       }
-
-      /* ---- iPad mini 横向きをピンポイント強化 ----
-        おおよそ横幅 1000〜1200px & 横向きの時だけ、さらに一段拡大 */
       @media screen and (orientation: landscape) and (min-width: 1000px) and (max-width: 1200px) {
         :root {
-          --base-font: 20px; /* ここで“ちょうどよい”固定値に */
+          --base-font: 20px;
         }
         .cover {
           aspect-ratio: 16 / 3.5;
-        } /* もう少し高さを出して見栄えUP */
+        }
       }
-
-      /* さらに大きいタブレット横向きでも読みやすく */
       @media screen and (orientation: landscape) and (min-width: 1201px) {
         :root {
           --base-font: 21px;
@@ -495,21 +439,988 @@
           aspect-ratio: 16 / 3.6;
         }
       }
-
-      /* 参考：スマホ縦など狭い画面では詰めすぎない */
       @media screen and (max-width: 599px) {
         :root {
           --base-font: 16px;
-        } /* 小画面は読みやすい最小値に固定 */
+        }
         .cover {
           aspect-ratio: 16 / 5;
-        } /* 高さは控えめ */
+        }
       }
     </style>
 
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
   </head>
+
   <body>
+    <!-- カバー（上） -->
+    <div class="cover">
+      <img
+        src="https://images.unsplash.com/photo-1623613950929-80f86508f1ad?q=80&w=1200&auto=format&fit=crop"
+        alt="カバー画像"
+      />
+    </div>
+
+    <!-- ページタイトル -->
+    <header>
+      <h1 id="実施案内">実施案内</h1>
+    </header>
+
+    <!-- イベント概要 -->
+    <section aria-labelledby="event-title">
+      <h2 id="event-title">大阪進研 Sテスト 第3回 8/23(土) @山下教室</h2>
+
+      <h3 id="時間割">時間割</h3>
+      <p>13:00～13:10 事前説明</p>
+      <p>13:10～13:45 <strong>社会</strong>（<em>35分</em>）</p>
+      <ul>
+        <li>5分休憩</li>
+      </ul>
+      <p>13:50～14:25 <strong>理科</strong>（<em>35分</em>）</p>
+      <ul>
+        <li>5分休憩</li>
+      </ul>
+      <p>14:30～15:15 <strong>英語</strong>（<em>45分</em>）</p>
+      <ul>
+        <li>5分休憩</li>
+      </ul>
+      <p>15:20～16:05 <strong>数学</strong>（<em>45分</em>）</p>
+      <ul>
+        <li>5分休憩</li>
+      </ul>
+      <p>16:10～16:55 <strong>国語</strong>（<em>45分</em>）</p>
+      <ul>
+        <li>解散</li>
+      </ul>
+
+      <h3 id="英語リスニング音声">英語リスニング音声</h3>
+      <p>パスワード<br /><strong>33125</strong></p>
+      <p>
+        <a href="https://vmoshi-oyakudachi.com/2025-shinken6s3"
+          >/// 小6リスニング音声 ///</a
+        >
+      </p>
+      <p>
+        <a href="https://vmoshi-oyakudachi.com/2025-shinken1s3"
+          >/// 中1リスニング音声 ///</a
+        >
+      </p>
+      <p>
+        <a href="https://vmoshi-oyakudachi.com/2025-shinken2s3"
+          >/// 中2リスニング音声 ///</a
+        >
+      </p>
+    </section>
+
+    <!-- カバー（下） -->
+    <div class="cover2">
+      <img
+        src="https://images.unsplash.com/photo-1686669941736-e8250fae2ef8?q=80&w=1200&auto=format&fit=crop"
+        alt="カバー画像"
+      />
+    </div>
+
+    <!-- 受験登録シート -->
+    <section aria-labelledby="reg-title">
+      <h2 id="reg-title">受験登録シート</h2>
+      <h3 id="reg-基本情報">基本情報</h3>
+      <p><strong>塾名：</strong>ipsim</p>
+      <p><strong>教室名：</strong>山下教室</p>
+      <p><strong>塾コード：</strong>T639001</p>
+      <p><strong>塾内個人No.：</strong>1401､1501､1601 など4ケタ</p>
+      <p><strong>希望通塾圏コード：</strong>281 と 282 の両方</p>
+    </section>
+
+    <!-- 志望校コード（公立） -->
+    <section aria-labelledby="pub-title">
+      <h2 id="pub-title">志望校コード番号（公立）</h2>
+
+      <h3 id="川西市-猪名川町">川西市 / 猪名川町</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>川西市 / 猪名川町</th>
+            <th>学科</th>
+            <th>高校コード</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>川西緑台</td>
+            <td>普通</td>
+            <td>2805900</td>
+          </tr>
+          <tr>
+            <td>川西北陵</td>
+            <td>普通</td>
+            <td>2806100</td>
+          </tr>
+          <tr>
+            <td>猪名川</td>
+            <td>普通</td>
+            <td>2806200</td>
+          </tr>
+          <tr>
+            <td>川西明峰</td>
+            <td>普通</td>
+            <td>2806000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="伊丹市">伊丹市</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>伊丹市</th>
+            <th>学科</th>
+            <th>高校コード</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>県立伊丹</td>
+            <td>普通</td>
+            <td>2805500</td>
+          </tr>
+          <tr>
+            <td>市立伊丹</td>
+            <td>普通</td>
+            <td>2805800</td>
+          </tr>
+          <tr>
+            <td>伊丹北</td>
+            <td>総合</td>
+            <td>2805700</td>
+          </tr>
+          <tr>
+            <td>伊丹西</td>
+            <td>普通</td>
+            <td>2805600</td>
+          </tr>
+          <tr>
+            <td>市立伊丹</td>
+            <td>商業</td>
+            <td>2805802</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="尼崎市">尼崎市</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>尼崎市</th>
+            <th>学科</th>
+            <th>高校コード</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>尼崎稲園</td>
+            <td>普通</td>
+            <td>2803102</td>
+          </tr>
+          <tr>
+            <td>尼崎北</td>
+            <td>普通</td>
+            <td>2803300</td>
+          </tr>
+          <tr>
+            <td>市立尼崎</td>
+            <td>普通</td>
+            <td>2803800</td>
+          </tr>
+          <tr>
+            <td>尼崎小田</td>
+            <td>普通</td>
+            <td>2803000</td>
+          </tr>
+          <tr>
+            <td>市立尼崎双星</td>
+            <td>普通</td>
+            <td>2803906</td>
+          </tr>
+          <tr>
+            <td>武庫之荘総合</td>
+            <td>総合</td>
+            <td>2803600</td>
+          </tr>
+          <tr>
+            <td>尼崎</td>
+            <td>普通</td>
+            <td>2803200</td>
+          </tr>
+          <tr>
+            <td>尼崎西</td>
+            <td>普通</td>
+            <td>2803400</td>
+          </tr>
+          <tr>
+            <td>尼崎工業</td>
+            <td>機械</td>
+            <td>2803500</td>
+          </tr>
+          <tr>
+            <td>尼崎工業</td>
+            <td>建築</td>
+            <td>2803501</td>
+          </tr>
+          <tr>
+            <td>尼崎工業</td>
+            <td>電気</td>
+            <td>2803505</td>
+          </tr>
+          <tr>
+            <td>尼崎工業</td>
+            <td>電子</td>
+            <td>2803507</td>
+          </tr>
+          <tr>
+            <td>市立尼崎双星</td>
+            <td>商業学</td>
+            <td>2803902</td>
+          </tr>
+          <tr>
+            <td>市立尼崎双星</td>
+            <td>電気情報</td>
+            <td>2803901</td>
+          </tr>
+          <tr>
+            <td>市立尼崎双星</td>
+            <td>ものづくり機械</td>
+            <td>2803900</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="宝塚市">宝塚市</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>宝塚市</th>
+            <th>学科</th>
+            <th>高校コード</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>宝塚北</td>
+            <td>普通</td>
+            <td>2805200</td>
+          </tr>
+          <tr>
+            <td>宝塚西</td>
+            <td>普通</td>
+            <td>2805300</td>
+          </tr>
+          <tr>
+            <td>宝塚</td>
+            <td>普通</td>
+            <td>2805000</td>
+          </tr>
+          <tr>
+            <td>宝塚東</td>
+            <td>普通</td>
+            <td>2805100</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="三田市">三田市</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>三田市</th>
+            <th>学科</th>
+            <th>高校コード</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>北摂三田</td>
+            <td>普通</td>
+            <td>2806400</td>
+          </tr>
+          <tr>
+            <td>三田祥雲館</td>
+            <td>普通</td>
+            <td>2806600</td>
+          </tr>
+          <tr>
+            <td>三田西陵</td>
+            <td>普通</td>
+            <td>2806500</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="西宮市">西宮市</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>西宮市</th>
+            <th>学科</th>
+            <th>高校コード</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>市立西宮</td>
+            <td>普通</td>
+            <td>2804800</td>
+          </tr>
+          <tr>
+            <td>市立西宮東</td>
+            <td>普通</td>
+            <td>2804700</td>
+          </tr>
+          <tr>
+            <td>西宮</td>
+            <td>普通</td>
+            <td>2804100</td>
+          </tr>
+          <tr>
+            <td>鳴尾</td>
+            <td>普通</td>
+            <td>2804200</td>
+          </tr>
+          <tr>
+            <td>西宮苦楽園</td>
+            <td>普通</td>
+            <td>2821701</td>
+          </tr>
+          <tr>
+            <td>西宮今津</td>
+            <td>総合</td>
+            <td>2804600</td>
+          </tr>
+          <tr>
+            <td>西宮南</td>
+            <td>普通</td>
+            <td>2804500</td>
+          </tr>
+          <tr>
+            <td>西宮香風</td>
+            <td>普通</td>
+            <td>2815000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="公立-その他">その他</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>その他</th>
+            <th>高校コード</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>大阪教育大学附属池田</td>
+            <td>2780000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 志望校コード（私立） -->
+    <section aria-labelledby="pri-title">
+      <h2 id="pri-title">志望校コード番号（私立）</h2>
+
+      <h3 id="兵庫県-共学">兵庫県 共学</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>兵庫県 共学</th>
+            <th>学科</th>
+            <th>高校コード</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>雲雀丘学園</td>
+            <td>文理探究</td>
+            <td>2853900</td>
+          </tr>
+          <tr>
+            <td>三田学園</td>
+            <td>普通</td>
+            <td>2850700</td>
+          </tr>
+          <tr>
+            <td>仁川学院</td>
+            <td>アカデミア</td>
+            <td>2853703</td>
+          </tr>
+          <tr>
+            <td>仁川学院</td>
+            <td>カルティべーションS</td>
+            <td>2853701</td>
+          </tr>
+          <tr>
+            <td>仁川学院</td>
+            <td>カルティべーション</td>
+            <td>2853700</td>
+          </tr>
+          <tr>
+            <td>三田松聖</td>
+            <td>特別進学</td>
+            <td>2853200</td>
+          </tr>
+          <tr>
+            <td>三田松聖</td>
+            <td>総合</td>
+            <td>2853201</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="兵庫県-女子">兵庫県 女子</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>兵庫県 女子</th>
+            <th>学科</th>
+            <th>高校コード</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>武庫川女子大学附属</td>
+            <td>グローバルサイエンス</td>
+            <td>2852305</td>
+          </tr>
+          <tr>
+            <td>武庫川女子大学附属</td>
+            <td>探究</td>
+            <td>2852307</td>
+          </tr>
+          <tr>
+            <td>百合学院</td>
+            <td>アカデミック</td>
+            <td>2852403</td>
+          </tr>
+          <tr>
+            <td>百合学院</td>
+            <td>キャリア</td>
+            <td>2852405</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="大阪府-共学">大阪府 共学</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>大阪府 共学</th>
+            <th>学科</th>
+            <th>高校コード</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>箕面自由学園</td>
+            <td>SS特進</td>
+            <td>2758704</td>
+          </tr>
+          <tr>
+            <td>箕面自由学園</td>
+            <td>S特進</td>
+            <td>2758700</td>
+          </tr>
+          <tr>
+            <td>箕面自由学園</td>
+            <td>特進</td>
+            <td>2758701</td>
+          </tr>
+          <tr>
+            <td>箕面自由学園</td>
+            <td>文理探究</td>
+            <td>2758702</td>
+          </tr>
+          <tr>
+            <td>大商学園</td>
+            <td>特進I</td>
+            <td>2757304</td>
+          </tr>
+          <tr>
+            <td>大商学園</td>
+            <td>特進II</td>
+            <td>2757300</td>
+          </tr>
+          <tr>
+            <td>大商学園</td>
+            <td>情報</td>
+            <td>2757302</td>
+          </tr>
+          <tr>
+            <td>大商学園</td>
+            <td>進学</td>
+            <td>2752901</td>
+          </tr>
+          <tr>
+            <td>大商学園</td>
+            <td>商業</td>
+            <td>2752903</td>
+          </tr>
+          <tr>
+            <td>箕面学園</td>
+            <td>特進</td>
+            <td>2758601</td>
+          </tr>
+          <tr>
+            <td>箕面学園</td>
+            <td>総合</td>
+            <td>2758602</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="大阪府-女子">大阪府 女子</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>大阪府 女子</th>
+            <th>学科</th>
+            <th>高校コード</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>宣真</td>
+            <td>看護医療/特進</td>
+            <td>2752901</td>
+          </tr>
+          <tr>
+            <td>宣真</td>
+            <td>保育系進学</td>
+            <td>2752902</td>
+          </tr>
+          <tr>
+            <td>宣真</td>
+            <td>総合</td>
+            <td>2752900</td>
+          </tr>
+          <tr>
+            <td>宣真</td>
+            <td>アニメアート</td>
+            <td>2752904</td>
+          </tr>
+          <tr>
+            <td>宣真</td>
+            <td>ウェルネススポーツ</td>
+            <td>2752905</td>
+          </tr>
+          <tr>
+            <td>梅花</td>
+            <td>特別進学</td>
+            <td>2753202</td>
+          </tr>
+          <tr>
+            <td>梅花</td>
+            <td>看護医療</td>
+            <td>2753203</td>
+          </tr>
+          <tr>
+            <td>梅花</td>
+            <td>グローバル</td>
+            <td>2753204</td>
+          </tr>
+          <tr>
+            <td>梅花</td>
+            <td>舞台芸術</td>
+            <td>2753205</td>
+          </tr>
+          <tr>
+            <td>梅花</td>
+            <td>キャリアデザイン</td>
+            <td>2753206</td>
+          </tr>
+          <tr>
+            <td>大阪薫英女学院</td>
+            <td>国際特進</td>
+            <td>2751105</td>
+          </tr>
+          <tr>
+            <td>大阪薫英女学院</td>
+            <td>国際進学</td>
+            <td>2751106</td>
+          </tr>
+          <tr>
+            <td>大阪薫英女学院</td>
+            <td>文理特進</td>
+            <td>2751107</td>
+          </tr>
+          <tr>
+            <td>大阪薫英女学院</td>
+            <td>英語進学</td>
+            <td>2751108</td>
+          </tr>
+          <tr>
+            <td>大阪薫英女学院</td>
+            <td>文理進学</td>
+            <td>2751111</td>
+          </tr>
+          <tr>
+            <td>大阪薫英女学院</td>
+            <td>総合進学</td>
+            <td>2751109</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 学園専用情報 -->
+    <section aria-labelledby="sasa-title">
+      <h2 id="sasa-title">能勢ささゆり学園 専用情報</h2>
+      <p>希望通塾圏コード：273</p>
+
+      <h3 id="能勢-大阪府">対象（大阪府）</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>大阪府</th>
+            <th>高校コード</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>豊中</td>
+            <td>2700701</td>
+          </tr>
+          <tr>
+            <td>箕面(グローバル)</td>
+            <td>2701001</td>
+          </tr>
+          <tr>
+            <td>池田</td>
+            <td>2700400</td>
+          </tr>
+          <tr>
+            <td>箕面</td>
+            <td>2701000</td>
+          </tr>
+          <tr>
+            <td>桜塚</td>
+            <td>2700800</td>
+          </tr>
+          <tr>
+            <td>刀根山</td>
+            <td>2700900</td>
+          </tr>
+          <tr>
+            <td>渋谷</td>
+            <td>2700500</td>
+          </tr>
+          <tr>
+            <td>豊中(能勢)</td>
+            <td>2700702</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- その他のコード番号 -->
+    <section aria-labelledby="other-code-title">
+      <h2 id="other-code-title">その他の志望校コード番号</h2>
+      <p>
+        <a
+          href="https://vmoshi-oyakudachi.com/wp-content/uploads/2025%E5%B9%B4%E5%BA%A6-%E5%85%B5%E5%BA%AB%E7%9C%8C-%E7%AC%AC3%E7%89%88.pdf"
+          >/// 兵庫県 コード番号 ///</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://vmoshi-oyakudachi.com/wp-content/uploads/2025%E5%B9%B4%E5%BA%A6-%E5%A4%A7%E9%98%AA%E5%BA%9C-%E7%AC%AC3%E7%89%88.pdf"
+          >/// 大阪府 コード番号 ///</a
+        >
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- 難易度表（公立） -->
+    <section aria-labelledby="diff-pub-title">
+      <h2 id="diff-pub-title">受験難易度表（公立）</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>偏差値</th>
+            <th>高校名</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>69</td>
+            <td>大阪教育大学附属池田 / 豊中</td>
+          </tr>
+          <tr>
+            <td>68</td>
+            <td>市立西宮</td>
+          </tr>
+          <tr>
+            <td>67</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>66</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>65</td>
+            <td>尼崎稲園</td>
+          </tr>
+          <tr>
+            <td>64</td>
+            <td>市立西宮東 / 箕面(グローバル)</td>
+          </tr>
+          <tr>
+            <td>63</td>
+            <td>宝塚北 / 北摂三田 / 池田</td>
+          </tr>
+          <tr>
+            <td>62</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>61</td>
+            <td>西宮</td>
+          </tr>
+          <tr>
+            <td>60</td>
+            <td>箕面</td>
+          </tr>
+          <tr>
+            <td>59</td>
+            <td>三田祥雲館</td>
+          </tr>
+          <tr>
+            <td>58</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>57</td>
+            <td>伊丹 / 鳴尾 / 桜塚</td>
+          </tr>
+          <tr>
+            <td>56</td>
+            <td>川西緑台 / 尼崎北</td>
+          </tr>
+          <tr>
+            <td>55</td>
+            <td>市立伊丹 / 宝塚西</td>
+          </tr>
+          <tr>
+            <td>54</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td>市立尼崎 / 刀根山</td>
+          </tr>
+          <tr>
+            <td>52</td>
+            <td>西宮苦楽園</td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td>伊丹北 / 尼崎小田</td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>49</td>
+            <td>三田西陵</td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td>川西北陵 / 伊丹西 / 市立尼崎双星</td>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td>宝塚 / 西宮今津 / 西宮南</td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>44</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>43</td>
+            <td>尼崎 / 尼崎西</td>
+          </tr>
+          <tr>
+            <td>42</td>
+            <td>猪名川 / 渋谷</td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td>宝塚東</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>川西明峰</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 難易度表（私立） -->
+    <section aria-labelledby="diff-pri-title">
+      <h2 id="diff-pri-title">受験難易度表（私立）</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>偏差値</th>
+            <th>高校名</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>67</td>
+            <td>箕面自由 SS特進</td>
+          </tr>
+          <tr>
+            <td>66</td>
+            <td>雲雀丘学園</td>
+          </tr>
+          <tr>
+            <td>65</td>
+            <td>履正社 学藝S類</td>
+          </tr>
+          <tr>
+            <td>64</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>63</td>
+            <td>箕面自由 S特進 / 仁川学院 アカデミア</td>
+          </tr>
+          <tr>
+            <td>62</td>
+            <td>三田学園</td>
+          </tr>
+          <tr>
+            <td>61</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>60</td>
+            <td>履正社 学藝Ⅰ類 / 武庫女 グローバル</td>
+          </tr>
+          <tr>
+            <td>59</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>58</td>
+            <td>箕面自由 特進 / 武庫女 探究 / 仁川学院 カルティS</td>
+          </tr>
+          <tr>
+            <td>57</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>56</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>55</td>
+            <td>箕面自由 文理探究</td>
+          </tr>
+          <tr>
+            <td>54</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td>百合学院 アカデミック</td>
+          </tr>
+          <tr>
+            <td>52</td>
+            <td>大商学園 特進Ⅰ類 / 履正社 学藝Ⅱ類 / 仁川学院 カルティ</td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td>三田松聖 特別進学</td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td>大商学園 特進Ⅱ類</td>
+          </tr>
+          <tr>
+            <td>49</td>
+            <td>百合学院 キャリア</td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td>宣真 看護医療特進</td>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td>大商学園 情報 / 宣真 保育系進学</td>
+          </tr>
+          <tr>
+            <td>44</td>
+            <td>大商学園 進学</td>
+          </tr>
+          <tr>
+            <td>43</td>
+            <td>大商学園 商業 / 三田松聖 総合</td>
+          </tr>
+          <tr>
+            <td>42</td>
+            <td>宣真 総合/アニメアート</td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>38</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td>箕面学園</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+      <p><small>2025 Copy Right @ ipsim</small></p>
+    </footer>
+
+    <!-- Mermaid 初期化（最後でOK） -->
     <script>
       mermaid.initialize({
         startOnLoad: true,
@@ -520,955 +1431,5 @@
             : "default",
       });
     </script>
-
-    <!-- 色鉛筆 斜め -->
-    <div class="cover">
-      <img
-        src="https://images.unsplash.com/photo-1623613950929-80f86508f1ad?q=80&w=1200&auto=format&fit=crop"
-        alt="カバー画像"
-      />
-    </div>
-
-    <h3
-      id="%E5%A4%A7%E9%98%AA%E9%80%B2%E7%A0%94-s%E3%83%86%E3%82%B9%E3%83%88-%E7%AC%AC3%E5%9B%9E"
-    >
-      大阪進研 Sテスト 第3回 8/23(土) @山下教室
-    </h3>
-    <h2 id="%E6%99%82%E9%96%93%E5%89%B2">時間割</h2>
-    <p>13:00～13:10 事前説明</p>
-    <p>13:10～13:45 <strong>社会</strong>（<em>35分</em>）</p>
-    <ul>
-      <li>5分休憩</li>
-    </ul>
-    <p>13:50～14:25 <strong>理科</strong>（<em>35分</em>）</p>
-    <ul>
-      <li>5分休憩</li>
-    </ul>
-    <p>14:30～15:15 <strong>英語</strong>（<em>45分</em>）</p>
-    <ul>
-      <li>5分休憩</li>
-    </ul>
-    <p>15:20～16:05 <strong>数学</strong>（<em>45分</em>）</p>
-    <ul>
-      <li>5分休憩</li>
-    </ul>
-    <p>16:10～16:55 <strong>国語</strong>（<em>45分</em>）</p>
-    <ul>
-      <li>解散</li>
-    </ul>
-    <h2
-      id="%E8%8B%B1%E8%AA%9E%E3%83%AA%E3%82%B9%E3%83%8B%E3%83%B3%E3%82%B0%E9%9F%B3%E5%A3%B0"
-    >
-      英語リスニング音声
-    </h2>
-    <p>
-      パスワード<br />
-      <strong>33125</strong>
-    </p>
-    <p>
-      <a href="https://vmoshi-oyakudachi.com/2025-shinken6s3"
-        >/// 小6リスニング音声 ///</a
-      >
-    </p>
-    <p>
-      <a href="https://vmoshi-oyakudachi.com/2025-shinken1s3"
-        >/// 中1リスニング音声 ///</a
-      >
-    </p>
-    <p>
-      <a href="https://vmoshi-oyakudachi.com/2025-shinken2s3"
-        >/// 中2リスニング音声 ///</a
-      >
-    </p>
-
-    <!-- 色鉛筆 向かい合い -->
-    <div class="cover2">
-      <img
-        src="https://images.unsplash.com/photo-1686669941736-e8250fae2ef8?q=80&w=1200&auto=format&fit=crop"
-        alt="カバー画像"
-      />
-    </div>
-
-    <h2 id="%E5%8F%97%E9%A8%93%E7%99%BB%E9%8C%B2%E3%82%B7%E3%83%BC%E3%83%88">
-      受験登録シート
-    </h2>
-    <h4 id="%E5%A1%BE%E5%90%8D--ipsim">塾名 ： ipsim</h4>
-    <h4 id="%E6%95%99%E5%AE%A4%E5%90%8D--%E5%B1%B1%E4%B8%8B%E6%95%99%E5%AE%A4">
-      教室名 ： 山下教室
-    </h4>
-    <h4 id="%E5%A1%BE%E3%82%B3%E3%83%BC%E3%83%89--t639001">
-      塾コード ： T639001
-    </h4>
-    <h4
-      id="%E5%A1%BE%E5%86%85%E5%80%8B%E4%BA%BAno--1401%EF%BD%A41501%EF%BD%A41601-%E3%81%AA%E3%81%A94%E3%82%B1%E3%82%BF"
-    >
-      塾内個人No. ： 1401､1501､1601 など4ケタ
-    </h4>
-    <h4
-      id="%E5%B8%8C%E6%9C%9B%E9%80%9A%E5%A1%BE%E5%9C%8F%E3%82%B3%E3%83%BC%E3%83%89281-%E3%81%A8-282-%E3%81%AE%E4%B8%A1%E6%96%B9"
-    >
-      希望通塾圏コード：281 と 282 の両方
-    </h4>
-    <h2
-      id="%E5%BF%97%E6%9C%9B%E6%A0%A1%E3%82%B3%E3%83%BC%E3%83%89%E7%95%AA%E5%8F%B7%E5%85%AC%E7%AB%8B"
-    >
-      志望校コード番号(公立)
-    </h2>
-    <table>
-      <thead>
-        <tr>
-          <th>川西市 / 猪名川町</th>
-          <th>学科</th>
-          <th>高校コード</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>川西緑台</td>
-          <td>普通</td>
-          <td>2805900</td>
-        </tr>
-        <tr>
-          <td>川西北陵</td>
-          <td>普通</td>
-          <td>2806100</td>
-        </tr>
-        <tr>
-          <td>猪名川</td>
-          <td>普通</td>
-          <td>2806200</td>
-        </tr>
-        <tr>
-          <td>川西明峰</td>
-          <td>普通</td>
-          <td>2806000</td>
-        </tr>
-      </tbody>
-    </table>
-    <table>
-      <thead>
-        <tr>
-          <th>伊丹市</th>
-          <th>学科</th>
-          <th>高校コード</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>県立伊丹</td>
-          <td>普通</td>
-          <td>2805500</td>
-        </tr>
-        <tr>
-          <td>市立伊丹</td>
-          <td>普通</td>
-          <td>2805800</td>
-        </tr>
-        <tr>
-          <td>伊丹北</td>
-          <td>総合</td>
-          <td>2805700</td>
-        </tr>
-        <tr>
-          <td>伊丹西</td>
-          <td>普通</td>
-          <td>2805600</td>
-        </tr>
-        <tr>
-          <td>市立伊丹</td>
-          <td>商業</td>
-          <td>2805802</td>
-        </tr>
-      </tbody>
-    </table>
-    <table>
-      <thead>
-        <tr>
-          <th>尼崎市</th>
-          <th>学科</th>
-          <th>高校コード</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>尼崎稲園</td>
-          <td>普通</td>
-          <td>2803102</td>
-        </tr>
-        <tr>
-          <td>尼崎北</td>
-          <td>普通</td>
-          <td>2803300</td>
-        </tr>
-        <tr>
-          <td>市立尼崎</td>
-          <td>普通</td>
-          <td>2803800</td>
-        </tr>
-        <tr>
-          <td>尼崎小田</td>
-          <td>普通</td>
-          <td>2803000</td>
-        </tr>
-        <tr>
-          <td>市立尼崎双星</td>
-          <td>普通</td>
-          <td>2803906</td>
-        </tr>
-        <tr>
-          <td>武庫之荘総合</td>
-          <td>総合</td>
-          <td>2803600</td>
-        </tr>
-        <tr>
-          <td>尼崎</td>
-          <td>普通</td>
-          <td>2803200</td>
-        </tr>
-        <tr>
-          <td>尼崎西</td>
-          <td>普通</td>
-          <td>2803400</td>
-        </tr>
-        <tr>
-          <td>尼崎工業</td>
-          <td>機械</td>
-          <td>2803500</td>
-        </tr>
-        <tr>
-          <td>尼崎工業</td>
-          <td>建築</td>
-          <td>2803501</td>
-        </tr>
-        <tr>
-          <td>尼崎工業</td>
-          <td>電気</td>
-          <td>2803505</td>
-        </tr>
-        <tr>
-          <td>尼崎工業</td>
-          <td>電子</td>
-          <td>2803507</td>
-        </tr>
-        <tr>
-          <td>市立尼崎双星</td>
-          <td>商業学</td>
-          <td>2803902</td>
-        </tr>
-        <tr>
-          <td>市立尼崎双星</td>
-          <td>電気情報</td>
-          <td>2803901</td>
-        </tr>
-        <tr>
-          <td>市立尼崎双星</td>
-          <td>ものづくり機械</td>
-          <td>2803900</td>
-        </tr>
-      </tbody>
-    </table>
-    <table>
-      <thead>
-        <tr>
-          <th>宝塚市</th>
-          <th>学科</th>
-          <th>高校コード</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>宝塚北</td>
-          <td>普通</td>
-          <td>2805200</td>
-        </tr>
-        <tr>
-          <td>宝塚西</td>
-          <td>普通</td>
-          <td>2805300</td>
-        </tr>
-        <tr>
-          <td>宝塚</td>
-          <td>普通</td>
-          <td>2805000</td>
-        </tr>
-        <tr>
-          <td>宝塚東</td>
-          <td>普通</td>
-          <td>2805100</td>
-        </tr>
-      </tbody>
-    </table>
-    <table>
-      <thead>
-        <tr>
-          <th>三田市</th>
-          <th>学科</th>
-          <th>高校コード</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>北摂三田</td>
-          <td>普通</td>
-          <td>2806400</td>
-        </tr>
-        <tr>
-          <td>三田祥雲館</td>
-          <td>普通</td>
-          <td>2806600</td>
-        </tr>
-        <tr>
-          <td>三田西陵</td>
-          <td>普通</td>
-          <td>2806500</td>
-        </tr>
-      </tbody>
-    </table>
-    <table>
-      <thead>
-        <tr>
-          <th>西宮市</th>
-          <th>学科</th>
-          <th>高校コード</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>市立西宮</td>
-          <td>普通</td>
-          <td>2804800</td>
-        </tr>
-        <tr>
-          <td>市立西宮東</td>
-          <td>普通</td>
-          <td>2804700</td>
-        </tr>
-        <tr>
-          <td>西宮</td>
-          <td>普通</td>
-          <td>2804100</td>
-        </tr>
-        <tr>
-          <td>鳴尾</td>
-          <td>普通</td>
-          <td>2804200</td>
-        </tr>
-        <tr>
-          <td>西宮苦楽園</td>
-          <td>普通</td>
-          <td>2821701</td>
-        </tr>
-        <tr>
-          <td>西宮今津</td>
-          <td>総合</td>
-          <td>2804600</td>
-        </tr>
-        <tr>
-          <td>西宮南</td>
-          <td>普通</td>
-          <td>2804500</td>
-        </tr>
-        <tr>
-          <td>西宮香風</td>
-          <td>普通</td>
-          <td>2815000</td>
-        </tr>
-      </tbody>
-    </table>
-    <table>
-      <thead>
-        <tr>
-          <th>その他</th>
-          <th>高校コード</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>大阪教育大学附属池田</td>
-          <td>2780000</td>
-        </tr>
-      </tbody>
-    </table>
-    <h2
-      id="%E5%BF%97%E6%9C%9B%E6%A0%A1%E3%82%B3%E3%83%BC%E3%83%89%E7%95%AA%E5%8F%B7%E7%A7%81%E7%AB%8B"
-    >
-      志望校コード番号(私立)
-    </h2>
-    <table>
-      <thead>
-        <tr>
-          <th>兵庫県 共学</th>
-          <th>学科</th>
-          <th>高校コード</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>雲雀丘学園</td>
-          <td>文理探究</td>
-          <td>2853900</td>
-        </tr>
-        <tr>
-          <td>三田学園</td>
-          <td>普通</td>
-          <td>2850700</td>
-        </tr>
-        <tr>
-          <td>仁川学院</td>
-          <td>アカデミア</td>
-          <td>2853703</td>
-        </tr>
-        <tr>
-          <td>仁川学院</td>
-          <td>カルティべーションS</td>
-          <td>2853701</td>
-        </tr>
-        <tr>
-          <td>仁川学院</td>
-          <td>カルティべーション</td>
-          <td>2853700</td>
-        </tr>
-        <tr>
-          <td>三田松聖</td>
-          <td>特別進学</td>
-          <td>2853200</td>
-        </tr>
-        <tr>
-          <td>三田松聖</td>
-          <td>総合</td>
-          <td>2853201</td>
-        </tr>
-      </tbody>
-    </table>
-    <table>
-      <thead>
-        <tr>
-          <th>兵庫県 女子</th>
-          <th>学科</th>
-          <th>高校コード</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>武庫川女子大学附属</td>
-          <td>グローバルサイエンス</td>
-          <td>2852305</td>
-        </tr>
-        <tr>
-          <td>武庫川女子大学附属</td>
-          <td>探究</td>
-          <td>2852307</td>
-        </tr>
-        <tr>
-          <td>百合学院</td>
-          <td>アカデミック</td>
-          <td>2852403</td>
-        </tr>
-        <tr>
-          <td>百合学院</td>
-          <td>キャリア</td>
-          <td>2852405</td>
-        </tr>
-      </tbody>
-    </table>
-    <table>
-      <thead>
-        <tr>
-          <th>大阪府 共学</th>
-          <th>学科</th>
-          <th>高校コード</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>箕面自由学園</td>
-          <td>SS特進</td>
-          <td>2758704</td>
-        </tr>
-        <tr>
-          <td>箕面自由学園</td>
-          <td>S特進</td>
-          <td>2758700</td>
-        </tr>
-        <tr>
-          <td>箕面自由学園</td>
-          <td>特進</td>
-          <td>2758701</td>
-        </tr>
-        <tr>
-          <td>箕面自由学園</td>
-          <td>文理探究</td>
-          <td>2758702</td>
-        </tr>
-        <tr>
-          <td>大商学園</td>
-          <td>特進I</td>
-          <td>2757304</td>
-        </tr>
-        <tr>
-          <td>大商学園</td>
-          <td>特進II</td>
-          <td>2757300</td>
-        </tr>
-        <tr>
-          <td>大商学園</td>
-          <td>情報</td>
-          <td>2757302</td>
-        </tr>
-        <tr>
-          <td>大商学園</td>
-          <td>進学</td>
-          <td>2752901</td>
-        </tr>
-        <tr>
-          <td>大商学園</td>
-          <td>商業</td>
-          <td>2752903</td>
-        </tr>
-        <tr>
-          <td>箕面学園</td>
-          <td>特進</td>
-          <td>2758601</td>
-        </tr>
-        <tr>
-          <td>箕面学園</td>
-          <td>総合</td>
-          <td>2758602</td>
-        </tr>
-      </tbody>
-    </table>
-    <table>
-      <thead>
-        <tr>
-          <th>大阪府 女子</th>
-          <th>学科</th>
-          <th>高校コード</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>宣真</td>
-          <td>看護医療/特進</td>
-          <td>2752901</td>
-        </tr>
-        <tr>
-          <td>宣真</td>
-          <td>保育系進学</td>
-          <td>2752902</td>
-        </tr>
-        <tr>
-          <td>宣真</td>
-          <td>総合</td>
-          <td>2752900</td>
-        </tr>
-        <tr>
-          <td>宣真</td>
-          <td>アニメアート</td>
-          <td>2752904</td>
-        </tr>
-        <tr>
-          <td>宣真</td>
-          <td>ウェルネススポーツ</td>
-          <td>2752905</td>
-        </tr>
-        <tr>
-          <td>梅花</td>
-          <td>特別進学</td>
-          <td>2753202</td>
-        </tr>
-        <tr>
-          <td>梅花</td>
-          <td>看護医療</td>
-          <td>2753203</td>
-        </tr>
-        <tr>
-          <td>梅花</td>
-          <td>グローバル</td>
-          <td>2753204</td>
-        </tr>
-        <tr>
-          <td>梅花</td>
-          <td>舞台芸術</td>
-          <td>2753205</td>
-        </tr>
-        <tr>
-          <td>梅花</td>
-          <td>キャリアデザイン</td>
-          <td>2753206</td>
-        </tr>
-        <tr>
-          <td>大阪薫英女学院</td>
-          <td>国際特進</td>
-          <td>2751105</td>
-        </tr>
-        <tr>
-          <td>大阪薫英女学院</td>
-          <td>国際進学</td>
-          <td>2751106</td>
-        </tr>
-        <tr>
-          <td>大阪薫英女学院</td>
-          <td>文理特進</td>
-          <td>2751107</td>
-        </tr>
-        <tr>
-          <td>大阪薫英女学院</td>
-          <td>英語進学</td>
-          <td>2751108</td>
-        </tr>
-        <tr>
-          <td>大阪薫英女学院</td>
-          <td>文理進学</td>
-          <td>2751111</td>
-        </tr>
-        <tr>
-          <td>大阪薫英女学院</td>
-          <td>総合進学</td>
-          <td>2751109</td>
-        </tr>
-      </tbody>
-    </table>
-    <h2
-      id="%E8%83%BD%E5%8B%A2%E3%81%95%E3%81%95%E3%82%86%E3%82%8A%E5%AD%A6%E5%9C%92-%E5%B0%82%E7%94%A8%E6%83%85%E5%A0%B1"
-    >
-      能勢ささゆり学園 専用情報
-    </h2>
-    <p>希望通塾圏コード：273</p>
-    <table>
-      <thead>
-        <tr>
-          <th>大阪府</th>
-          <th>高校コード</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>豊中</td>
-          <td>2700701</td>
-        </tr>
-        <tr>
-          <td>箕面(グローバル)</td>
-          <td>2701001</td>
-        </tr>
-        <tr>
-          <td>池田</td>
-          <td>2700400</td>
-        </tr>
-        <tr>
-          <td>箕面</td>
-          <td>2701000</td>
-        </tr>
-        <tr>
-          <td>桜塚</td>
-          <td>2700800</td>
-        </tr>
-        <tr>
-          <td>刀根山</td>
-          <td>2700900</td>
-        </tr>
-        <tr>
-          <td>渋谷</td>
-          <td>2700500</td>
-        </tr>
-        <tr>
-          <td>豊中(能勢)</td>
-          <td>2700702</td>
-        </tr>
-      </tbody>
-    </table>
-    <h2
-      id="%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E5%BF%97%E6%9C%9B%E6%A0%A1%E3%82%B3%E3%83%BC%E3%83%89%E7%95%AA%E5%8F%B7"
-    >
-      その他の志望校コード番号
-    </h2>
-    <p>
-      <a
-        href="https://vmoshi-oyakudachi.com/wp-content/uploads/2025%E5%B9%B4%E5%BA%A6-%E5%85%B5%E5%BA%AB%E7%9C%8C-%E7%AC%AC3%E7%89%88.pdf"
-        >/// 兵庫県 コード番号 ///</a
-      >
-    </p>
-    <p>
-      <a
-        href="https://vmoshi-oyakudachi.com/wp-content/uploads/2025%E5%B9%B4%E5%BA%A6-%E5%A4%A7%E9%98%AA%E5%BA%9C-%E7%AC%AC3%E7%89%88.pdf"
-        >/// 大阪府 コード番号 ///</a
-      >
-    </p>
-    <hr />
-    <h2
-      id="%E5%8F%97%E9%A8%93%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8-%E5%85%AC%E7%AB%8B"
-    >
-      受験難易度表 (公立)
-    </h2>
-    <table>
-      <thead>
-        <tr>
-          <th>偏差値</th>
-          <th>高校名</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>69</td>
-          <td>大阪教育大学附属池田 / 豊中</td>
-        </tr>
-        <tr>
-          <td>68</td>
-          <td>市立西宮</td>
-        </tr>
-        <tr>
-          <td>67</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>66</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>65</td>
-          <td>尼崎稲園</td>
-        </tr>
-        <tr>
-          <td>64</td>
-          <td>市立西宮東 / 箕面(グローバル)</td>
-        </tr>
-        <tr>
-          <td>63</td>
-          <td>宝塚北 / 北摂三田 / 池田</td>
-        </tr>
-        <tr>
-          <td>62</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>61</td>
-          <td>西宮</td>
-        </tr>
-        <tr>
-          <td>60</td>
-          <td>箕面</td>
-        </tr>
-        <tr>
-          <td>59</td>
-          <td>三田祥雲館</td>
-        </tr>
-        <tr>
-          <td>58</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>57</td>
-          <td>伊丹 / 鳴尾 / 桜塚</td>
-        </tr>
-        <tr>
-          <td>56</td>
-          <td>川西緑台 / 尼崎北</td>
-        </tr>
-        <tr>
-          <td>55</td>
-          <td>市立伊丹 / 宝塚西</td>
-        </tr>
-        <tr>
-          <td>54</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>53</td>
-          <td>市立尼崎 / 刀根山</td>
-        </tr>
-        <tr>
-          <td>52</td>
-          <td>西宮苦楽園</td>
-        </tr>
-        <tr>
-          <td>51</td>
-          <td>伊丹北 / 尼崎小田</td>
-        </tr>
-        <tr>
-          <td>50</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>49</td>
-          <td>三田西陵</td>
-        </tr>
-        <tr>
-          <td>48</td>
-          <td>川西北陵 / 伊丹西 / 市立尼崎双星</td>
-        </tr>
-        <tr>
-          <td>47</td>
-          <td>宝塚 / 西宮今津 / 西宮南</td>
-        </tr>
-        <tr>
-          <td>46</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>45</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>44</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>43</td>
-          <td>尼崎 / 尼崎西</td>
-        </tr>
-        <tr>
-          <td>42</td>
-          <td>猪名川 / 渋谷</td>
-        </tr>
-        <tr>
-          <td>41</td>
-          <td>宝塚東</td>
-        </tr>
-        <tr>
-          <td>40</td>
-          <td>川西明峰</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr />
-    <h2
-      id="%E5%8F%97%E9%A8%93%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8-%E7%A7%81%E7%AB%8B"
-    >
-      受験難易度表 (私立)
-    </h2>
-    <table>
-      <thead>
-        <tr>
-          <th>偏差値</th>
-          <th>高校名</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>67</td>
-          <td>箕面自由 SS特進</td>
-        </tr>
-        <tr>
-          <td>66</td>
-          <td>雲雀丘学園</td>
-        </tr>
-        <tr>
-          <td>65</td>
-          <td>履正社 学藝S類</td>
-        </tr>
-        <tr>
-          <td>64</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>63</td>
-          <td>箕面自由 S特進 / 仁川学院 アカデミア</td>
-        </tr>
-        <tr>
-          <td>62</td>
-          <td>三田学園</td>
-        </tr>
-        <tr>
-          <td>61</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>60</td>
-          <td>履正社 学藝Ⅰ類 / 武庫女 グローバル</td>
-        </tr>
-        <tr>
-          <td>59</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>58</td>
-          <td>箕面自由 特進 / 武庫女 探究 / 仁川学院 カルティS</td>
-        </tr>
-        <tr>
-          <td>57</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>56</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>55</td>
-          <td>箕面自由 文理探究</td>
-        </tr>
-        <tr>
-          <td>54</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>53</td>
-          <td>百合学院 アカデミック</td>
-        </tr>
-        <tr>
-          <td>52</td>
-          <td>大商学園 特進Ⅰ類 / 履正社 学藝Ⅱ類 / 仁川学院 カルティ</td>
-        </tr>
-        <tr>
-          <td>51</td>
-          <td>三田松聖 特別進学</td>
-        </tr>
-        <tr>
-          <td>50</td>
-          <td>大商学園 特進Ⅱ類</td>
-        </tr>
-        <tr>
-          <td>49</td>
-          <td>百合学院 キャリア</td>
-        </tr>
-        <tr>
-          <td>48</td>
-          <td>宣真 看護医療特進</td>
-        </tr>
-        <tr>
-          <td>47</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>46</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>45</td>
-          <td>大商学園 情報 / 宣真 保育系進学</td>
-        </tr>
-        <tr>
-          <td>44</td>
-          <td>大商学園 進学</td>
-        </tr>
-        <tr>
-          <td>43</td>
-          <td>大商学園 商業 / 三田松聖 総合</td>
-        </tr>
-        <tr>
-          <td>42</td>
-          <td>宣真 総合/アニメアート</td>
-        </tr>
-        <tr>
-          <td>41</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>40</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>39</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>38</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>37</td>
-          <td>箕面学園</td>
-        </tr>
-      </tbody>
-    </table>
-    <h6 id="2025-copy-right--ipsim">2025 Copy Right @ ipsim</h6>
   </body>
 </html>
