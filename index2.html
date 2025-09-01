@@ -197,12 +197,55 @@
         <p class="section-lead">すでに終了した主なイベントです。</p>
 
         <div class="grid grid-3">
+          <!-- 夏期講習 -->
           <article class="card">
+            <div class="icon" aria-hidden="true">
+              <!-- sparkles icon -->
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 3l1.5 3.5L10 8l-3.5 1.5L5 13l-1.5-3.5L0 8l3.5-1.5L5 3zM19 11l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5zM12 1l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
             <h3>夏期講習</h3>
-            <p>7/21(月)〜8/8(金)、8/18(月)〜8/22(金)</p>
+            <p>7/21(月)〜8/8(金)</p>
+            <p>8/18(月)〜8/22(金)</p>
           </article>
 
-          <article class="card is-exam">
+          <!-- 8月 模擬試験 -->
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <!-- 左下→右上 斜め3本線（中央長／上下=60%・間隔1.5倍）22x22 -->
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <g
+                  transform="translate(12,12) rotate(-45)"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  fill="none"
+                >
+                  <!-- 中央（長い）: 半長=9 -->
+                  <line x1="-9" y1="0" x2="9" y2="0" />
+                  <!-- 上下（60%）: 半長=5.4 / 間隔=±3.94 -->
+                  <line x1="-5.4" y1="-3.94" x2="5.4" y2="-3.94" />
+                  <line x1="-5.4" y1="3.94" x2="5.4" y2="3.94" />
+                </g>
+              </svg>
+            </div>
             <h3>8月 模擬試験</h3>
             <p><a href="docs/testrange.pdf">出題範囲</a></p>
             <p>
@@ -220,35 +263,164 @@
         <p class="section-lead">この先の主な予定です。</p>
 
         <div class="grid grid-3">
-          <article class="card is-exam">
-            <h3>10月 模擬試験 (中3)</h3>
-            <p><a href="docs/testrange.pdf">出題範囲</a></p>
-            <p>10/19(日) 外部会場（兵庫Vもし第3回）</p>
-          </article>
-
-          <article class="card is-exam">
-            <h3>テスト対策 [期末]</h3>
-            <p>1:55 / 3:50(ロング)</p>
-            <p>11/4(火)〜18(火) ／ 11/17(月)〜19(水) 東谷中 期末</p>
-          </article>
-
-          <article class="card is-exam">
-            <h3>11月 模擬試験 (中3)</h3>
-            <p><a href="docs/testrange.pdf">出題範囲</a></p>
-            <p>11/30(日) 外部会場（兵庫Vもし第4回）</p>
-          </article>
-
+          <!-- 10月 模擬試験 (中3) -->
           <article class="card">
-            <h3>冬期講習</h3>
-            <p>12/22(月)〜12/27(土)、1/5(月)〜1/9(金)</p>
+            <div class="icon" aria-hidden="true">
+              <!-- 左下→右上 斜め3本線（中央長／上下=60%・間隔1.5倍）22x22 -->
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <g
+                  transform="translate(12,12) rotate(-45)"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  fill="none"
+                >
+                  <!-- 中央（長い）: 半長=9 -->
+                  <line x1="-9" y1="0" x2="9" y2="0" />
+                  <!-- 上下（60%）: 半長=5.4 / 間隔=±3.94 -->
+                  <line x1="-5.4" y1="-3.94" x2="5.4" y2="-3.94" />
+                  <line x1="-5.4" y1="3.94" x2="5.4" y2="3.94" />
+                </g>
+              </svg>
+            </div>
+            <h3>10月 模擬試験 (中3)</h3>
+            <p>/// <a href="docs/testrange.pdf">出題範囲</a> ///</p>
+            <p>10/19(日) @外部会場</p>
+            <p style="text-indent: 1em">中3 兵庫Vもし第3回</p>
           </article>
 
-          <article class="card is-exam">
+          <!-- テスト対策 [期末] -->
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <!-- Pencil (tip bottom-left, single inner line, corrected rotation) -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                role="img"
+              >
+                <!-- -45°で斜めにした後、180°回転でペン先を左下に -->
+                <g transform="rotate(135 12 12)">
+                  <!-- 本体 -->
+                  <rect x="4" y="9" width="12" height="6" rx="2" />
+                  <!-- ペン先 -->
+                  <path d="M16 9l5 3-5 3z" />
+                  <!-- フェルール（消しゴム側） -->
+                  <rect x="3" y="9" width="2" height="6" rx="1" />
+                  <!-- 内側の線 1本 -->
+                  <line x1="9" y1="10" x2="9" y2="14" />
+                </g>
+              </svg>
+            </div>
+            <h3>テスト対策 [期末]</h3>
+            <p>授業時間 = 1時間55分</p>
+            <p>授業時間 = 3時間50分 ロング</p>
+            <p>11/4(火)〜18(火) テスト対策</p>
+            <p>11/17(月),18(火),19(水) 東谷中学校 期末テスト</p>
+          </article>
+
+          <!-- 11月 模擬試験 (中3) -->
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <!-- 左下→右上 斜め3本線（中央長／上下=60%・間隔1.5倍）22x22 -->
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <g
+                  transform="translate(12,12) rotate(-45)"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  fill="none"
+                >
+                  <!-- 中央（長い）: 半長=9 -->
+                  <line x1="-9" y1="0" x2="9" y2="0" />
+                  <!-- 上下（60%）: 半長=5.4 / 間隔=±3.94 -->
+                  <line x1="-5.4" y1="-3.94" x2="5.4" y2="-3.94" />
+                  <line x1="-5.4" y1="3.94" x2="5.4" y2="3.94" />
+                </g>
+              </svg>
+            </div>
+            <h3>11月 模擬試験 (中3)</h3>
+            <p>/// <a href="docs/testrange.pdf">出題範囲</a> ///</p>
+            <p>11/30(日) @外部会場</p>
+            <p style="text-indent: 1em">中3 兵庫Vもし第4回</p>
+          </article>
+
+          <!-- 冬期講習 -->
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <!-- sparkles icon -->
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 3l1.5 3.5L10 8l-3.5 1.5L5 13l-1.5-3.5L0 8l3.5-1.5L5 3zM19 11l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5zM12 1l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <h3>冬期講習</h3>
+            <p>12/22(月)〜12/27(土)</p>
+            <p>1/5(月)〜1/9(金)</p>
+          </article>
+
+          <!-- 1月 模擬試験 -->
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <!-- 左下→右上 斜め3本線（中央長／上下=60%・間隔1.5倍）22x22 -->
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <g
+                  transform="translate(12,12) rotate(-45)"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  fill="none"
+                >
+                  <!-- 中央（長い）: 半長=9 -->
+                  <line x1="-9" y1="0" x2="9" y2="0" />
+                  <!-- 上下（60%）: 半長=5.4 / 間隔=±3.94 -->
+                  <line x1="-5.4" y1="-3.94" x2="5.4" y2="-3.94" />
+                  <line x1="-5.4" y1="3.94" x2="5.4" y2="3.94" />
+                </g>
+              </svg>
+            </div>
             <h3>1月 模擬試験</h3>
-            <p><a href="docs/testrange.pdf">出題範囲</a></p>
-            <p>
-              1/10(土) 山下教室（小・中1・中2）／ 1/11(日) 外部会場（中3Vもし）
-            </p>
+            <p>/// <a href="docs/testrange.pdf">出題範囲</a> ///</p>
+            <p>1/10(土) @山下教室</p>
+            <p style="text-indent: 1em">小学生, 中1, 中2 進研Sテスト第5回</p>
+            <!-- フォールバック（埋め込み不可の環境向け） -->
+            <!-- <p> /// <a href="docs/moshi.pdf">実施について</a> /// </p> -->
+            <p>1/11(日) @外部会場</p>
+            <p style="text-indent: 1em">中3 兵庫Vもし第5回</p>
           </article>
         </div>
       </section>
