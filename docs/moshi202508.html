@@ -10,9 +10,9 @@
     <style>
       /* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
       /*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
+      *  Copyright (c) Microsoft Corporation. All rights reserved.
+      *  Licensed under the MIT License. See License.txt in the project root for license information.
+      *--------------------------------------------------------------------------------------------*/
       /* カバー全体のエリア */
       .cover {
         width: 320px;
@@ -28,7 +28,7 @@
         object-fit: cover; /* 画像をトリミングしてエリアにフィット */
         object-position: center 50%;
         /* ↑ 表示位置を調整 
-         center 30% = 横中央、縦方向は画像の30%の位置を基準
+          center 30% = 横中央、縦方向は画像の30%の位置を基準
          (top / bottom / left / right / px / % で自由に調整可能) */
       }
 
@@ -47,7 +47,7 @@
         object-fit: cover; /* 画像をトリミングしてエリアにフィット */
         object-position: center 25%;
         /* ↑ 表示位置を調整 
-         center 30% = 横中央、縦方向は画像の30%の位置を基準
+          center 30% = 横中央、縦方向は画像の30%の位置を基準
          (top / bottom / left / right / px / % で自由に調整可能) */
       }
 
@@ -277,9 +277,7 @@
       .vscode-dark table > tbody > tr + tr > td {
         border-color: rgba(255, 255, 255, 0.18);
       }
-    </style>
 
-    <style>
       /* Tomorrow Theme */
       /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
       /* Original theme - https://github.com/chriskempson/tomorrow-theme */
@@ -353,12 +351,10 @@
       .hljs-strong {
         font-weight: bold;
       }
-    </style>
 
-    <style>
       /*
- * Markdown PDF CSS
- */
+      * Markdown PDF CSS
+      */
 
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
@@ -404,6 +400,110 @@
 -------------------------------------------------------- */
       .page {
         page-break-after: always;
+      }
+
+      /* ====== iPad mini 横向きで見やすく拡大 ====== */
+
+      /* まずは全体の基準フォントを可変に */
+      :root {
+        --base-font: clamp(
+          16px,
+          1.8vw,
+          22px
+        ); /* 画面幅に応じて16〜22pxに自動調整 */
+        --line-height: 1.75;
+      }
+      /* 既存の VSCode 変数に上書き（このページのCSSがそれを参照しているため） */
+      :root {
+        --vscode-markdown-font-size: var(--base-font);
+        --vscode-markdown-line-height: calc(
+          var(--base-font) * var(--line-height)
+        );
+      }
+
+      /* 本文の余白と行間を少しゆったりに */
+      body {
+        font-size: var(--vscode-markdown-font-size);
+        line-height: var(--vscode-markdown-line-height);
+        padding: 0 clamp(16px, 4vw, 56px); /* 横の余白も自動調整 */
+      }
+
+      /* タイトル類は相対拡大（小画面でも大きすぎになりにくい） */
+      h1 {
+        font-size: 1.8em;
+      }
+      h2 {
+        font-size: 1.5em;
+        margin-top: 1.2em;
+      }
+      h3 {
+        font-size: 1.25em;
+        margin-top: 1.1em;
+      }
+
+      /* 表の可読性をUP */
+      table {
+        font-size: 1em;
+      }
+      table > thead > tr > th,
+      table > thead > tr > td,
+      table > tbody > tr > th,
+      table > tbody > tr > td {
+        padding: clamp(6px, 1.1vw, 14px) clamp(8px, 1.4vw, 18px);
+      }
+
+      /* コードや引用も少し大きめに */
+      pre,
+      code,
+      blockquote {
+        font-size: 0.95em;
+      }
+
+      /* カバー画像を「幅いっぱい・比率維持」で拡大しやすく */
+      .cover {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 4; /* 元の横長感を維持して伸縮 */
+        overflow: hidden;
+        position: relative;
+      }
+      .cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 60%;
+        display: block;
+      }
+
+      /* ---- iPad mini 横向きをピンポイント強化 ----
+        おおよそ横幅 1000〜1200px & 横向きの時だけ、さらに一段拡大 */
+      @media screen and (orientation: landscape) and (min-width: 1000px) and (max-width: 1200px) {
+        :root {
+          --base-font: 20px; /* ここで“ちょうどよい”固定値に */
+        }
+        .cover {
+          aspect-ratio: 16 / 3.5;
+        } /* もう少し高さを出して見栄えUP */
+      }
+
+      /* さらに大きいタブレット横向きでも読みやすく */
+      @media screen and (orientation: landscape) and (min-width: 1201px) {
+        :root {
+          --base-font: 21px;
+        }
+        .cover {
+          aspect-ratio: 16 / 3.6;
+        }
+      }
+
+      /* 参考：スマホ縦など狭い画面では詰めすぎない */
+      @media screen and (max-width: 599px) {
+        :root {
+          --base-font: 16px;
+        } /* 小画面は読みやすい最小値に固定 */
+        .cover {
+          aspect-ratio: 16 / 5;
+        } /* 高さは控えめ */
       }
     </style>
 
