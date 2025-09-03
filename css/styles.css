@@ -1,54 +1,5 @@
 :root {
   --bg: #0b1220;
-  --fg: #0f172a;
-  --text: #0b1324;
-  --text-dim: #475569;
-  --brand: #0ea5e9;
-  --brand-2: #22c55e;
-  --card: #ffffff;
-  --shadow: 0 10px 25px rgba(2, 6, 23, 0.12);
-  --radius: 16px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --fg: #0b1220;
-    --text: #e5e7eb;
-    --text-dim: #9ca3af;
-    --card: #0f172a;
-    --shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic",
-    Meiryo, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    "Poppins", sans-serif;
-  color: var(--text);
-  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 60%, #eef2ff 100%);
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: radial-gradient(1200px 600px at 50% -10%,
-        #0b1220 0%,
-        #020617 60%,
-        #000 100%);
-  }
-}
-
-:root {
-  --bg: #0b1220;
   /* 背景(ダーク) */
   --fg: #0f172a;
   /* 背景(ライト) */
@@ -91,18 +42,12 @@ body {
     Meiryo, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
     "Poppins", sans-serif;
   color: var(--text);
-  background: linear-gradient(180deg,
-      #f8fafc 0%,
-      #f1f5f9 60%,
-      #eef2ff 100%);
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 60%, #eef2ff 100%);
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: radial-gradient(1200px 600px at 50% -10%,
-        #0b1220 0%,
-        #020617 60%,
-        #000 100%);
+    background: radial-gradient(1200px 600px at 50% -10%, #0b1220 0%, #020617 60%, #000 100%);
   }
 }
 
@@ -222,8 +167,7 @@ nav a:hover {
   color: var(--text);
   font-weight: 600;
   letter-spacing: 0.2px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease,
-    background 0.3s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.3s ease;
 }
 
 .btn:hover {
@@ -295,9 +239,7 @@ nav a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(1200px 500px at 70% -10%,
-      rgba(14, 165, 233, 0.45),
-      rgba(14, 165, 233, 0) 60%),
+  background: radial-gradient(1200px 500px at 70% -10%, rgba(14, 165, 233, 0.45), rgba(14, 165, 233, 0) 60%),
     linear-gradient(180deg, rgba(2, 6, 23, 0.15), rgba(2, 6, 23, 0.55));
   mix-blend-mode: multiply;
   pointer-events: none;
@@ -348,7 +290,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-/* セクション共通 */
+/* セクション */
 section {
   padding: 64px 0;
 }
@@ -364,7 +306,7 @@ section {
   margin-bottom: 28px;
 }
 
-/* カードグリッド */
+/* グリッド */
 .grid {
   display: grid;
   gap: 18px;
@@ -386,6 +328,7 @@ section {
   }
 }
 
+/* カード */
 .card {
   background: var(--card);
   border: 1px solid rgba(2, 6, 23, 0.06);
@@ -407,9 +350,7 @@ section {
   border-radius: 10px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg,
-      rgba(14, 165, 233, 0.15),
-      rgba(34, 197, 94, 0.15));
+  background: linear-gradient(135deg, rgba(14, 165, 233, .15), rgba(34, 197, 94, .15));
   border: 1px solid rgba(2, 6, 23, 0.06);
 }
 
@@ -445,12 +386,8 @@ section {
 
 /* CTA */
 .cta {
-  background: radial-gradient(600px 200px at 10% 0%,
-      rgba(14, 165, 233, 0.15),
-      rgba(14, 165, 233, 0) 70%),
-    radial-gradient(600px 200px at 90% 0%,
-      rgba(34, 197, 94, 0.15),
-      rgba(34, 197, 94, 0) 70%),
+  background: radial-gradient(600px 200px at 10% 0%, rgba(14, 165, 233, 0.15), rgba(14, 165, 233, 0) 70%),
+    radial-gradient(600px 200px at 90% 0%, rgba(34, 197, 94, 0.15), rgba(34, 197, 94, 0) 70%),
     linear-gradient(180deg, #ffffff, #f8fafc);
   border-top: 1px solid rgba(2, 6, 23, 0.06);
   border-bottom: 1px solid rgba(2, 6, 23, 0.06);
@@ -458,12 +395,8 @@ section {
 
 @media (prefers-color-scheme: dark) {
   .cta {
-    background: radial-gradient(600px 200px at 10% 0%,
-        rgba(14, 165, 233, 0.18),
-        rgba(14, 165, 233, 0) 70%),
-      radial-gradient(600px 200px at 90% 0%,
-        rgba(34, 197, 94, 0.18),
-        rgba(34, 197, 94, 0) 70%),
+    background: radial-gradient(600px 200px at 10% 0%, rgba(14, 165, 233, 0.18), rgba(14, 165, 233, 0) 70%),
+      radial-gradient(600px 200px at 90% 0%, rgba(34, 197, 94, 0.18), rgba(34, 197, 94, 0) 70%),
       linear-gradient(180deg, #0b1220, #020617);
   }
 }
@@ -530,30 +463,26 @@ footer {
   }
 }
 
-/* 読みにくいテキスト用 (ここから始まるあなたの物語)：半透明“黄緑”チップ */
+/* 読みにくいテキスト用チップ */
 .u-chip {
   display: inline-block;
   padding: 0.3em 0.8em;
   background: rgba(92, 185, 154, 0.5);
-  /* 湖色 (青緑) を65%透過 */
   color: #f7fff7;
-  /* 白に近い黄緑で可読性を確保 */
   border-radius: 0.5em;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   font-weight: 600;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.35),
-    1px -1px 1px rgba(0, 0, 0, 0.35), -1px 1px 1px rgba(0, 0, 0, 0.35),
-    1px 1px 1px rgba(0, 0, 0, 0.35);
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, .35), 1px -1px 1px rgba(0, 0, 0, .35),
+    -1px 1px 1px rgba(0, 0, 0, .35), 1px 1px 1px rgba(0, 0, 0, .35);
 }
 
-/* iPad横長（例: 幅 ≥ 768px）で少し強め */
+/* iPad横長で少し強め */
 @media (min-width: 768px) and (orientation: landscape) {
   .u-chip {
-    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4),
-      1px -1px 1px rgba(0, 0, 0, 0.4), -1px 1px 1px rgba(0, 0, 0, 0.4),
-      1px 1px 1px rgba(0, 0, 0, 0.4);
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, .4), 1px -1px 1px rgba(0, 0, 0, .4),
+      -1px 1px 1px rgba(0, 0, 0, .4), 1px 1px 1px rgba(0, 0, 0, .4);
   }
 }
 
@@ -561,7 +490,6 @@ footer {
 .calendar-wrapper {
   position: relative;
   padding-bottom: 75%;
-  /* 縦横比 4:3 に調整 */
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -578,9 +506,24 @@ footer {
   height: 100%;
 }
 
-/* iPhone対策：reveal演出を完全オフ */
-.reveal,
-.reveal.in {
-  opacity: 1 !important;
-  transform: none !important;
+/* --- ARIAで意味付けする“点なしリスト” --- */
+.plain-list {
+  display: grid;
+  gap: .35rem;
+  margin: 0;
+  padding: 0;
 }
+
+.plain-row {
+  margin: 0;
+}
+
+.u-indent {
+  text-indent: 1em;
+  display: block;
+}
+
+/* iPhone対策：reveal演出を完全オフ（必要なら有効化） */
+/*
+.reveal, .reveal.in { opacity: 1 !important; transform: none !important; }
+*/
