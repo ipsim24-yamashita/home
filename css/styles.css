@@ -523,7 +523,5 @@ footer {
   display: block;
 }
 
-/* iPhone対策：reveal演出を完全オフ（必要なら有効化） */
-/*
+/* iPhone対策：reveal演出を完全オフ（アニメ無効） */
 .reveal, .reveal.in { opacity: 1 !important; transform: none !important; }
-*/
