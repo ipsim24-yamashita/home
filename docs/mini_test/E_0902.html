@@ -364,13 +364,24 @@
           return;
         }
 
-        // 声一覧の更新（非同期で届く場合あり）
         let voices = [];
         const refreshVoices = () => { voices = window.speechSynthesis.getVoices(); };
         refreshVoices();
         window.speechSynthesis.onvoiceschanged = refreshVoices;
 
-        // 英語音声の優先選択
+        // ✅ Android対策：ユーザー操作後に voices が揃うまで待つ
+        const waitForVoices = (timeoutMs = 2000, intervalMs = 100) =>
+          new Promise((resolve) => {
+            const start = performance.now();
+            const tick = () => {
+              refreshVoices();
+              if (voices && voices.length > 0) return resolve(true);
+              if (performance.now() - start >= timeoutMs) return resolve(false);
+              setTimeout(tick, intervalMs);
+            };
+            tick();
+          });
+
         const pickEnglishVoice = () => {
           if (!voices || voices.length === 0) return null;
           const prefs = [/en-US/i, /en-GB/i, /^en-/i];
@@ -378,10 +389,22 @@
             const v = voices.find(voice => rx.test(voice.lang));
             if (v) return v;
           }
-          return voices[0] || null;
+          return null; // デフォルトに任せる方が安定する端末あり
         };
 
-        // 対象: details 直下の英語訳 <div lang="en">
+        // 簡易トースト
+        const toast = (msg) => {
+          const el = document.createElement("div");
+          el.textContent = msg;
+          Object.assign(el.style, {
+            position: "fixed", left: "50%", bottom: "24px", transform: "translateX(-50%)",
+            background: "rgba(0,0,0,.8)", color: "#fff", padding: "8px 12px",
+            borderRadius: "8px", fontSize: "13px", zIndex: 9999
+          });
+          document.body.appendChild(el);
+          setTimeout(() => el.remove(), 1800);
+        };
+
         const nodes = [...document.querySelectorAll('details > div[lang="en"]')]
           .filter(n => n.textContent.trim());
 
@@ -407,34 +430,53 @@
             pauseBtn.textContent = "⏸ 一時停止";
           };
 
-          // 再生
-          playBtn.addEventListener("click", () => {
-            // iOS Safari対策：ユーザー操作中に開始し、前回をキャンセル
+          // ✅ 再生（Androidのvoices遅延に同期）
+          playBtn.addEventListener("click", async () => {
+            // ユーザー操作中に開始（自動再生ブロック対策）
             window.speechSynthesis.cancel();
 
             const text = node.textContent.trim();
             if (!text) return;
 
+            // クリック後にvoices待機（最大2秒）
+            const hadVoices = await waitForVoices();
+
             const uttr = new SpeechSynthesisUtterance(text);
             const v = pickEnglishVoice();
             if (v) uttr.voice = v;
+
+            // ✅ 声が取れない端末でも英語化を強制（デフォルト音声でも en-US 指定）
             uttr.lang = (v && v.lang) ? v.lang : "en-US";
-            uttr.rate = 1.0;   // 読み上げ速度
-            uttr.pitch = 1.0;  // ピッチ
-            uttr.volume = 1.0; // 音量
+            uttr.rate = 1.0;
+            uttr.pitch = 1.0;
+            uttr.volume = 1.0;
 
             uttr.onstart = () => {
               node.classList.add("tts-speaking");
               playBtn.disabled = true;
             };
             uttr.onend = clearState;
-            uttr.onerror = clearState;
+            uttr.onerror = (e) => {
+              clearState();
+              console.warn("TTS error:", e);
+              toast("音声再生に失敗しました。端末のTTS設定をご確認ください。");
+            };
 
-            currentUtterance = uttr;
-            window.speechSynthesis.speak(uttr);
+            // 一部端末では最初の発話が無音になるため軽い“起動”を挟むと安定
+            try {
+              // 短い無音のキャンセルはiOSで副作用が出ることがあるので、Android系でのみ軽くspeak→cancelはしない
+              window.speechSynthesis.speak(uttr);
+            } catch (err) {
+              console.warn(err);
+              toast("音声がブロックされました。サイトの『音声:許可』を確認してください。");
+            }
+
+            if (!hadVoices) {
+              // 2秒待ってもvoices 0件だった場合のヒント
+              toast("音声データの読み込みが遅れています。もう一度再生を押してください。");
+            }
           });
 
-          // 一時停止/再開
           pauseBtn.addEventListener("click", () => {
             if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
               window.speechSynthesis.pause();
@@ -445,16 +487,16 @@
             }
           });
 
-          // 停止
           stopBtn.addEventListener("click", () => {
             window.speechSynthesis.cancel();
             clearState();
           });
         });
 
-        // ページ離脱時に停止
         window.addEventListener("beforeunload", () => window.speechSynthesis.cancel());
       })();
     </script>
+
+
   </body>
 </html>
