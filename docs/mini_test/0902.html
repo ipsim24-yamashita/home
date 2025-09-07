@@ -4,98 +4,21 @@
     <meta charset="utf-8" />
     <title>英語 小テスト</title>
 
-    <!-- 音声の相対基準は /home/audio/ に固定 -->
+    <!-- 音声ファイルの相対基準は /home/audio/ に固定 -->
     <base href="https://ipsim24-yamashita.github.io/home/audio/" />
 
-    <!-- CSS は <base> の影響を受けない絶対パスで -->
+    <!-- CSS は絶対パス（<base>の影響を受けない） -->
     <link rel="stylesheet" href="/home/css/englishtest.css" />
+
+    <script>
+      window.ENG_TEST_DATA_URL = "/home/docs/mini_test/json/0902.json";
+    </script>
+    <script src="/home/js/englishtest-render.js" defer></script>
   </head>
   <body>
     <h1>英語 必修テキスト 小テスト</h1>
     <h3>9/2(火)〜5(金)</h3>
 
     <div id="app"></div>
-
-    <script>
-      // JSON は <base> の影響を避けるため絶対パスで
-      const DATA_URL = "/home/docs/mini_test/json/0902.json";
-
-      // details + audio を1件描画
-      function renderItem(item, baseSubdir) {
-        const det = document.createElement("details");
-        const sum = document.createElement("summary");
-        sum.textContent = item.ja;
-
-        const en = document.createElement("div");
-        en.lang = "en";
-        en.textContent = item.en;
-
-        const audio = document.createElement("audio");
-        audio.setAttribute("controls", "");
-        audio.setAttribute("preload", "none");
-
-        // <base> を活かして相対指定（0902/en_xxx.*）
-        const m4a = document.createElement("source");
-        m4a.src = baseSubdir + item.stem + ".m4a";
-        m4a.type = "audio/mp4";
-
-        const mp3 = document.createElement("source");
-        mp3.src = baseSubdir + item.stem + ".mp3";
-        mp3.type = "audio/mpeg";
-
-        audio.appendChild(m4a);
-        audio.appendChild(mp3);
-
-        det.appendChild(sum);
-        det.appendChild(en);
-        det.appendChild(audio);
-        return det;
-      }
-
-      function renderUnit(unit, baseSubdir) {
-        const frag = document.createDocumentFragment();
-        const h4 = document.createElement("h4");
-        h4.textContent = unit.title;
-        frag.appendChild(h4);
-
-        const ul = document.createElement("ul");
-        const li = document.createElement("li");
-        li.appendChild(document.createTextNode("次の日本語を英語にしましょう"));
-
-        unit.items.forEach((it) => li.appendChild(renderItem(it, baseSubdir)));
-
-        ul.appendChild(li);
-        frag.appendChild(ul);
-        return frag;
-      }
-
-      function renderSection(section, baseSubdir) {
-        const frag = document.createDocumentFragment();
-        const h2 = document.createElement("h2");
-        h2.textContent = section.title;
-        frag.appendChild(h2);
-        section.units.forEach((u) =>
-          frag.appendChild(renderUnit(u, baseSubdir))
-        );
-        return frag;
-      }
-
-      (async () => {
-        const app = document.getElementById("app");
-        try {
-          const res = await fetch(DATA_URL, { cache: "no-store" });
-          if (!res.ok) throw new Error(res.status + " " + res.statusText);
-          const data = await res.json();
-
-          data.sections.forEach((sec) => {
-            app.appendChild(renderSection(sec, data.baseAudioSubdir || ""));
-          });
-        } catch (e) {
-          app.innerHTML =
-            '<p style="color:#c00">データの読込みに失敗しました。ファイルの配置 / パス（絶対パス）/ CORS を確認してください。</p>';
-          console.error(e);
-        }
-      })();
-    </script>
   </body>
 </html>
