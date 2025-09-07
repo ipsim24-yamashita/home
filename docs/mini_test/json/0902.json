@@ -1,0 +1,92 @@
+{
+  "baseAudioSubdir": "0902/",
+  "sections": [
+    {
+      "title": "中1",
+      "units": [
+        {
+          "title": "Unit 1 文法のまとめ",
+          "items": [
+            { "ja": "私はエドワード・トラウトです。", "en": "I am Edward Trout.", "stem": "en_001" },
+            { "ja": "私は日本の甘い菓子が好きです。", "en": "I like Japanese sweets.", "stem": "en_002" },
+            { "ja": "あなたはラグビーが好きですか。 はい、好きです。いいえ、好きではありません。", "en": "Do you like rugby? Yes, I do. No, I do not.", "stem": "en_003" },
+            { "ja": "私はラグビーをしません。", "en": "I do not play rugby.", "stem": "en_004" },
+            { "ja": "あなたはアニメのファンですか。はい、そうです。いいえ、ちがいます。", "en": "Are you an anime fan? Yes, I am. No, I am not.", "stem": "en_005" },
+            { "ja": "私はアニメのファンではありません。", "en": "I am not an anime fan.", "stem": "en_006" }
+          ]
+        },
+        {
+          "title": "Unit 2 文法のまとめ",
+          "items": [
+            { "ja": "こちらは純です。彼は1年1組です。", "en": "This is Jun. He is in Class 1-1.", "stem": "en_007" },
+            { "ja": "彼は1年2組ではありません。", "en": "He is not in Class 1-2.", "stem": "en_008" },
+            { "ja": "こちらはチェン先生です。彼女は私たちの新しい先生です。", "en": "This is Ms. Chen. She is our new teacher.", "stem": "en_009" },
+            { "ja": "彼女はアメリカ出身ではありません。", "en": "She is not from America.", "stem": "en_010" },
+            { "ja": "彼はサッカー部に入っていますか。はい、入っています。いいえ、入っていません。", "en": "Is he on the soccer team? Yes, he is. No, he is not.", "stem": "en_011" },
+            { "ja": "私はぎょうざを作ることができます。", "en": "I can make gyoza.", "stem": "en_012" },
+            { "ja": "私はシュウマイを作ることができません。", "en": "I cannot make shumai.", "stem": "en_013" },
+            { "ja": "あなたはひらがなを読むことができますか。はい、読めます。いいえ、読めません。", "en": "Can you read hiragana? Yes, I can. No, I cannot.", "stem": "en_014" },
+            { "ja": "これはあなたのペンです。", "en": "This is your pen.", "stem": "en_015" },
+            { "ja": "あれは私のペンです。", "en": "That is my pen.", "stem": "en_016" },
+            { "ja": "これは鳥ですか。はい、そうです。いいえ、ちがいます。", "en": "Is this a bird? Yes, it is. No, it is not.", "stem": "en_017" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "中2",
+      "units": [
+        {
+          "title": "Lesson 1 文法のまとめ (未来 will, be going to)",
+          "items": [
+            { "ja": "約10分後に始めます。", "en": "We will start in about ten minutes.", "stem": "en_018" },
+            { "ja": "彼女は私たちの写真を撮るでしょうか。はい、撮るでしょう。いいえ、撮らないでしょう。", "en": "Will she take our picture? Yes, she will. No, she will not.", "stem": "en_019" },
+            { "ja": "私たちは練習試合をするつもりです。", "en": "We're going to have a practice game.", "stem": "en_020" },
+            { "ja": "私はあした、祖父を訪ねるつもりです。(be going toを使って)", "en": "I am going to visit my grandfather tomorrow.", "stem": "en_021" },
+            { "ja": "彼女は次の火曜日にバスケットボールをするでしょう。(will を使って)", "en": "She will play basketball next Tuesday.", "stem": "en_022" },
+            { "ja": "私はきょう、イギリスに向けて日本を出発するつもりです。(be going to, leaveを使って)", "en": "I am going to leave Japan for the U.K. today.", "stem": "en_023" },
+            { "ja": "彼は宿題のためにそのコンピュータを使うでしょうか。(will を使って)", "en": "Will he use the computer for his homework?", "stem": "en_024" },
+            { "ja": "弟は夕食後にテレビを見るつもりです。(be going toを使って)", "en": "My brother is going to watch TV after dinner.", "stem": "en_025" }
+          ]
+        },
+        {
+          "title": "Lesson 2 文法のまとめ (接続詞 when, if, that, because)",
+          "items": [
+            { "ja": "子どもの時、私は動物のお話が大好きでした。", "en": "When I was a child, I loved stories with animals.", "stem": "en_026" },
+            { "ja": "もし明日時間があれば、職員室に来てください。", "en": "If you have time tomorrow, come to the teachers' room.", "stem": "en_027" },
+            { "ja": "ピーターはおもしろいキャラクターだと思います。", "en": "I think (that) Peter is an interesting character.", "stem": "en_028" },
+            { "ja": "きっとあなたはその映画を気に入ります。", "en": "I am sure (that) you'll love the movie.", "stem": "en_029" },
+            { "ja": "語彙が簡単なので、その本は子どもたちにとって最適です。", "en": "The book is perfect for children because the vocabulary is easy.", "stem": "en_030" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "中3",
+      "units": [
+        {
+          "title": "Lesson 1 文法のまとめ (現在完了 経験, 継続)",
+          "items": [
+            { "ja": "私は以前、同じ問題に直面したことがあります。", "en": "I have faced the same problem before.", "stem": "en_031" },
+            { "ja": "音楽を聞くことは長い間ずっと人気のある趣味です。", "en": "Listening to music has been a popular hobby for a long time.", "stem": "en_032" },
+            { "ja": "私は何年もずっとこの市に住んでいます。", "en": "I have lived in this city for many years.", "stem": "en_033" },
+            { "ja": "私たちは3年間ずっと英語を学んでいます。", "en": "We have learned English for three years.", "stem": "en_034" },
+            { "ja": "トムは以前、いくつかの日本料理を作ったことがあります。", "en": "Tom has made some Japanese dishes before.", "stem": "en_035" },
+            { "ja": "あなたは今までに札幌に行ったことがありますか。", "en": "Have you ever been to Sapporo?", "stem": "en_036" },
+            { "ja": "私の母は昨晩からずっと忙しいです。", "en": "My mother has been busy since last night.", "stem": "en_037" }
+          ]
+        },
+        {
+          "title": "Lesson 2 文法のまとめ (現在完了進行形, help 人 動詞原形, It is 形容詞 for 人 to 動詞原形)",
+          "items": [
+            { "ja": "私たちは先週からずっとそれについて話し合っています。", "en": "We have been discussing it since last week.", "stem": "en_038" },
+            { "ja": "あなたたちはどれくらい長くそれについて話し合っていますか。", "en": "How long have you been discussing it?", "stem": "en_039" },
+            { "ja": "2時間話し合い続けています。先週から話し合い続けています。", "en": "For two hours. Since last week.", "stem": "en_040" },
+            { "ja": "私の友人たちがドラムセットを運ぶのを手伝ってくれました。", "en": "My friends helped me carry my drum set.", "stem": "en_041" },
+            { "ja": "私にとって写真を撮ることは楽しいです。", "en": "It's fun for me to take pictures.", "stem": "en_042" }
+          ]
+        }
+      ]
+    }
+  ]
+}
