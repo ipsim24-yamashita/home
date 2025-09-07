@@ -1,877 +1,101 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="ja">
   <head>
+    <meta charset="utf-8" />
     <title>英語 小テスト</title>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-type" />
-    <meta content="noindex, nofollow" name="robots" />
-    <meta content="noindex, nofollow" name="googlebot" />
-    <style>
-      /* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
-      /*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
 
-      body {
-        font-family: var(
-          --vscode-markdown-font-family,
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe WPC",
-          "Segoe UI",
-          "Ubuntu",
-          "Droid Sans",
-          sans-serif
-        );
-        font-size: var(--vscode-markdown-font-size, 14px);
-        padding: 0 26px;
-        line-height: var(--vscode-markdown-line-height, 22px);
-        word-wrap: break-word;
-      }
+    <!-- 音声の相対基準は /home/audio/ に固定 -->
+    <base href="https://ipsim24-yamashita.github.io/home/audio/" />
 
-      #code-csp-warning {
-        position: fixed;
-        top: 0;
-        right: 0;
-        color: white;
-        margin: 16px;
-        text-align: center;
-        font-size: 12px;
-        font-family: sans-serif;
-        background-color: #444444;
-        cursor: pointer;
-        padding: 6px;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-      }
-
-      #code-csp-warning:hover {
-        text-decoration: none;
-        background-color: #007acc;
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-      }
-
-      body.scrollBeyondLastLine {
-        margin-bottom: calc(100vh - 22px);
-      }
-
-      body.showEditorSelection .code-line {
-        position: relative;
-      }
-
-      body.showEditorSelection .code-active-line:before,
-      body.showEditorSelection .code-line:hover:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: -12px;
-        height: 100%;
-      }
-
-      body.showEditorSelection li.code-active-line:before,
-      body.showEditorSelection li.code-line:hover:before {
-        left: -30px;
-      }
-
-      .vscode-light.showEditorSelection .code-active-line:before {
-        border-left: 3px solid rgba(0, 0, 0, 0.15);
-      }
-
-      .vscode-light.showEditorSelection .code-line:hover:before {
-        border-left: 3px solid rgba(0, 0, 0, 0.4);
-      }
-
-      .vscode-light.showEditorSelection .code-line .code-line:hover:before {
-        border-left: none;
-      }
-
-      .vscode-dark.showEditorSelection .code-active-line:before {
-        border-left: 3px solid rgba(255, 255, 255, 0.4);
-      }
-
-      .vscode-dark.showEditorSelection .code-line:hover:before {
-        border-left: 3px solid rgba(255, 255, 255, 0.6);
-      }
-
-      .vscode-dark.showEditorSelection .code-line .code-line:hover:before {
-        border-left: none;
-      }
-
-      .vscode-high-contrast.showEditorSelection .code-active-line:before {
-        border-left: 3px solid rgba(255, 160, 0, 0.7);
-      }
-
-      .vscode-high-contrast.showEditorSelection .code-line:hover:before {
-        border-left: 3px solid rgba(255, 160, 0, 1);
-      }
-
-      .vscode-high-contrast.showEditorSelection
-        .code-line
-        .code-line:hover:before {
-        border-left: none;
-      }
-
-      img {
-        max-width: 100%;
-        max-height: 100%;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      a:focus,
-      input:focus,
-      select:focus,
-      textarea:focus {
-        outline: 1px solid -webkit-focus-ring-color;
-        outline-offset: -1px;
-      }
-
-      hr {
-        border: 0;
-        height: 2px;
-        border-bottom: 2px solid;
-      }
-
-      h1 {
-        padding-bottom: 0.3em;
-        line-height: 1.2;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-      }
-
-      h1,
-      h2,
-      h3 {
-        font-weight: normal;
-      }
-
-      table {
-        border-collapse: collapse;
-      }
-
-      table > thead > tr > th {
-        text-align: left;
-        border-bottom: 1px solid;
-      }
-
-      table > thead > tr > th,
-      table > thead > tr > td,
-      table > tbody > tr > th,
-      table > tbody > tr > td {
-        padding: 5px 10px;
-      }
-
-      table > tbody > tr + tr > td {
-        border-top: 1px solid;
-      }
-
-      blockquote {
-        margin: 0 7px 0 5px;
-        padding: 0 16px 0 10px;
-        border-left-width: 5px;
-        border-left-style: solid;
-      }
-
-      code {
-        font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New",
-          monospace, "Droid Sans Fallback";
-        font-size: 1em;
-        line-height: 1.357em;
-      }
-
-      body.wordWrap pre {
-        white-space: pre-wrap;
-      }
-
-      pre:not(.hljs),
-      pre.hljs code > div {
-        padding: 16px;
-        border-radius: 3px;
-        overflow: auto;
-      }
-
-      pre code {
-        color: var(--vscode-editor-foreground);
-        tab-size: 4;
-      }
-
-      /** Theming */
-
-      .vscode-light pre {
-        background-color: rgba(220, 220, 220, 0.4);
-      }
-
-      .vscode-dark pre {
-        background-color: rgba(10, 10, 10, 0.4);
-      }
-
-      .vscode-high-contrast pre {
-        background-color: rgb(0, 0, 0);
-      }
-
-      .vscode-high-contrast h1 {
-        border-color: rgb(0, 0, 0);
-      }
-
-      .vscode-light table > thead > tr > th {
-        border-color: rgba(0, 0, 0, 0.69);
-      }
-
-      .vscode-dark table > thead > tr > th {
-        border-color: rgba(255, 255, 255, 0.69);
-      }
-
-      .vscode-light h1,
-      .vscode-light hr,
-      .vscode-light table > tbody > tr + tr > td {
-        border-color: rgba(0, 0, 0, 0.18);
-      }
-
-      .vscode-dark h1,
-      .vscode-dark hr,
-      .vscode-dark table > tbody > tr + tr > td {
-        border-color: rgba(255, 255, 255, 0.18);
-      }
-    </style>
-    <style>
-      /* Tomorrow Theme */
-      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-      /* Tomorrow Comment */
-      .hljs-comment,
-      .hljs-quote {
-        color: #8e908c;
-      }
-
-      /* Tomorrow Red */
-      .hljs-variable,
-      .hljs-template-variable,
-      .hljs-tag,
-      .hljs-name,
-      .hljs-selector-id,
-      .hljs-selector-class,
-      .hljs-regexp,
-      .hljs-deletion {
-        color: #c82829;
-      }
-
-      /* Tomorrow Orange */
-      .hljs-number,
-      .hljs-built_in,
-      .hljs-builtin-name,
-      .hljs-literal,
-      .hljs-type,
-      .hljs-params,
-      .hljs-meta,
-      .hljs-link {
-        color: #f5871f;
-      }
-
-      /* Tomorrow Yellow */
-      .hljs-attribute {
-        color: #eab700;
-      }
-
-      /* Tomorrow Green */
-      .hljs-string,
-      .hljs-symbol,
-      .hljs-bullet,
-      .hljs-addition {
-        color: #718c00;
-      }
-
-      /* Tomorrow Blue */
-      .hljs-title,
-      .hljs-section {
-        color: #4271ae;
-      }
-
-      /* Tomorrow Purple */
-      .hljs-keyword,
-      .hljs-selector-tag {
-        color: #8959a8;
-      }
-
-      .hljs {
-        display: block;
-        overflow-x: auto;
-        color: #4d4d4c;
-        padding: 0.5em;
-      }
-
-      .hljs-emphasis {
-        font-style: italic;
-      }
-
-      .hljs-strong {
-        font-weight: bold;
-      }
-    </style>
-    <style>
-      /*
- * Markdown PDF CSS
- */
-
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
-          "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
-        padding: 0 12px;
-      }
-
-      pre {
-        background-color: #f8f8f8;
-        border: 1px solid #cccccc;
-        border-radius: 3px;
-        overflow-x: auto;
-        white-space: pre-wrap;
-        overflow-wrap: break-word;
-      }
-
-      pre:not(.hljs) {
-        padding: 23px;
-        line-height: 19px;
-      }
-
-      blockquote {
-        background: rgba(127, 127, 127, 0.1);
-        border-color: rgba(0, 122, 204, 0.5);
-      }
-
-      .emoji {
-        height: 1.4em;
-      }
-
-      code {
-        font-size: 14px;
-        line-height: 19px;
-      }
-
-      /* for inline code */
-      :not(pre):not(.hljs) > code {
-        color: #c9ae75; /* Change the old color so it seems less like an error */
-        font-size: inherit;
-      }
-
-      /* Page Break : use <div class="page"/> to insert page break
--------------------------------------------------------- */
-      .page {
-        page-break-after: always;
-      }
-    </style>
-    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <!-- CSS は <base> の影響を受けない絶対パスで -->
+    <link rel="stylesheet" href="/home/css/englishtest.css" />
   </head>
   <body>
+    <h1>英語 必修テキスト 小テスト</h1>
+    <h3>9/2(火)〜5(金)</h3>
+
+    <div id="app"></div>
+
     <script>
-      mermaid.initialize({
-        startOnLoad: true,
-        theme:
-          document.body.classList.contains("vscode-dark") ||
-          document.body.classList.contains("vscode-high-contrast")
-            ? "dark"
-            : "default",
-      });
+      // JSON は <base> の影響を避けるため絶対パスで
+      const DATA_URL = "/home/docs/mini_test/json/0902.json";
+
+      // details + audio を1件描画
+      function renderItem(item, baseSubdir) {
+        const det = document.createElement("details");
+        const sum = document.createElement("summary");
+        sum.textContent = item.ja;
+
+        const en = document.createElement("div");
+        en.lang = "en";
+        en.textContent = item.en;
+
+        const audio = document.createElement("audio");
+        audio.setAttribute("controls", "");
+        audio.setAttribute("preload", "none");
+
+        // <base> を活かして相対指定（0902/en_xxx.*）
+        const m4a = document.createElement("source");
+        m4a.src = baseSubdir + item.stem + ".m4a";
+        m4a.type = "audio/mp4";
+
+        const mp3 = document.createElement("source");
+        mp3.src = baseSubdir + item.stem + ".mp3";
+        mp3.type = "audio/mpeg";
+
+        audio.appendChild(m4a);
+        audio.appendChild(mp3);
+
+        det.appendChild(sum);
+        det.appendChild(en);
+        det.appendChild(audio);
+        return det;
+      }
+
+      function renderUnit(unit, baseSubdir) {
+        const frag = document.createDocumentFragment();
+        const h4 = document.createElement("h4");
+        h4.textContent = unit.title;
+        frag.appendChild(h4);
+
+        const ul = document.createElement("ul");
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode("次の日本語を英語にしましょう"));
+
+        unit.items.forEach((it) => li.appendChild(renderItem(it, baseSubdir)));
+
+        ul.appendChild(li);
+        frag.appendChild(ul);
+        return frag;
+      }
+
+      function renderSection(section, baseSubdir) {
+        const frag = document.createDocumentFragment();
+        const h2 = document.createElement("h2");
+        h2.textContent = section.title;
+        frag.appendChild(h2);
+        section.units.forEach((u) =>
+          frag.appendChild(renderUnit(u, baseSubdir))
+        );
+        return frag;
+      }
+
+      (async () => {
+        const app = document.getElementById("app");
+        try {
+          const res = await fetch(DATA_URL, { cache: "no-store" });
+          if (!res.ok) throw new Error(res.status + " " + res.statusText);
+          const data = await res.json();
+
+          data.sections.forEach((sec) => {
+            app.appendChild(renderSection(sec, data.baseAudioSubdir || ""));
+          });
+        } catch (e) {
+          app.innerHTML =
+            '<p style="color:#c00">データの読込みに失敗しました。ファイルの配置 / パス（絶対パス）/ CORS を確認してください。</p>';
+          console.error(e);
+        }
+      })();
     </script>
-    <h1
-      id="%E8%8B%B1%E8%AA%9E-%E5%BF%85%E4%BF%AE%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-%E5%B0%8F%E3%83%86%E3%82%B9%E3%83%88"
-    >
-      英語 必修テキスト 小テスト
-    </h1>
-    <h3 id="92%E7%81%AB%E3%80%9C5%E9%87%91">9/2(火)〜5(金)</h3>
-    <h2 id="%E4%B8%AD1">中1</h2>
-    <h4 id="unit-1-%E6%96%87%E6%B3%95%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81">
-      Unit 1 文法のまとめ
-    </h4>
-    <ul>
-      <li>
-        次の日本語を英語にしましょう
-        <details>
-          <summary>私はエドワード・トラウトです。</summary>
-          <div lang="en">I am Edward Trout.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_001.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>私は日本の甘い菓子が好きです。</summary>
-          <div lang="en">I like Japanese sweets.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_002.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            あなたはラグビーが好きですか。
-            はい、好きです。いいえ、好きではありません。
-          </summary>
-          <div lang="en">Do you like rugby? Yes, I do. No, I do not.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_003.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>私はラグビーをしません。</summary>
-          <div lang="en">I do not play rugby.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_004.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            あなたはアニメのファンですか。はい、そうです。いいえ、ちがいます。
-          </summary>
-          <div lang="en">Are you an anime fan? Yes, I am. No, I am not.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_005.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>私はアニメのファンではありません。</summary>
-          <div lang="en">I am not an anime fan.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_006.m4a"
-          ></audio>
-        </details>
-      </li>
-    </ul>
-    <h4 id="unit-2-%E6%96%87%E6%B3%95%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81">
-      Unit 2 文法のまとめ
-    </h4>
-    <ul>
-      <li>
-        次の日本語を英語にしましょう
-        <details>
-          <summary>こちらは純です。彼は1年1組です。</summary>
-          <div lang="en">This is Jun. He is in Class 1-1.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_007.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>彼は1年2組ではありません。</summary>
-          <div lang="en">He is not in Class 1-2.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_008.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            こちらはチェン先生です。彼女は私たちの新しい先生です。
-          </summary>
-          <div lang="en">This is Ms. Chen. She is our new teacher.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_009.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>彼女はアメリカ出身ではありません。</summary>
-          <div lang="en">She is not from America.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_010.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            彼はサッカー部に入っていますか。はい、入っています。いいえ、入っていません。
-          </summary>
-          <div lang="en">
-            Is he on the soccer team? Yes, he is. No, he is not.
-          </div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_011.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>私はぎょうざを作ることができます。</summary>
-          <div lang="en">I can make <em>gyoza</em>.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_012.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>私はシュウマイを作ることができません。</summary>
-          <div lang="en">I cannot make <em>shumai</em>.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_013.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            あなたはひらがなを読むことができますか。はい、読めます。いいえ、読めません。
-          </summary>
-          <div lang="en">
-            Can you read <em>hiragana</em>? Yes, I can. No, I cannot.
-          </div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_014.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>これはあなたのペンです。</summary>
-          <div lang="en">This is your pen.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_015.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>あれは私のペンです。</summary>
-          <div lang="en">That is my pen.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_016.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            これは鳥ですか。はい、そうです。いいえ、ちがいます。
-          </summary>
-          <div lang="en">Is this a bird? Yes, it is. No, it is not.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_017.m4a"
-          ></audio>
-        </details>
-      </li>
-    </ul>
-    <h2 id="%E4%B8%AD2">中2</h2>
-    <h4
-      id="lesson-1-%E6%96%87%E6%B3%95%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81-%E6%9C%AA%E6%9D%A5-will-be-going-to"
-    >
-      Lesson 1 文法のまとめ (未来 will, be going to)
-    </h4>
-    <ul>
-      <li>
-        次の日本語を英語にしましょう
-        <details>
-          <summary>約10分後に始めます。</summary>
-          <div lang="en">We will start in about ten minutes.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_018.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            彼女は私たちの写真を撮るでしょうか。はい、撮るでしょう。いいえ、撮らないでしょう。
-          </summary>
-          <div lang="en">
-            Will she take our picture? Yes, she will. No, she will not.
-          </div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_019.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>私たちは練習試合をするつもりです。</summary>
-          <div lang="en">We're going to have a practice game.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_020.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            私はあした、祖父を訪ねるつもりです。(be going toを使って)
-          </summary>
-          <div lang="en">I am going to visit my grandfather tomorrow.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_021.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            彼女は次の火曜日にバスケットボールをするでしょう。(will を使って)
-          </summary>
-          <div lang="en">She will play basketball next Tuesday.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_022.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            私はきょう、イギリスに向けて日本を出発するつもりです。(be going to,
-            leaveを使って)
-          </summary>
-          <div lang="en">I am going to leave Japan for the U.K. today.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_023.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            彼は宿題のためにそのコンピュータを使うでしょうか。(will を使って)
-          </summary>
-          <div lang="en">Will he use the computer for his homework?</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_024.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            弟は夕食後にテレビを見るつもりです。(be going toを使って)
-          </summary>
-          <div lang="en">My brother is going to watch TV after dinner.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_025.m4a"
-          ></audio>
-        </details>
-      </li>
-    </ul>
-    <h4
-      id="lesson-2-%E6%96%87%E6%B3%95%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81-%E6%8E%A5%E7%B6%9A%E8%A9%9E-when-if-that-because"
-    >
-      Lesson 2 文法のまとめ (接続詞 when, if, that, because)
-    </h4>
-    <ul>
-      <li>
-        次の日本語を英語にしましょう
-        <details>
-          <summary>子どもの時、私は動物のお話が大好きでした。</summary>
-          <div lang="en">When I was a child, I loved stories with animals.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_026.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>もし明日時間があれば、職員室に来てください。</summary>
-          <div lang="en">
-            If you have time tomorrow, come to the teachers' room.
-          </div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_027.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>ピーターはおもしろいキャラクターだと思います。</summary>
-          <div lang="en">I think (that) Peter is an interesting character.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_028.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>きっとあなたはその映画を気に入ります。</summary>
-          <div lang="en">I am sure (that) you'll love the movie.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_029.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            語彙が簡単なので、その本は子どもたちにとって最適です。
-          </summary>
-          <div lang="en">
-            The book is perfect for children because the vocabulary is easy.
-          </div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_030.m4a"
-          ></audio>
-        </details>
-      </li>
-    </ul>
-    <h2 id="%E4%B8%AD3">中3</h2>
-    <h4
-      id="lesson-1-%E6%96%87%E6%B3%95%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81-%E7%8F%BE%E5%9C%A8%E5%AE%8C%E4%BA%86-%E7%B5%8C%E9%A8%93-%E7%B6%99%E7%B6%9A"
-    >
-      Lesson 1 文法のまとめ (現在完了 経験, 継続)
-    </h4>
-    <ul>
-      <li>
-        次の日本語を英語にしましょう
-        <details>
-          <summary>私は以前、同じ問題に直面したことがあります。</summary>
-          <div lang="en">I have faced the same problem before.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_031.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>音楽を聞くことは長い間ずっと人気のある趣味です。</summary>
-          <div lang="en">
-            Listening to music has been a popular hobby for a long time.
-          </div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_032.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>私は何年もずっとこの市に住んでいます。</summary>
-          <div lang="en">I have lived in this city for many years.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_033.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>私たちは3年間ずっと英語を学んでいます。</summary>
-          <div lang="en">We have learned English for three years.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_034.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            トムは以前、いくつかの日本料理を作ったことがあります。
-          </summary>
-          <div lang="en">Tom has made some Japanese dishes before.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_035.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>あなたは今までに札幌に行ったことがありますか。</summary>
-          <div lang="en">Have you ever been to Sapporo?</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_036.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>私の母は昨晩からずっと忙しいです。</summary>
-          <div lang="en">My mother has been busy since last night.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_037.m4a"
-          ></audio>
-        </details>
-      </li>
-    </ul>
-    <h4
-      id="lesson-2-%E6%96%87%E6%B3%95%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81-%E7%8F%BE%E5%9C%A8%E5%AE%8C%E4%BA%86%E9%80%B2%E8%A1%8C%E5%BD%A2-help-%E4%BA%BA-%E5%8B%95%E8%A9%9E%E5%8E%9F%E5%BD%A2-it-is-%E5%BD%A2%E5%AE%B9%E8%A9%9E-for-%E4%BA%BA-to-%E5%8B%95%E8%A9%9E%E5%8E%9F%E5%BD%A2"
-    >
-      Lesson 2 文法のまとめ (現在完了進行形, help 人 動詞原形, It is 形容詞 for
-      人 to 動詞原形)
-    </h4>
-    <ul>
-      <li>
-        次の日本語を英語にしましょう
-        <details>
-          <summary>
-            私たちは先週からずっとそれについて話し合っています。
-          </summary>
-          <div lang="en">We have been discussing it since last week.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_038.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            あなたたちはどれくらい長くそれについて話し合っていますか。
-          </summary>
-          <div lang="en">How long have you been discussing it?</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_039.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            2時間話し合い続けています。先週から話し合い続けています。
-          </summary>
-          <div lang="en">For two hours. Since last week.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_040.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>
-            私の友人たちがドラムセットを運ぶのを手伝ってくれました。
-          </summary>
-          <div lang="en">My friends helped me carry my drum set.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_041.m4a"
-          ></audio>
-        </details>
-        <details>
-          <summary>私にとって写真を撮ることは楽しいです。</summary>
-          <div lang="en">It's fun for me to take pictures.</div>
-          <audio
-            controls="True"
-            preload="none"
-            src="/home/audio/0902/en_042.m4a"
-          ></audio>
-        </details>
-      </li>
-    </ul>
   </body>
 </html>
