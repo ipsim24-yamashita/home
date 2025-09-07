@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>英語 小テスト</title>
+
+    <!-- 音声ファイルの相対基準は /home/audio/ に固定 -->
+    <base href="https://ipsim24-yamashita.github.io/home/audio/" />
+
+    <!-- CSS は絶対パス（<base>の影響を受けない） -->
+    <link rel="stylesheet" href="/home/css/englishtest.css" />
+
+    <script>
+      window.ENG_TEST_DATA_URL = "/home/docs/mini_test/json/0909.json";
+    </script>
+    <script src="/home/js/englishtest-render.js" defer></script>
+  </head>
+  <body>
+    <h1>英語 必修テキスト 小テスト</h1>
+    <h3>9/9(火)〜12(金)</h3>
+
+    <div id="app"></div>
+  </body>
+</html>

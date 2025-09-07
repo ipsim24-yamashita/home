@@ -1,232 +1,203 @@
 {
-    "ongoing": [
-        {
-            "icon": "ic-lines",
-            "size": 28,
-            "title": "英語小テスト",
-            "p": [
-                "/// <a href='./docs/mini_test/E_0902.html'>9/2(火)〜5(金) 小テスト</a> ///"
-            ]
-        },
-        {
-            "icon": "ic-lines",
-            "size": 28,
-            "title": "解説",
-            "p": [
-                "/// <a href='./docs/moshi/kaisetsu2508_math.pdf'>中3 8月模擬試験 数学</a> ///"
-            ]
-        },
-        {
-            "icon": "ic-pencil",
-            "size": 28,
-            "title": "通常授業",
-            "p": [
-                "授業時間 = 2時間25分",
-                "9/2(火)〜5(金) 通常授業",
-                "9/30(火)〜 通常授業"
-            ]
-        },
-        {
-            "icon": "ic-clock",
-            "size": 22,
-            "title": "通常授業 時間割",
-            "items": [
-                "A 15:50〜18:15",
-                "B 16:20〜18:45",
-                "C 16:50〜19:15",
-                "D 17:20〜19:45",
-                "E 17:50〜20:15",
-                "F 18:20〜20:45",
-                "G 18:50〜21:10"
-            ]
-        },
-        {
-            "icon": "ic-pencil",
-            "size": 28,
-            "title": "テスト対策 [中間]",
-            "p": [
-                "授業時間 = 1時間55分",
-                "授業時間 = 3時間50分 ロング"
-            ],
-            "items": [
-                "9/9(火)〜23(火) テスト対策",
-                "9/22(月),24(水) 東谷中学校 中間テスト"
-            ]
-        },
-        {
-            "icon": "ic-clock",
-            "size": 22,
-            "title": "テスト対策 時間割",
-            "items": [
-                "TA 15:50〜17:45",
-                "TB 16:20〜18:15",
-                "TC 16:50〜18:45",
-                "TD 17:20〜19:15",
-                "TE 17:50〜19:45",
-                "TF 18:20〜20:15",
-                "TG 18:50〜20:45",
-                "TP 13:00〜16:50",
-                "TQ 17:00〜20:50"
-            ]
-        },
-        {
-            "icon": "ic-pencil",
-            "size": 28,
-            "title": "中3受験期 通常授業",
-            "p": [
-                "授業時間 = 1時間55分",
-                "(火) (水) (木) (金)",
-                "2学期から開始"
-            ]
-        },
-        {
-            "icon": "ic-sparkles",
-            "size": 22,
-            "title": "中3秋期講習",
-            "p": [
-                "授業時間 = 4時間50分",
-                "14:00〜18:50"
-            ],
-            "items": [
-                "8/30(土)",
-                "9/6(土)",
-                "10/4(土),11(土),25(土)",
-                "11/29(土)",
-                "12/6(土),13(土)"
-            ]
-        },
-        {
-            "icon": "ic-bed",
-            "size": 22,
-            "title": "休校",
-            "items": [
-                "8/25(月)〜27(水)",
-                "9/24(水)〜27(土)"
-            ]
-        },
-        {
-            "icon": "ic-music",
-            "size": 30,
-            "title": "英語テキスト音声",
-            "p": [
-                "/// <a href='https://listening.bunri.co.jp'>音声配信サービス onhai</a> ///"
-            ],
-            "items": [
-                "必修テキスト 1年 GXJ9Z",
-                "必修テキスト 2年 G3UKU",
-                "必修テキスト 3年 GKUEZ",
-                "必修テキスト 能勢2年 GQXFF",
-                "Winpass 1年 FHMKV",
-                "Winpass 2年 FPNQC",
-                "Winpass 3年 FHPJW"
-            ]
-        },
-        {
-            "icon": "ic-book",
-            "size": 22,
-            "title": "Winpass デジタルテキスト",
-            "items": [
-                "/// <a href='https://dwinpass.jp/viewer/067c76ed96ce4f0ead8f4c93dba04e8b?index=%2Fviewer%2F067c76ed96ce4f0ead8f4c93dba04e8b&print=0&canvas=0&page=2'>Winpass 英語 1年</a> ///",
-                "/// <a href='https://dwinpass.jp/viewer/ef888f1a11874765bd5b51b1ede76cbe?index=%2Fviewer%2Fef888f1a11874765bd5b51b1ede76cbe&print=0&canvas=0&page=2'>Winpass 英語 2年</a> ///",
-                "/// <a href='https://dwinpass.jp/viewer/3d9cdb7f8bcf488c838b61f18b503751?index=%2Fviewer%2F3d9cdb7f8bcf488c838b61f18b503751&print=0&canvas=0&page=2'>Winpass 英語 3年</a> ///",
-                "/// <a href='https://dwinpass.jp/viewer/c8ea6235a9154055a0852e8747034916?index=%2Fviewer%2Fc8ea6235a9154055a0852e8747034916&print=0&canvas=0&page=2'>Winpass 数学 1年</a> ///",
-                "/// <a href='https://dwinpass.jp/viewer/6d7c8bf4b7154ee0a6df121cc7745622?index=%2Fviewer%2F6d7c8bf4b7154ee0a6df121cc7745622&print=0&canvas=0&page=2'>Winpass 数学 2年</a> ///",
-                "/// <a href='https://dwinpass.jp/viewer/937ed3d30b9b4746a0a90666b1f5cc54?index=%2Fviewer%2F937ed3d30b9b4746a0a90666b1f5cc54&print=0&canvas=0&page=2'>Winpass 数学 3年</a> ///",
-                "/// <a href='https://dwinpass.jp/viewer/dee54c07c69e4025afc6a44dc5c6e156?index=%2Fviewer%2Fdee54c07c69e4025afc6a44dc5c6e156&print=0&canvas=0&page=2'>Winpass 理科 1年</a> ///",
-                "/// <a href='https://dwinpass.jp/viewer/03bc25b72b914ad39b827dec45917131?index=%2Fviewer%2F03bc25b72b914ad39b827dec45917131&print=0&canvas=0&page=2'>Winpass 理科 2年</a> ///",
-                "/// <a href='https://dwinpass.jp/viewer/2a31ccf2f116416b95fee5dce4a4530b?index=%2Fviewer%2F2a31ccf2f116416b95fee5dce4a4530b&print=0&canvas=0&page=2'>Winpass 理科 全</a> ///",
-                "/// <a href='https://dwinpass.jp/viewer/f0e52242f3a044ae9c3aa73b892abefe?index=%2Fviewer%2Ff0e52242f3a044ae9c3aa73b892abefe&print=0&canvas=0&page=2'>Winpass 社会 地理</a> ///",
-                "/// <a href='https://dwinpass.jp/viewer/cf112fe8dae24b198acd566d1b0b4813?index=%2Fviewer%2Fcf112fe8dae24b198acd566d1b0b4813&print=0&canvas=0&page=2'>Winpass 社会 歴史</a> ///",
-                "/// <a href='https://dwinpass.jp/viewer/c9fbc72b89854b628142e34a7eb42088?index=%2Fviewer%2Fc9fbc72b89854b628142e34a7eb42088&print=0&canvas=0&page=2'>Winpass 社会 全</a> ///"
-            ]
-        }
-    ],
-    "ended": [
-        {
-            "icon": "ic-sparkles",
-            "size": 22,
-            "title": "夏期講習",
-            "items": [
-                "7/21(月)〜8/8(金)",
-                "8/18(月)〜8/22(金)"
-            ]
-        },
-        {
-            "icon": "ic-lines",
-            "size": 28,
-            "title": "8月 模擬試験",
-            "p": [
-                "/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"
-            ],
-            "items": [
-                "8/23(土) @山下教室",
-                "<span class='u-indent'>小学生, 中1, 中2 進研Sテスト第3回</span>",
-                "/// <a href='./docs/moshi/annai2508.html'>山下教室 実施案内</a> ///",
-                "8/24(日) @雲雀丘学園",
-                "<span class='u-indent'>中3 兵庫Vもし第2回</span>"
-            ]
-        }
-    ],
-    "future": [
-        {
-            "icon": "ic-lines",
-            "size": 28,
-            "title": "10月 模擬試験 (中3)",
-            "p": [
-                "/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"
-            ],
-            "items": [
-                "10/19(日) @外部会場",
-                "<span class='u-indent'>中3 兵庫Vもし第3回</span>"
-            ]
-        },
-        {
-            "icon": "ic-pencil",
-            "size": 28,
-            "title": "テスト対策 [期末]",
-            "p": [
-                "授業時間 = 1時間55分",
-                "授業時間 = 3時間50分 ロング"
-            ],
-            "items": [
-                "11/4(火)〜18(火) テスト対策",
-                "11/17(月),18(火),19(水) 東谷中学校 期末テスト"
-            ]
-        },
-        {
-            "icon": "ic-lines",
-            "size": 28,
-            "title": "11月 模擬試験 (中3)",
-            "p": [
-                "/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"
-            ],
-            "items": [
-                "11/30(日) @外部会場",
-                "<span class='u-indent'>中3 兵庫Vもし第4回</span>"
-            ]
-        },
-        {
-            "icon": "ic-sparkles",
-            "size": 22,
-            "title": "冬期講習",
-            "items": [
-                "12/22(月)〜12/27(土)",
-                "1/5(月)〜1/9(金)"
-            ]
-        },
-        {
-            "icon": "ic-lines",
-            "size": 28,
-            "title": "1月 模擬試験",
-            "p": [
-                "/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"
-            ],
-            "items": [
-                "1/10(土) @山下教室",
-                "<span class='u-indent'>小学生, 中1, 中2 進研Sテスト第5回</span>",
-                "1/11(日) @外部会場",
-                "<span class='u-indent'>中3 兵庫Vもし第5回</span>"
-            ]
-        }
-    ]
+  "ongoing": [
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "英語小テスト",
+      "p": [
+        "/// <a href='./docs/mini_test/0909.html'>9/9(火)〜12(金) 小テスト</a> ///",
+        "/// <a href='./docs/mini_test/0902.html'>9/2(火)〜5(金) 小テスト</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "解説",
+      "p": [
+        "/// <a href='./docs/moshi/kaisetsu2508_math.pdf'>中3 8月模擬試験 数学</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-pencil",
+      "size": 28,
+      "title": "通常授業",
+      "p": [
+        "授業時間 = 2時間25分",
+        "9/2(火)〜5(金) 通常授業",
+        "9/30(火)〜 通常授業"
+      ]
+    },
+    {
+      "icon": "ic-clock",
+      "size": 22,
+      "title": "通常授業 時間割",
+      "items": [
+        "A 15:50〜18:15",
+        "B 16:20〜18:45",
+        "C 16:50〜19:15",
+        "D 17:20〜19:45",
+        "E 17:50〜20:15",
+        "F 18:20〜20:45",
+        "G 18:50〜21:10"
+      ]
+    },
+    {
+      "icon": "ic-pencil",
+      "size": 28,
+      "title": "テスト対策 [中間]",
+      "p": ["授業時間 = 1時間55分", "授業時間 = 3時間50分 ロング"],
+      "items": [
+        "9/9(火)〜23(火) テスト対策",
+        "9/22(月),24(水) 東谷中学校 中間テスト"
+      ]
+    },
+    {
+      "icon": "ic-clock",
+      "size": 22,
+      "title": "テスト対策 時間割",
+      "items": [
+        "TA 15:50〜17:45",
+        "TB 16:20〜18:15",
+        "TC 16:50〜18:45",
+        "TD 17:20〜19:15",
+        "TE 17:50〜19:45",
+        "TF 18:20〜20:15",
+        "TG 18:50〜20:45",
+        "TP 13:00〜16:50",
+        "TQ 17:00〜20:50"
+      ]
+    },
+    {
+      "icon": "ic-pencil",
+      "size": 28,
+      "title": "中3受験期 通常授業",
+      "p": ["授業時間 = 1時間55分", "(火) (水) (木) (金)", "2学期から開始"]
+    },
+    {
+      "icon": "ic-sparkles",
+      "size": 22,
+      "title": "中3秋期講習",
+      "p": ["授業時間 = 4時間50分", "14:00〜18:50"],
+      "items": [
+        "8/30(土)",
+        "9/6(土)",
+        "10/4(土),11(土),25(土)",
+        "11/29(土)",
+        "12/6(土),13(土)"
+      ]
+    },
+    {
+      "icon": "ic-bed",
+      "size": 22,
+      "title": "休校",
+      "items": ["8/25(月)〜27(水)", "9/24(水)〜27(土)"]
+    },
+    {
+      "icon": "ic-music",
+      "size": 30,
+      "title": "英語テキスト音声",
+      "p": [
+        "/// <a href='https://listening.bunri.co.jp'>音声配信サービス onhai</a> ///"
+      ],
+      "items": [
+        "必修テキスト 1年 GXJ9Z",
+        "必修テキスト 2年 G3UKU",
+        "必修テキスト 3年 GKUEZ",
+        "必修テキスト 能勢2年 GQXFF",
+        "Winpass 1年 FHMKV",
+        "Winpass 2年 FPNQC",
+        "Winpass 3年 FHPJW"
+      ]
+    },
+    {
+      "icon": "ic-book",
+      "size": 22,
+      "title": "Winpass デジタルテキスト",
+      "items": [
+        "/// <a href='https://dwinpass.jp/viewer/067c76ed96ce4f0ead8f4c93dba04e8b?index=%2Fviewer%2F067c76ed96ce4f0ead8f4c93dba04e8b&print=0&canvas=0&page=2'>Winpass 英語 1年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/ef888f1a11874765bd5b51b1ede76cbe?index=%2Fviewer%2Fef888f1a11874765bd5b51b1ede76cbe&print=0&canvas=0&page=2'>Winpass 英語 2年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/3d9cdb7f8bcf488c838b61f18b503751?index=%2Fviewer%2F3d9cdb7f8bcf488c838b61f18b503751&print=0&canvas=0&page=2'>Winpass 英語 3年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/c8ea6235a9154055a0852e8747034916?index=%2Fviewer%2Fc8ea6235a9154055a0852e8747034916&print=0&canvas=0&page=2'>Winpass 数学 1年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/6d7c8bf4b7154ee0a6df121cc7745622?index=%2Fviewer%2F6d7c8bf4b7154ee0a6df121cc7745622&print=0&canvas=0&page=2'>Winpass 数学 2年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/937ed3d30b9b4746a0a90666b1f5cc54?index=%2Fviewer%2F937ed3d30b9b4746a0a90666b1f5cc54&print=0&canvas=0&page=2'>Winpass 数学 3年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/dee54c07c69e4025afc6a44dc5c6e156?index=%2Fviewer%2Fdee54c07c69e4025afc6a44dc5c6e156&print=0&canvas=0&page=2'>Winpass 理科 1年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/03bc25b72b914ad39b827dec45917131?index=%2Fviewer%2F03bc25b72b914ad39b827dec45917131&print=0&canvas=0&page=2'>Winpass 理科 2年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/2a31ccf2f116416b95fee5dce4a4530b?index=%2Fviewer%2F2a31ccf2f116416b95fee5dce4a4530b&print=0&canvas=0&page=2'>Winpass 理科 全</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/f0e52242f3a044ae9c3aa73b892abefe?index=%2Fviewer%2Ff0e52242f3a044ae9c3aa73b892abefe&print=0&canvas=0&page=2'>Winpass 社会 地理</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/cf112fe8dae24b198acd566d1b0b4813?index=%2Fviewer%2Fcf112fe8dae24b198acd566d1b0b4813&print=0&canvas=0&page=2'>Winpass 社会 歴史</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/c9fbc72b89854b628142e34a7eb42088?index=%2Fviewer%2Fc9fbc72b89854b628142e34a7eb42088&print=0&canvas=0&page=2'>Winpass 社会 全</a> ///"
+      ]
+    }
+  ],
+  "ended": [
+    {
+      "icon": "ic-sparkles",
+      "size": 22,
+      "title": "夏期講習",
+      "items": ["7/21(月)〜8/8(金)", "8/18(月)〜8/22(金)"]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "8月 模擬試験",
+      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
+      "items": [
+        "8/23(土) @山下教室",
+        "<span class='u-indent'>小学生, 中1, 中2 進研Sテスト第3回</span>",
+        "/// <a href='./docs/moshi/annai2508.html'>山下教室 実施案内</a> ///",
+        "8/24(日) @雲雀丘学園",
+        "<span class='u-indent'>中3 兵庫Vもし第2回</span>"
+      ]
+    }
+  ],
+  "future": [
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "10月 模擬試験 (中3)",
+      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
+      "items": [
+        "10/19(日) @外部会場",
+        "<span class='u-indent'>中3 兵庫Vもし第3回</span>"
+      ]
+    },
+    {
+      "icon": "ic-pencil",
+      "size": 28,
+      "title": "テスト対策 [期末]",
+      "p": ["授業時間 = 1時間55分", "授業時間 = 3時間50分 ロング"],
+      "items": [
+        "11/4(火)〜18(火) テスト対策",
+        "11/17(月),18(火),19(水) 東谷中学校 期末テスト"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "11月 模擬試験 (中3)",
+      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
+      "items": [
+        "11/30(日) @外部会場",
+        "<span class='u-indent'>中3 兵庫Vもし第4回</span>"
+      ]
+    },
+    {
+      "icon": "ic-sparkles",
+      "size": 22,
+      "title": "冬期講習",
+      "items": ["12/22(月)〜12/27(土)", "1/5(月)〜1/9(金)"]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "1月 模擬試験",
+      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
+      "items": [
+        "1/10(土) @山下教室",
+        "<span class='u-indent'>小学生, 中1, 中2 進研Sテスト第5回</span>",
+        "1/11(日) @外部会場",
+        "<span class='u-indent'>中3 兵庫Vもし第5回</span>"
+      ]
+    }
+  ]
 }

@@ -1,0 +1,185 @@
+{
+  "baseAudioSubdir": "0909/",
+  "sections": [
+    {
+      "title": "中1",
+      "units": [
+        {
+          "title": "Unit 3 文法のまとめ (What is ... ?, how, when, where)",
+          "items": [
+            {
+              "ja": "それは何ですか。これは家紋、ある家族を表す記号です。",
+              "en": "What is that? It is a kamon, a symbol for a family.",
+              "stem": "en_001"
+            },
+            {
+              "ja": "あなたのいちばん好きなキャラクターはだれですか。私のいちばん好きなキャラクターは小次郎です。",
+              "en": "Who is your favorite character? My favorite character is Kojiro.",
+              "stem": "en_002"
+            },
+            {
+              "ja": "あなたはどのように学校に来ますか。私は歩いて学校に来ます。",
+              "en": "How do you come to school? I walk to school.",
+              "stem": "en_003"
+            },
+            {
+              "ja": "あなたはいつ学校に来ますか。私は月曜日に学校に来ます。",
+              "en": "When do you come to school? I come to school on Mondays.",
+              "stem": "en_004"
+            },
+            {
+              "ja": "その公園はどこですか。それは駅の近くです。",
+              "en": "Where is the park? It is near the station.",
+              "stem": "en_005"
+            },
+            {
+              "ja": "あなたたちは雨の日にどこで練習をしますか。私たちはろうかで練習をします。",
+              "en": "Where do you practice on rainy days? We practice in the hallway.",
+              "stem": "en_006"
+            },
+            {
+              "ja": "あれは何ですか。",
+              "en": "What is that? (What's that?)",
+              "stem": "en_007"
+            },
+            {
+              "ja": "あなたたちのネコはどこですか。",
+              "en": "Where is your cat? (Where's your cat?)",
+              "stem": "en_008"
+            },
+            {
+              "ja": "あなたはいつ牛乳を飲みますか。",
+              "en": "When do you drink milk?",
+              "stem": "en_009"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "中2",
+      "units": [
+        {
+          "title": "Lesson 3 文法のまとめ (to 不定詞 名詞用法, 副詞用法, 形容詞用法, must ... , must not ... )",
+          "items": [
+            {
+              "ja": "私の夢は獣医になることです。",
+              "en": "My dream is to be a vet.",
+              "stem": "en_010"
+            },
+            {
+              "ja": "私は動物を助けたいです。",
+              "en": "I want to help animals.",
+              "stem": "en_011"
+            },
+            {
+              "ja": "たくさんのお客さんが昼食を買うためにお店に来ました。",
+              "en": "Many customers came to the shop to buy lunch.",
+              "stem": "en_012"
+            },
+            {
+              "ja": "何か飲み物を飲みましょう。",
+              "en": "Let's have something to drink.",
+              "stem": "en_013"
+            },
+            {
+              "ja": "あなたはマスクをつけなければなりません。",
+              "en": "You must wear masks.",
+              "stem": "en_014"
+            },
+            {
+              "ja": "私たちはこのコンピュータを使ってはいけません。",
+              "en": "We must not use this computer.",
+              "stem": "en_015"
+            },
+            {
+              "ja": "彼女の夢はよい先生になることです。",
+              "en": "Her dream is to be a good teacher. Her dream is to become a good teacher.",
+              "stem": "en_016"
+            },
+            {
+              "ja": "私はあなたに言うべきことを思い出せません。",
+              "en": "I cannot remember the thing to say to you. I can't remember the things to say to you.",
+              "stem": "en_017"
+            },
+            {
+              "ja": "私の姉はアメリカ合衆国に住むために英語を勉強しています。",
+              "en": "My sister studies English to live in the U.S.A.",
+              "stem": "en_018"
+            },
+            {
+              "ja": "あなたはこの映画を見てはいけません。",
+              "en": "You must not see this movie. You must not watch this movie.",
+              "stem": "en_019"
+            },
+            {
+              "ja": "私たちは彼ともう一度話す必要があります。",
+              "en": "We need to talk with him again.",
+              "stem": "en_020"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "中3",
+      "units": [
+        {
+          "title": "Lesson 3 文法のまとめ (受け身, by ... の文)",
+          "items": [
+            {
+              "ja": "何千羽もの折り鶴が毎年、広島に送られています。",
+              "en": "Thousands of paper cranes are sent to Hiroshima every year.",
+              "stem": "en_021"
+            },
+            {
+              "ja": "その像は禎子の友人たちによって建てられました。",
+              "en": "The statue was built by Sadako's friends.",
+              "stem": "en_022"
+            },
+            {
+              "ja": "その雑誌はあの店で売られています。",
+              "en": "The magazine is sold at that store.",
+              "stem": "en_023"
+            },
+            {
+              "ja": "この種類のコンピュータは多くの人々によって使われています。",
+              "en": "This type of computer is used by many people.",
+              "stem": "en_024"
+            },
+            {
+              "ja": "あなたはスミスさんによってこのパーティーに招待されたのですか。",
+              "en": "Were you invited to this party by Ms. Smith?",
+              "stem": "en_025"
+            },
+            {
+              "ja": "この教室はきょう、生徒たちによってそうじされませんでした。",
+              "en": "This classroom was not cleaned by the students today.",
+              "stem": "en_026"
+            },
+            {
+              "ja": "柔道は世界中で練習されています。",
+              "en": "Judo is practiced around the world. Judo is practiced all over the world.",
+              "stem": "en_027"
+            },
+            {
+              "ja": "その有名な絵は、ある日本の美術館によって買われました。",
+              "en": "The famous picture was bought by a Japanese museum.",
+              "stem": "en_028"
+            },
+            {
+              "ja": "私のカバンはリクによって運ばれたのですか。いいえ、そうではありません。",
+              "en": "Was my bag carried by Riku? No, it wasn't.",
+              "stem": "en_029"
+            },
+            {
+              "ja": "朝食は、毎週土曜日には私の母によって作られません。",
+              "en": "Breakfast isn't made by my mother on Saturdays.",
+              "stem": "en_030"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
