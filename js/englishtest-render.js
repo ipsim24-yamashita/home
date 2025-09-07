@@ -56,16 +56,31 @@
     const sum = el("summary", { text: item?.ja || "" });
     const en = el("div", { lang: "en", text: item?.en || "" });
 
+    // m4a 優先
+    // const audio = el(
+    //   "audio",
+    //   { controls: "", preload: "none" },
+    //   el("source", {
+    //     src: base + (item?.stem || "") + ".m4a",
+    //     type: "audio/mp4",
+    //   }),
+    //   el("source", {
+    //     src: base + (item?.stem || "") + ".mp3",
+    //     type: "audio/mpeg",
+    //   })
+    // );
+
+    // mp3 優先
     const audio = el(
       "audio",
       { controls: "", preload: "none" },
       el("source", {
-        src: base + (item?.stem || "") + ".m4a",
-        type: "audio/mp4",
-      }),
-      el("source", {
         src: base + (item?.stem || "") + ".mp3",
         type: "audio/mpeg",
+      }),
+      el("source", {
+        src: base + (item?.stem || "") + ".m4a",
+        type: "audio/mp4",
       })
     );
 
