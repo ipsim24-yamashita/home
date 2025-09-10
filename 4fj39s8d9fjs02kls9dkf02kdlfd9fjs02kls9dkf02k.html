@@ -318,31 +318,31 @@
             );
           case "ic-flower":
             return wrap(
-              `<g stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
-                <!-- 花（チューリップ上部） -->
-                <path d="M12 17
-                        C 7.5 17 4 14.5 4 10
-                        L 7 6  9.5 9  12 6  14.5 9  17 6  20 10
-                        C 20 14.5 16.5 17 12 17 Z"
-                      fill="#fff"/>
-                <!-- 茎 -->
-                <rect x="11" y="17" width="2" height="5" rx="0.8" fill="currentColor"/>
-                <!-- 葉っぱ（下げて、線を細く） -->
-                <g stroke-width="1.2">
-                  <!-- 左の葉 -->
-                  <path d="M11 21
-                          C 9.2 22 7.0 21.3 5.8 19.5
-                          C 6.8 17.8 8.8 17.0 10.4 17.8
-                          C 11.0 18.0 11.0 19.7 11 21 Z"
-                        fill="currentColor"/>
-                  <!-- 右の葉 -->
-                  <path d="M13 21
-                          C 14.8 22 17.0 21.3 18.2 19.5
-                          C 17.2 17.8 15.2 17.0 13.6 17.8
-                          C 13.0 18.0 13.0 19.7 13 21 Z"
-                        fill="currentColor"/>
-                </g>
-              </g>`
+    `<g stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+      <!-- 花（チューリップの花びら部分） -->
+      <path d="M12 17
+               C 7.5 17 4 14.5 4 10
+               L 7 6  9.5 9  12 6  14.5 9  17 6  20 10
+               C 20 14.5 16.5 17 12 17 Z"
+            fill="#fff"/>
+      <!-- 茎 -->
+      <rect x="11" y="17" width="2" height="6" rx="0.8" fill="currentColor"/>
+      <!-- 葉っぱ（位置をさらに下へ、長さを伸ばす） -->
+      <g stroke-width="1.2">
+        <!-- 左の葉 -->
+        <path d="M11 23
+                 C 8.8 25 6.0 24 5.2 20.8
+                 C 6.4 18.2 8.8 17.5 10.8 18.8
+                 C 11.0 19.5 11.0 21.5 11 23 Z"
+              fill="currentColor"/>
+        <!-- 右の葉 -->
+        <path d="M13 23
+                 C 15.2 25 18.0 24 18.8 20.8
+                 C 17.6 18.2 15.2 17.5 13.2 18.8
+                 C 13.0 19.5 13.0 21.5 13 23 Z"
+              fill="currentColor"/>
+      </g>
+    </g>`
             );
           case "ic-lines":
             return wrap(
