@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>実施案内</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+
+    <style>
+      /* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+      /*---------------------------------------------------------------------------------------------
+      *  Copyright (c) Microsoft Corporation. All rights reserved.
+      *  Licensed under the MIT License. See License.txt in the project root for license information.
+      *--------------------------------------------------------------------------------------------*/
+      /* カバー全体のエリア */
+      .cover {
+        width: 320px;
+        height: 80px; /* ← 縦幅を任意に変更できます */
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* 画像の調整 */
+      .cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* 画像をトリミングしてエリアにフィット */
+        object-position: center 50%;
+      }
+
+      /* カバー全体のエリア */
+      .cover2 {
+        width: 320px;
+        height: 80px; /* ← 縦幅を任意に変更できます */
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* 画像の調整 */
+      .cover2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* 画像をトリミングしてエリアにフィット */
+        object-position: center 25%;
+      }
+
+      body {
+        font-family: var(
+          --vscode-markdown-font-family,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe WPC",
+          "Segoe UI",
+          "Ubuntu",
+          "Droid Sans",
+          sans-serif
+        );
+        font-size: var(--vscode-markdown-font-size, 14px);
+        padding: 0 26px;
+        line-height: var(--vscode-markdown-line-height, 22px);
+        word-wrap: break-word;
+      }
+
+      #code-csp-warning {
+        position: fixed;
+        top: 0;
+        right: 0;
+        color: white;
+        margin: 16px;
+        text-align: center;
+        font-size: 12px;
+        font-family: sans-serif;
+        background-color: #444444;
+        cursor: pointer;
+        padding: 6px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+      }
+
+      #code-csp-warning:hover {
+        text-decoration: none;
+        background-color: #007acc;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+      }
+
+      body.scrollBeyondLastLine {
+        margin-bottom: calc(100vh - 22px);
+      }
+
+      body.showEditorSelection .code-line {
+        position: relative;
+      }
+
+      body.showEditorSelection .code-active-line:before,
+      body.showEditorSelection .code-line:hover:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -12px;
+        height: 100%;
+      }
+
+      body.showEditorSelection li.code-active-line:before,
+      body.showEditorSelection li.code-line:hover:before {
+        left: -30px;
+      }
+
+      .vscode-light.showEditorSelection .code-active-line:before {
+        border-left: 3px solid rgba(0, 0, 0, 0.15);
+      }
+
+      .vscode-light.showEditorSelection .code-line:hover:before {
+        border-left: 3px solid rgba(0, 0, 0, 0.4);
+      }
+
+      .vscode-light.showEditorSelection .code-line .code-line:hover:before {
+        border-left: none;
+      }
+
+      .vscode-dark.showEditorSelection .code-active-line:before {
+        border-left: 3px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .vscode-dark.showEditorSelection .code-line:hover:before {
+        border-left: 3px solid rgba(255, 255, 255, 0.6);
+      }
+
+      .vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+        border-left: none;
+      }
+
+      .vscode-high-contrast.showEditorSelection .code-active-line:before {
+        border-left: 3px solid rgba(255, 160, 0, 0.7);
+      }
+
+      .vscode-high-contrast.showEditorSelection .code-line:hover:before {
+        border-left: 3px solid rgba(255, 160, 0, 1);
+      }
+
+      .vscode-high-contrast.showEditorSelection
+        .code-line
+        .code-line:hover:before {
+        border-left: none;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:focus,
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: 1px solid -webkit-focus-ring-color;
+        outline-offset: -1px;
+      }
+
+      hr {
+        border: 0;
+        height: 2px;
+        border-bottom: 2px solid;
+      }
+
+      h1 {
+        padding-bottom: 0.3em;
+        line-height: 1.2;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-weight: normal;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      table > thead > tr > th {
+        text-align: left;
+        border-bottom: 1px solid;
+      }
+
+      table > thead > tr > th,
+      table > thead > tr > td,
+      table > tbody > tr > th,
+      table > tbody > tr > td {
+        padding: 5px 10px;
+      }
+
+      table > tbody > tr + tr > td {
+        border-top: 1px solid;
+      }
+
+      blockquote {
+        margin: 0 7px 0 5px;
+        padding: 0 16px 0 10px;
+        border-left-width: 5px;
+        border-left-style: solid;
+      }
+
+      code {
+        font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New",
+          monospace, "Droid Sans Fallback";
+        font-size: 1em;
+        line-height: 1.357em;
+      }
+
+      body.wordWrap pre {
+        white-space: pre-wrap;
+      }
+
+      pre:not(.hljs),
+      pre.hljs code > div {
+        padding: 16px;
+        border-radius: 3px;
+        overflow: auto;
+      }
+
+      pre code {
+        color: var(--vscode-editor-foreground);
+        tab-size: 4;
+      }
+
+      /** Theming */
+
+      .vscode-light pre {
+        background-color: rgba(220, 220, 220, 0.4);
+      }
+
+      .vscode-dark pre {
+        background-color: rgba(10, 10, 10, 0.4);
+      }
+
+      .vscode-high-contrast pre {
+        background-color: rgb(0, 0, 0);
+      }
+
+      .vscode-high-contrast h1 {
+        border-color: rgb(0, 0, 0);
+      }
+
+      .vscode-light table > thead > tr > th {
+        border-color: rgba(0, 0, 0, 0.69);
+      }
+
+      .vscode-dark table > thead > tr > th {
+        border-color: rgba(255, 255, 255, 0.69);
+      }
+
+      .vscode-light h1,
+      .vscode-light hr,
+      .vscode-light table > tbody > tr + tr > td {
+        border-color: rgba(0, 0, 0, 0.18);
+      }
+
+      .vscode-dark h1,
+      .vscode-dark hr,
+      .vscode-dark table > tbody > tr + tr > td {
+        border-color: rgba(255, 255, 255, 0.18);
+      }
+
+      /* Tomorrow Theme */
+      .hljs-comment,
+      .hljs-quote {
+        color: #8e908c;
+      }
+      .hljs-variable,
+      .hljs-template-variable,
+      .hljs-tag,
+      .hljs-name,
+      .hljs-selector-id,
+      .hljs-selector-class,
+      .hljs-regexp,
+      .hljs-deletion {
+        color: #c82829;
+      }
+      .hljs-number,
+      .hljs-built_in,
+      .hljs-builtin-name,
+      .hljs-literal,
+      .hljs-type,
+      .hljs-params,
+      .hljs-meta,
+      .hljs-link {
+        color: #f5871f;
+      }
+      .hljs-attribute {
+        color: #eab700;
+      }
+      .hljs-string,
+      .hljs-symbol,
+      .hljs-bullet,
+      .hljs-addition {
+        color: #718c00;
+      }
+      .hljs-title,
+      .hljs-section {
+        color: #4271ae;
+      }
+      .hljs-keyword,
+      .hljs-selector-tag {
+        color: #8959a8;
+      }
+      .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #4d4d4c;
+        padding: 0.5em;
+      }
+      .hljs-emphasis {
+        font-style: italic;
+      }
+      .hljs-strong {
+        font-weight: bold;
+      }
+
+      /*
+      * Markdown PDF CSS
+      */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
+          "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+        padding: 0 12px;
+      }
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+      pre:not(.hljs) {
+        padding: 23px;
+        line-height: 19px;
+      }
+      blockquote {
+        background: rgba(127, 127, 127, 0.1);
+        border-color: rgba(0, 122, 204, 0.5);
+      }
+      .emoji {
+        height: 1.4em;
+      }
+      code {
+        font-size: 14px;
+        line-height: 19px;
+      }
+      :not(pre):not(.hljs) > code {
+        color: #c9ae75;
+        font-size: inherit;
+      }
+
+      /* Page Break */
+      .page {
+        page-break-after: always;
+      }
+
+      /* ====== iPad mini 横向きで見やすく拡大 ====== */
+      :root {
+        --base-font: clamp(16px, 1.8vw, 22px);
+        --line-height: 1.75;
+      }
+      :root {
+        --vscode-markdown-font-size: var(--base-font);
+        --vscode-markdown-line-height: calc(
+          var(--base-font) * var(--line-height)
+        );
+      }
+      body {
+        font-size: var(--vscode-markdown-font-size);
+        line-height: var(--vscode-markdown-line-height);
+        padding: 0 clamp(16px, 4vw, 56px);
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+      h2 {
+        font-size: 1.5em;
+        margin-top: 1.2em;
+      }
+      h3 {
+        font-size: 1.25em;
+        margin-top: 1.1em;
+      }
+      table {
+        font-size: 1em;
+      }
+      table > thead > tr > th,
+      table > thead > tr > td,
+      table > tbody > tr > th,
+      table > tbody > tr > td {
+        padding: clamp(6px, 1.1vw, 14px) clamp(8px, 1.4vw, 18px);
+      }
+      pre,
+      code,
+      blockquote {
+        font-size: 0.95em;
+      }
+      .cover {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 4;
+        overflow: hidden;
+        position: relative;
+      }
+      .cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 60%;
+        display: block;
+      }
+      @media screen and (orientation: landscape) and (min-width: 1000px) and (max-width: 1200px) {
+        :root {
+          --base-font: 20px;
+        }
+        .cover {
+          aspect-ratio: 16 / 3.5;
+        }
+      }
+      @media screen and (orientation: landscape) and (min-width: 1201px) {
+        :root {
+          --base-font: 21px;
+        }
+        .cover {
+          aspect-ratio: 16 / 3.6;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        :root {
+          --base-font: 16px;
+        }
+        .cover {
+          aspect-ratio: 16 / 5;
+        }
+      }
+    </style>
+
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+  </head>
+
+  <body>
+    <!-- カバー（上） -->
+    <div class="cover">
+      <img
+        src="https://images.unsplash.com/photo-1623613950929-80f86508f1ad?q=80&w=1200&auto=format&fit=crop"
+        alt="カバー画像"
+      />
+    </div>
+
+    <!-- ページタイトル -->
+    <header>
+      <h1 id="偏差値表">偏差値表</h1>
+    </header>
+
+    <!-- 難易度表（公立） -->
+    <section aria-labelledby="diff-pub-title">
+      <h2 id="diff-pub-title">受験難易度表（公立）</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>偏差値</th>
+            <th>高校名</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>69</td>
+            <td>大阪教育大学附属池田 / 豊中</td>
+          </tr>
+          <tr>
+            <td>68</td>
+            <td>市立西宮</td>
+          </tr>
+          <tr>
+            <td>67</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>66</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>65</td>
+            <td>尼崎稲園</td>
+          </tr>
+          <tr>
+            <td>64</td>
+            <td>市立西宮東 / 箕面(グローバル)</td>
+          </tr>
+          <tr>
+            <td>63</td>
+            <td>宝塚北 / 北摂三田 / 池田</td>
+          </tr>
+          <tr>
+            <td>62</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>61</td>
+            <td>西宮</td>
+          </tr>
+          <tr>
+            <td>60</td>
+            <td>箕面</td>
+          </tr>
+          <tr>
+            <td>59</td>
+            <td>三田祥雲館</td>
+          </tr>
+          <tr>
+            <td>58</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>57</td>
+            <td>伊丹 / 鳴尾 / 桜塚</td>
+          </tr>
+          <tr>
+            <td>56</td>
+            <td>川西緑台 / 尼崎北</td>
+          </tr>
+          <tr>
+            <td>55</td>
+            <td>市立伊丹 / 宝塚西</td>
+          </tr>
+          <tr>
+            <td>54</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td>市立尼崎 / 刀根山</td>
+          </tr>
+          <tr>
+            <td>52</td>
+            <td>西宮苦楽園</td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td>伊丹北 / 尼崎小田</td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>49</td>
+            <td>三田西陵</td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td>川西北陵 / 伊丹西 / 市立尼崎双星</td>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td>宝塚 / 西宮今津 / 西宮南</td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>44</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>43</td>
+            <td>尼崎 / 尼崎西</td>
+          </tr>
+          <tr>
+            <td>42</td>
+            <td>猪名川 / 渋谷</td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td>宝塚東</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>川西明峰</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 難易度表（私立） -->
+    <section aria-labelledby="diff-pri-title">
+      <h2 id="diff-pri-title">受験難易度表（私立）</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>偏差値</th>
+            <th>高校名</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>67</td>
+            <td>箕面自由 SS特進</td>
+          </tr>
+          <tr>
+            <td>66</td>
+            <td>雲雀丘学園</td>
+          </tr>
+          <tr>
+            <td>65</td>
+            <td>履正社 学藝S類</td>
+          </tr>
+          <tr>
+            <td>64</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>63</td>
+            <td>箕面自由 S特進 / 仁川学院 アカデミア</td>
+          </tr>
+          <tr>
+            <td>62</td>
+            <td>三田学園</td>
+          </tr>
+          <tr>
+            <td>61</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>60</td>
+            <td>履正社 学藝Ⅰ類 / 武庫女 グローバル</td>
+          </tr>
+          <tr>
+            <td>59</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>58</td>
+            <td>箕面自由 特進 / 武庫女 探究 / 仁川学院 カルティS</td>
+          </tr>
+          <tr>
+            <td>57</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>56</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>55</td>
+            <td>箕面自由 文理探究</td>
+          </tr>
+          <tr>
+            <td>54</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td>百合学院 アカデミック</td>
+          </tr>
+          <tr>
+            <td>52</td>
+            <td>大商学園 特進Ⅰ類 / 履正社 学藝Ⅱ類 / 仁川学院 カルティ</td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td>三田松聖 特別進学</td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td>大商学園 特進Ⅱ類</td>
+          </tr>
+          <tr>
+            <td>49</td>
+            <td>百合学院 キャリア</td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td>宣真 看護医療特進</td>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td>大商学園 情報 / 宣真 保育系進学</td>
+          </tr>
+          <tr>
+            <td>44</td>
+            <td>大商学園 進学</td>
+          </tr>
+          <tr>
+            <td>43</td>
+            <td>大商学園 商業 / 三田松聖 総合</td>
+          </tr>
+          <tr>
+            <td>42</td>
+            <td>宣真 総合/アニメアート</td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>38</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td>箕面学園</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+      <p><small>2025 Copy Right @ ipsim</small></p>
+    </footer>
+
+    <!-- Mermaid 初期化（最後でOK） -->
+    <script>
+      mermaid.initialize({
+        startOnLoad: true,
+        theme:
+          document.body.classList.contains("vscode-dark") ||
+          document.body.classList.contains("vscode-high-contrast")
+            ? "dark"
+            : "default",
+      });
+    </script>
+  </body>
+</html>

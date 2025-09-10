@@ -159,7 +159,8 @@
         "<span class='u-indent'>小学生, 中1, 中2 進研Sテスト第3回</span>",
         "/// <a href='./docs/moshi/annai2508.html'>山下教室 実施案内</a> ///",
         "8/24(日) @雲雀丘学園",
-        "<span class='u-indent'>中3 兵庫Vもし第2回</span>"
+        "<span class='u-indent'>中3 兵庫Vもし第2回</span>",
+        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///"
       ]
     }
   ],
@@ -171,7 +172,8 @@
       "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
       "items": [
         "10/19(日) @外部会場",
-        "<span class='u-indent'>中3 兵庫Vもし第3回</span>"
+        "<span class='u-indent'>中3 兵庫Vもし第3回</span>",
+        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///"
       ]
     },
     {
@@ -191,7 +193,8 @@
       "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
       "items": [
         "11/30(日) @外部会場",
-        "<span class='u-indent'>中3 兵庫Vもし第4回</span>"
+        "<span class='u-indent'>中3 兵庫Vもし第4回</span>",
+        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///"
       ]
     },
     {
@@ -209,7 +212,8 @@
         "1/10(土) @山下教室",
         "<span class='u-indent'>小学生, 中1, 中2 進研Sテスト第5回</span>",
         "1/11(日) @外部会場",
-        "<span class='u-indent'>中3 兵庫Vもし第5回</span>"
+        "<span class='u-indent'>中3 兵庫Vもし第5回</span>",
+        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///"
       ]
     }
   ]
