@@ -1,7 +1,7 @@
 {
   "ongoing": [
     {
-      "icon": "ic-lines",
+      "icon": "ic-flower",
       "size": 28,
       "title": "英語小テスト",
       "p": [
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "icon": "ic-lines",
+      "icon": "ic-lightbulb",
       "size": 28,
       "title": "テキスト 訂正",
       "p": [
