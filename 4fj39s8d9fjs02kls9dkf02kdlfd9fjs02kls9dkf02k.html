@@ -318,15 +318,15 @@
             );
           case "ic-flower":
             return wrap(
-              `<g transform="translate(12,12)" stroke="currentColor" stroke-width="1.8" fill="none">
-                <!-- 花の部分 -->
-                <path d="M -4 -2 Q -4 -7 0 -7 Q 4 -7 4 -2 Q 0 2 -4 -2 Z" fill="currentColor"/>
+              `<g transform="translate(12,12)" stroke="currentColor" stroke-width="2" fill="none">
+                <!-- 花（チューリップの花びら） -->
+                <path d="M -6 -2 Q -6 -8 0 -8 Q 6 -8 6 -2 
+                        Q 3 -4 0 -1 Q -3 -4 -6 -2 Z" fill="currentColor"/>
                 <!-- 茎 -->
-                <line x1="0" y1="2" x2="0" y2="8" stroke="currentColor"/>
-                <!-- 左の葉 -->
-                <path d="M 0 5 Q -4 6 -5 10" />
-                <!-- 右の葉 -->
-                <path d="M 0 5 Q 4 6 5 10" />
+                <rect x="-1" y="0" width="2" height="7" fill="currentColor"/>
+                <!-- 葉っぱ（左右対称、丸みを強調） -->
+                <path d="M -1 4 Q -5 5 -5 8 Q -3 7 -1 7 Z" fill="currentColor"/>
+                <path d="M  1 4 Q  5 5  5 8 Q  3 7  1 7 Z" fill="currentColor"/>
               </g>`
             );
           case "ic-lines":
