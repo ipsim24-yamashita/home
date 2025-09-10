@@ -12,6 +12,16 @@
     {
       "icon": "ic-lines",
       "size": 28,
+      "title": "テキスト 訂正",
+      "p": [
+        "2乗に比例する関数, 中点連結定理, 角の二等分線",
+        "/// <a href='./docs/gene3.pdf'>GENESIS 中3数学</a> ///",
+        "お手持ちのテキストに載っていない場合にご利用ください"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
       "title": "解説",
       "p": [
         "/// <a href='./docs/moshi/kaisetsu2508_math.pdf'>中3 8月模擬試験 数学</a> ///"
