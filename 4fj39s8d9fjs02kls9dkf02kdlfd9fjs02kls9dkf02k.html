@@ -303,34 +303,32 @@
           case "ic-lightbulb":
             return wrap(
               `<g transform="translate(12,12)" stroke="currentColor" stroke-width="2" fill="none">
-      <!-- 電球本体 -->
-      <circle cx="0" cy="-3" r="6"/>
-      <!-- 芯（フィラメント） -->
-      <path d="M -2 -3 Q 0 -1 2 -3" stroke="currentColor" stroke-width="1.5" fill="none"/>
-      <!-- ソケット部分 -->
-      <rect x="-3" y="3" width="6" height="5" rx="1.5"/>
-      <line x1="-3" y1="8" x2="3" y2="8"/>
-      <!-- ひらめきの線 -->
-      <line x1="8" y1="-6" x2="12" y2="-8"/>
-      <line x1="9" y1="-3" x2="14" y2="-3"/>
-      <line x1="8" y1="0" x2="12" y2="2"/>
-    </g>`
+                <!-- 電球本体 -->
+                <circle cx="0" cy="-3" r="6"/>
+                <!-- 芯（フィラメント） -->
+                <path d="M -2 -3 Q 0 -1 2 -3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <!-- ソケット部分 -->
+                <rect x="-3" y="3" width="6" height="5" rx="1.5"/>
+                <line x1="-3" y1="8" x2="3" y2="8"/>
+                <!-- ひらめきの線 -->
+                <line x1="8" y1="-6" x2="12" y2="-8"/>
+                <line x1="9" y1="-3" x2="14" y2="-3"/>
+                <line x1="8" y1="0" x2="12" y2="2"/>
+              </g>`
             );
-
           case "ic-flower":
-                  return wrap(
-                    `<g transform="translate(12,12)" stroke="currentColor" stroke-width="1.8" fill="none">
-            <!-- 花の中心 -->
-            <circle cx="0" cy="0" r="2" fill="currentColor"/>
-            <!-- 花びら（大きめ5枚） -->
-            <circle cx="0" cy="-7" r="4"/>
-            <circle cx="6.7" cy="-2.2" r="4"/>
-            <circle cx="4.2" cy="5.7" r="4"/>
-            <circle cx="-4.2" cy="5.7" r="4"/>
-            <circle cx="-6.7" cy="-2.2" r="4"/>
-          </g>`
-                  );
-
+            return wrap(
+              `<g transform="translate(12,12)" stroke="currentColor" stroke-width="1.8" fill="none">
+                <!-- 花の部分 -->
+                <path d="M -4 -2 Q -4 -7 0 -7 Q 4 -7 4 -2 Q 0 2 -4 -2 Z" fill="currentColor"/>
+                <!-- 茎 -->
+                <line x1="0" y1="2" x2="0" y2="8" stroke="currentColor"/>
+                <!-- 左の葉 -->
+                <path d="M 0 5 Q -4 6 -5 10" />
+                <!-- 右の葉 -->
+                <path d="M 0 5 Q 4 6 5 10" />
+              </g>`
+            );
           case "ic-lines":
             return wrap(
               `<g transform="translate(12,12) rotate(-45)" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"><line x1="-9" y1="0" x2="9" y2="0"/><line x1="-5.4" y1="-3.94" x2="5.4" y2="-3.94"/><line x1="-5.4" y1="3.94" x2="5.4" y2="3.94"/></g>`
