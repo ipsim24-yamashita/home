@@ -451,7 +451,7 @@
       /* Firefox など Webkit非対応ブラウザ用 */
       /* <p class="text-stroke-with-shadow">影を使った縁どり</p> */
       .text-stroke-with-shadow {
-        font-size: 50px;
+        font-size: 20px;
         font-weight: bold;
         color: blue;
         text-shadow: -2px -2px 0 yellow, 2px -2px 0 yellow, -2px 2px 0 yellow,
@@ -461,13 +461,13 @@
       /* Safari Chrome など Webkit対応ブラウザ用 */
       /* <p class="text-stroke-with-webkit">`-webkit-text-stroke`を使った縁どり</p> */
       .text-stroke-with-webkit {
-        font-size: 50px;
+        font-size: 20px;
         font-weight: bold;
         color: blue;
-        -webkit-text-stroke: 2px yellow;
+        -webkit-text-stroke: 1px yellow;
         /* 他のブラウザのための代替として、text-shadowを併用することもできます */
-        text-shadow: -2px -2px 0 yellow, 2px -2px 0 yellow, -2px 2px 0 yellow,
-          2px 2px 0 yellow;
+        text-shadow: -1px -1px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow,
+          1px 1px 0 yellow;
       }
     </style>
 
