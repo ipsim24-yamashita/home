@@ -485,6 +485,28 @@
         }
       }
       /* ========== ここまで追加 ========== */
+      
+      
+      /* ========== ここから修正 ========== */
+/* 画面が横長の時（orientation: landscape） */
+@media (orientation: landscape) {
+  .tables-container {
+    flex-direction: row; /* 要素を横に並べる */
+    flex-wrap: nowrap; /* 要素を折り返さないようにする */
+  }
+  .tables-container > section {
+    flex: 1; /* 各セクションが同じ幅になるように設定 */
+  }
+}
+
+/* 画面が縦長の時（orientation: portrait） */
+@media (orientation: portrait) {
+  .tables-container {
+    flex-direction: column; /* 要素を縦に並べる */
+  }
+}
+/* ========== ここまで修正 ========== */
+
     </style>
 
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
