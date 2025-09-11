@@ -451,23 +451,11 @@
       /* Firefox など Webkit非対応ブラウザ用 */
       /* <p class="text-stroke-with-shadow">影を使った縁どり</p> */
       .text-stroke-with-shadow {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: bold;
         color: blue;
         text-shadow: -2px -2px 0 yellow, 2px -2px 0 yellow, -2px 2px 0 yellow,
           2px 2px 0 yellow;
-      }
-      /* 強調したい文字を縁取りする */
-      /* Safari Chrome など Webkit対応ブラウザ用 */
-      /* <p class="text-stroke-with-webkit">`-webkit-text-stroke`を使った縁どり</p> */
-      .text-stroke-with-webkit {
-        font-size: 20px;
-        font-weight: bold;
-        color: blue;
-        -webkit-text-stroke: 1px yellow;
-        /* 他のブラウザのための代替として、text-shadowを併用することもできます */
-        text-shadow: -1px -1px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow,
-          1px 1px 0 yellow;
       }
     </style>
 
@@ -517,7 +505,7 @@
           </tr>
           <tr>
             <td>65</td>
-            <td>尼崎稲園</td>
+            <td><p class="text-stroke-with-shadow">尼崎稲園</p></td>
           </tr>
           <tr>
             <td>64</td>
@@ -553,7 +541,10 @@
           </tr>
           <tr>
             <td>56</td>
-            <td>川西緑台 / 尼崎北</td>
+            <td>
+              <p class="text-stroke-with-shadow">川西緑台</p>
+              / 尼崎北
+            </td>
           </tr>
           <tr>
             <td>55</td>
@@ -561,12 +552,7 @@
           </tr>
           <tr>
             <td>54</td>
-            <td>
-              <p class="text-stroke-with-shadow">影を使った縁どり</p>
-              <p class="text-stroke-with-webkit">
-                `-webkit-text-stroke`を使った縁どり
-              </p>
-            </td>
+            <td></td>
           </tr>
           <tr>
             <td>53</td>
@@ -590,7 +576,10 @@
           </tr>
           <tr>
             <td>48</td>
-            <td>川西北陵 / 伊丹西 / 市立尼崎双星</td>
+            <td>
+              <p class="text-stroke-with-shadow">川西北陵</p>
+              / 伊丹西 / 市立尼崎双星
+            </td>
           </tr>
           <tr>
             <td>47</td>
