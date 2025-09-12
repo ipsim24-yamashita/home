@@ -10,6 +10,16 @@
       ]
     },
     {
+      "icon": "ic-test",
+      "size": 28,
+      "title": "中間テスト範囲表",
+      "p": [
+        "/// <a href='./docs/teiki_test/2025-S2-T1-1.pdf'>1年生</a> ///",
+        "/// <a href='./docs/teiki_test/2025-S2-T1-2.pdf'>2年生</a> ///",
+        "/// <a href='./docs/teiki_test/2025-S2-T1-3.pdf'>3年生</a> ///"
+      ]
+    },
+    {
       "icon": "ic-lightbulb",
       "size": 28,
       "title": "テキスト 訂正",
