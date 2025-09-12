@@ -22,6 +22,22 @@
     {
       "icon": "ic-lightbulb",
       "size": 28,
+      "title": "ipsim教材 の利用方法",
+      "p": [
+        "スマホでipsim教材を",
+        "閲覧(えつらん)できます",
+        "Google Drive をダウンロード",
+        "Google Drive へログイン",
+        "ipsim LINE公式アカウントから",
+        "Drive を押して共有をリクエスト",
+        "→ Google Drive の共有中",
+        "→ ipsim教材",
+        "☆自宅学習に役立ててください"
+      ]
+    },
+    {
+      "icon": "ic-lightbulb",
+      "size": 28,
       "title": "テキスト 訂正",
       "p": [
         "2乗に比例する関数",
