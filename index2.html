@@ -222,6 +222,28 @@
         パスワード: <input type="password" name="password" /><br />
         <input type="submit" value="送信" />
       </form>
+
+      <h2>リンク先へ進むにはパスワードを入力してください</h2>
+
+      <button onclick="checkPassword()">リンクへ</button>
+
+      <script>
+        function checkPassword() {
+          // パスワードをここに設定
+          var correctPassword = "333"; // 好きなパスワードに変更してください
+
+          var password = prompt("パスワードを入力してください:");
+
+          if (password === correctPassword) {
+            // パスワードが一致した場合
+            window.location.href =
+              "https://drive.google.com/drive/folders/153wFc-PrEnIIlIFbwwskTwes_qah87EZ"; // リンク先のURLに変更してください
+          } else {
+            // パスワードが一致しなかった場合
+            alert("パスワードが違います。");
+          }
+        }
+      </script>
     </main>
 
     <footer>
