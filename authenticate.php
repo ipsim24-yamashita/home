@@ -16,6 +16,6 @@ if ($submitted_password === $correct_password) {
 } else {
     // パスワードが一致しない場合、エラーメッセージを表示してログインページに戻る
     echo "パスワードが違います。";
-    echo '<br><a href="index2.html">戻る</a>';
+    echo '<br><a href="https://drive.google.com">戻る</a>';
 }
 ?>
