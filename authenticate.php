@@ -11,7 +11,7 @@ if ($submitted_password === $correct_password) {
     $_SESSION['authenticated'] = true;
     
     // 保護されたページへリダイレクト
-    header("Location: ./php/protected_page.php");
+    header("Location: protected_page.php");
     exit();
 } else {
     // パスワードが一致しない場合、エラーメッセージを表示してログインページに戻る

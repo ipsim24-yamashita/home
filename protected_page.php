@@ -17,6 +17,6 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
 <body>
     <h2>このページは保護されています</h2>
     <p>ログインに成功しました。</p>
-    <a href="./php/logout.php">ログアウト</a>
+    <a href="logout.php">ログアウト</a>
 </body>
 </html>
