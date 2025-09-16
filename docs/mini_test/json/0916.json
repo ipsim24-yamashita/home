@@ -1,0 +1,160 @@
+{
+  "baseAudioSubdir": "0916/",
+  "sections": [
+    {
+      "title": "中1",
+      "units": [
+        {
+          "title": "Unit 4 文法のまとめ (名詞の複数形, How many...?, What time...?, 命令文)",
+          "items": [
+            {
+              "ja": "あなたはウサギを何羽飼っていますか。私は3羽のウサギを飼っています。",
+              "en": "How many rabbits do you have? I have three rabbits.",
+              "stem": "en_001"
+            },
+            {
+              "ja": "何時ですか。3時です。",
+              "en": "What time is it?  It is three (o’clock).",
+              "stem": "en_002"
+            },
+            {
+              "ja": "あなたは何のスポーツをしますか。私はサッカーとテニスをします。",
+              "en": "What sports do you play? I play soccer and tennis.",
+              "stem": "en_003"
+            },
+            {
+              "ja": "前に来なさい。勇気を出して。心配しないで。",
+              "en": "Come to the front. Be brave. Don’t worry.",
+              "stem": "en_004"
+            },
+            {
+              "ja": "駅まで行きなさい。",
+              "en": "Go to the station.",
+              "stem": "en_005"
+            },
+            {
+              "ja": "あなたはどんなスポーツを楽しみますか。",
+              "en": "What sports do you enjoy?",
+              "stem": "en_006"
+            },
+            {
+              "ja": "アメリカ合衆国は何時ですか。",
+              "en": "What time is it in the United States?",
+              "stem": "en_007"
+            },
+            {
+              "ja": "彼らは車を何台持っていますか。",
+              "en": "How many cars do they have?",
+              "stem": "en_008"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "中2",
+      "units": [
+        {
+          "title": "Lesson 4 文法のまとめ (There is [are], 動名詞, have to, don't have to)",
+          "items": [
+            {
+              "ja": "図書館にはそのトピックについての本が何用があります。",
+              "en": "There are some books about the topic at the library.",
+              "stem": "en_009"
+            },
+            {
+              "ja": "この市には大きな図書館がありますか。はい、あります。いいえ、ありません。",
+              "en": "Is there a big library in this city? Yes, there is. No, there is not.",
+              "stem": "en_010"
+            },
+            {
+              "ja": "私たちは洗濯をするために水が必要です。",
+              "en": "We need water for doing the laundry.",
+              "stem": "en_011"
+            },
+            {
+              "ja": "私たちはその本を読み終えなければなりません。",
+              "en": "We have to finish reading the book.",
+              "stem": "en_012"
+            },
+            {
+              "ja": "あなたはきょうスーパーマーケットに行かなくてもよいです。",
+              "en": "You don't have to go to the supermarket today.",
+              "stem": "en_013"
+            },
+            {
+              "ja": "その箱の中に1つのボールがあります。",
+              "en": "There is a ball in the box.",
+              "stem": "en_014"
+            },
+            {
+              "ja": "私たちはその試験に向けて準備をしなくてはなりません。（7語で）",
+              "en": "We have to prepare for the exam.",
+              "stem": "en_015"
+            },
+            {
+              "ja": "その木の下に1人の女性がいますか。はい、います。",
+              "en": "Is there a woman under the tree? Yes, there is.",
+              "stem": "en_016"
+            },
+            {
+              "ja": "あなたはあの大きな箱を運ばなくてもよいです。",
+              "en": "You do not have to carry that big box. You don't have to carry that large box.",
+              "stem": "en_017"
+            },
+            {
+              "ja": "このコンピュータを使うことは難しくありません。（5語で）",
+              "en": "Using this computer isn't difficult.",
+              "stem": "en_018"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "中3",
+      "units": [
+        {
+          "title": "Lesson 4 文法のまとめ (後置修飾 動詞ing, 過去分詞, be glad to)",
+          "items": [
+            {
+              "ja": "カメラの側に立っているこの人は私の祖父です。",
+              "en": "This person standing by the camera is my grandfather.",
+              "stem": "en_019"
+            },
+            {
+              "ja": "これは、有名な監督によって監督されたコメディ映画です。",
+              "en": "This is a comedy movie directed by a famous director.",
+              "stem": "en_020"
+            },
+            {
+              "ja": "私はきょう、あなたに会えてうれしいです。",
+              "en": "I’m glad to meet you today.",
+              "stem": "en_021"
+            },
+            {
+              "ja": "サッカーを練習している男の子はマーク(Mark)です。",
+              "en": "The boy practicing soccer is Mark.",
+              "stem": "en_022"
+            },
+            {
+              "ja": "あなたは帽子(hat)をかぶっているあの女の子を知っていますか。",
+              "en": "Do you know that girl wearing a hat?",
+              "stem": "en_023"
+            },
+            {
+              "ja": "トム(Tom)はその機会を逃して悲しんでいます。",
+              "en": "Tom is sad to miss the chance.",
+              "stem": "en_024"
+            },
+            {
+              "ja": "私は父によって料理された朝食を食べました(had)。",
+              "en": "I had breakfast cooked by my father.",
+              "stem": "en_025"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
