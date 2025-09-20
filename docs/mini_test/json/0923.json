@@ -1,0 +1,175 @@
+{
+  "baseAudioSubdir": "0916/",
+  "sections": [
+    {
+      "title": "中1",
+      "units": [
+        {
+          "title": "Unit 5 文法のまとめ (三人称単数現在形、疑問文、否定文)",
+          "items": [
+            {
+              "ja": "フミヤはハワイに住んでいます。",
+              "en": "Fumiya lives in Hawaii.",
+              "stem": "en_001"
+            },
+            {
+              "ja": "フミヤはビーチの近くに住んでいますか。はい住んでいます。いいえ住んでいません。",
+              "en": "Does Fumiya live near a beach? Yes, he does. No, he doesn't.",
+              "stem": "en_002"
+            },
+            {
+              "ja": "マリアは日本語を話しません。",
+              "en": "Maria doesn't speak Japanese.",
+              "stem": "en_003"
+            },
+            {
+              "ja": "ジローは泳ぎません。",
+              "en": "Jiro doesn't swim.",
+              "stem": "en_004"
+            },
+            {
+              "ja": "カナはマンガを読みますか。",
+              "en": "Does Kana read manga?",
+              "stem": "en_005"
+            },
+            {
+              "ja": "リョーマはどこで剣道を練習しますか。",
+              "en": "Where does Ryoma practice kendo?",
+              "stem": "en_006"
+            },
+            {
+              "ja": "姉はときどき昼食を作ります。",
+              "en": "My sister sometimes makes lunch.",
+              "stem": "en_007"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "中2",
+      "units": [
+        {
+          "title": "Lesson 5 文法のまとめ (show/call/make + A + B, how to)",
+          "items": [
+            {
+              "ja": "私はあなたに写真を何枚か見せましょう。",
+              "en": "I will show you some pictures.",
+              "stem": "en_008"
+            },
+            {
+              "ja": "ベティと呼んでください。",
+              "en": "Please call me Betty.",
+              "stem": "en_009"
+            },
+            {
+              "ja": "それは私を幸せにします。",
+              "en": "It makes me happy.",
+              "stem": "en_010"
+            },
+            {
+              "ja": "あなたにそのカメラの使い方を教えましょう。",
+              "en": "I'll show you how to use the camera.",
+              "stem": "en_011"
+            },
+            {
+              "ja": "私は私の弟にカバンをあげました。(6語で)",
+              "en": "I gave my brother a bag.",
+              "stem": "en_012"
+            },
+            {
+              "ja": "私は私の弟にカバンをあげました。(7語で)",
+              "en": "I gave a bag to my brother.",
+              "stem": "en_013"
+            },
+            {
+              "ja": "その試合はみんなを興奮させるでしょう。",
+              "en": "The game will make everyone excited.",
+              "stem": "en_014"
+            },
+            {
+              "ja": "彼女は彼にこのコンピュータの使い方を見せました。(8語で)",
+              "en": "She showed him how to use this computer.",
+              "stem": "en_015"
+            },
+            {
+              "ja": " 私たちはあのパンダをキキと呼びます。",
+              "en": "We call that panda Kiki.",
+              "stem": "en_016"
+            },
+            {
+              "ja": "私はあなたにTシャツを買うつもりです。",
+              "en": "I'll buy you a T-shirt.",
+              "stem": "en_017"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "中3",
+      "units": [
+        {
+          "title": "Lesson 5 文法のまとめ (関係代名詞 that, which, who, want A to V)",
+          "items": [
+            {
+              "ja": "私たちは英語の訳があるカードを使います。",
+              "en": "We use cards which have the English translation on them.",
+              "stem": "en_018"
+            },
+            {
+              "ja": "そのアニメは見事な技をすることができるサッカー選手についてのものです。",
+              "en": "The anime is about a soccer player who can do amazing tricks.",
+              "stem": "en_019"
+            },
+            {
+              "ja": "私はあなたにこの本を英語に翻訳してもらいたいです。",
+              "en": "I want you to translate this books into English.",
+              "stem": "en_020"
+            },
+            {
+              "ja": "姫路は美しい城で有名な都市です。",
+              "en": "Himeji is a city that is famous for its beautiful castle.",
+              "stem": "en_021"
+            },
+            {
+              "ja": "あなたは私に窓をあけてほしいと思っていますか。",
+              "en": "Do you want me to open the window?",
+              "stem": "en_022"
+            },
+            {
+              "ja": "私の家族の中でいちばん料理が上手なのは私の父です。",
+              "en": "The person who cooks the best in my family is my father.",
+              "stem": "en_023"
+            },
+            {
+              "ja": "ジョーンズ先生はいちばん早く学校に来る先生です。",
+              "en": "Ms. Jones is the teacher that comes to school the earliest.",
+              "stem": "en_024"
+            },
+            {
+              "ja": "梅田に行く電車に乗りなさい。",
+              "en": "Take a train which goes to Umeda.",
+              "stem": "en_025"
+            },
+            {
+              "ja": "彼は3つの言語を使うことができる生徒です。",
+              "en": "He is a student who can use three languages.",
+              "stem": "en_026"
+            },
+            {
+              "ja": "私はあなたに私の兄に会ってもらいたいです。",
+              "en": "I want you to see meet my brother.",
+              "stem": "en_027"
+            },
+            {
+              "ja": "私はおいしいサンドイッチを売っている店を知っています。",
+              "en": "I know a shop which sells good sandwiches.",
+              "stem": "en_028"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
