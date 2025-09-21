@@ -525,3 +525,46 @@ footer {
 
 /* iPhone対策：reveal演出を完全オフ（アニメ無効） */
 .reveal, .reveal.in { opacity: 1 !important; transform: none !important; }
+
+
+/* 追記 20250921 */
+/* === 私立大学リンク：文字大きめ＆2列（自動バランス） === */
+.link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-list a {
+  display: block;
+  font-weight: 600;
+  font-size: clamp(17px, 2.1vw, 20px); /* ←文字を大きく */
+  line-height: 1.65;
+  padding: 6px 8px;                  /* タップしやすい余白 */
+  border-radius: 10px;
+}
+
+.link-list a:hover {
+  background: rgba(14, 165, 233, 0.08);
+  text-decoration: none;
+}
+
+/* 2列化＆列バランス。liの分割回避で見た目を整える */
+.link-list.columns {
+  column-count: 2;                  /* ←PC/タブレットで2列 */
+  column-gap: 28px;                 /* 列間 */
+  column-fill: balance;
+}
+
+.link-list.columns li {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  margin: 0 0 4px;
+}
+
+/* 画面が狭いときは1列に戻す */
+@media (max-width: 760px) {
+  .link-list.columns {
+    column-count: 1;
+  }
+}
