@@ -500,7 +500,7 @@ footer {
 
 .calendar-wrapper iframe {
   position: absolute;
-  top: 0,
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -527,9 +527,8 @@ footer {
 .reveal, .reveal.in { opacity: 1 !important; transform: none !important; }
 
 
-/* 追記 20250921（リンク集：Gridで行優先／3列） */
-
-/* ベース：見た目と可読性 */
+/* 追記 20250921 */
+/* === 私立大学リンク：文字大きめ＆2列（自動バランス） === */
 .link-list {
   list-style: none;
   margin: 0;
@@ -539,9 +538,9 @@ footer {
 .link-list a {
   display: block;
   font-weight: 600;
-  font-size: clamp(17px, 2.1vw, 20px);
+  font-size: clamp(17px, 2.1vw, 20px); /* ←文字を大きく */
   line-height: 1.65;
-  padding: 6px 8px;
+  padding: 6px 8px;                  /* タップしやすい余白 */
   border-radius: 10px;
 }
 
@@ -550,72 +549,77 @@ footer {
   text-decoration: none;
 }
 
-/* === 行優先の3列（PC:3 / タブレット:2 / スマホ:1）=== */
+/* 2列化＆列バランス。liの分割回避で見た目を整える */
 .link-list.columns {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px 28px;   /* 行間8px / 列間28px */
-  width: 100%;
+  column-count: 3;                  /* ←PC/タブレットで2列 */
+  column-gap: 28px;                 /* 列間 */
+  column-fill: balance;
 }
 
 .link-list.columns li {
-  margin: 0;       /* multi-column用指定は不要 */
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  margin: 0 0 4px;
 }
 
-@media (max-width: 1024px) {
+/* 画面が狭いときは1列に戻す */
+@media (max-width: 760px) {
   .link-list.columns {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-@media (max-width: 640px) {
-  .link-list.columns {
-    grid-template-columns: 1fr;
+    column-count: 1;
   }
 }
 
-/* --- #schoollist 配下（必要なら個別調整を維持） --- */
+/* --- iPad/Safari対応：2列＆文字拡大（優先度UP＋WebKitプレフィックス） --- */
 section#schoollist .link-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 section#schoollist .link-list a {
   display: block;
   font-weight: 600;
-  font-size: clamp(18px, 2.2vw, 21px); /* 個別に少し大きめ */
+  font-size: clamp(18px, 2.2vw, 21px);
   line-height: 1.7;
   padding: 6px 8px;
   border-radius: 10px;
 }
+
 section#schoollist .link-list a:hover {
   background: rgba(14,165,233,0.08);
   text-decoration: none;
 }
 
-/* #schoollist も行優先Gridで統一 */
+/* 3列（Safariは -webkit- が必要な場合あり） */
 section#schoollist .link-list.columns {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px 28px;
+  -webkit-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 28px;
+  column-gap: 28px;
+  /* Safariのレイアウト安定化用 */
   width: 100%;
 }
-section#schoollist .link-list.columns li { margin: 0; }
 
-@media (max-width: 1024px) {
-  section#schoollist .link-list.columns {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-@media (max-width: 640px) {
-  section#schoollist .link-list.columns {
-    grid-template-columns: 1fr;
-  }
+/* 列内での分割回避（Safari向け指定を含む） */
+section#schoollist .link-list.columns li {
+  break-inside: avoid-column;
+  -webkit-column-break-inside: avoid;
+  margin: 0 0 4px;
 }
 
-/* === 見出し調整：h4を小さく（h1の約1/2）=== */
+/* 画面が狭いときは1列 */
+@media (max-width: 760px) {
+  section#schoollist .link-list.columns {
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+/* === 見出し調整：h4をh1の約1/2サイズに === */
 #schoollist h4.section-title {
+  /* h1: clamp(32px, 4vw, 56px) の約半分に相当 */
   font-size: clamp(16px, 2vw, 28px);
-  font-weight: 600;
+  font-weight: 600;         /* 視認性を少し上げる（お好みで 500/700 に） */
   line-height: 1.25;
-  text-shadow: none;
+  text-shadow: none;        /* 影を弱めたい場合は残してOK */
 }
