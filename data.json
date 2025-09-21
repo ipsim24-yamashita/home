@@ -97,7 +97,18 @@
     {
       "icon": "ic-lines",
       "size": 28,
-      "title": "解説",
+      "title": "生物解説",
+      "p": [
+        "3年 中間テスト範囲",
+        "生物遺伝分野 学校プリント解説",
+        "/// <a href='./docs/kaisetsu/iden_p.pdf'>問題</a> ///",
+        "/// <a href='./docs/kaisetsu/iden_q.pdf'>解説</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "数学解説",
       "p": [
         "/// <a href='./docs/moshi/kaisetsu2508_math.pdf'>中3 8月模擬試験 数学</a> ///"
       ]
