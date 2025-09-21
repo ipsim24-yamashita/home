@@ -568,3 +568,49 @@ footer {
     column-count: 1;
   }
 }
+
+/* --- iPad/Safari対応：2列＆文字拡大（優先度UP＋WebKitプレフィックス） --- */
+section#private-univ .link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section#private-univ .link-list a {
+  display: block;
+  font-weight: 600;
+  font-size: clamp(18px, 2.2vw, 21px);
+  line-height: 1.7;
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+
+section#private-univ .link-list a:hover {
+  background: rgba(14,165,233,0.08);
+  text-decoration: none;
+}
+
+/* 2列（Safariは -webkit- が必要な場合あり） */
+section#private-univ .link-list.columns {
+  -webkit-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 28px;
+  column-gap: 28px;
+  /* Safariのレイアウト安定化用 */
+  width: 100%;
+}
+
+/* 列内での分割回避（Safari向け指定を含む） */
+section#private-univ .link-list.columns li {
+  break-inside: avoid-column;
+  -webkit-column-break-inside: avoid;
+  margin: 0 0 4px;
+}
+
+/* 画面が狭いときは1列 */
+@media (max-width: 760px) {
+  section#private-univ .link-list.columns {
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
