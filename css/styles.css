@@ -551,7 +551,7 @@ footer {
 
 /* 2列化＆列バランス。liの分割回避で見た目を整える */
 .link-list.columns {
-  column-count: 2;                  /* ←PC/タブレットで2列 */
+  column-count: 3;                  /* ←PC/タブレットで2列 */
   column-gap: 28px;                 /* 列間 */
   column-fill: balance;
 }
