@@ -1,11 +1,18 @@
 :root {
-  --bg: #0b1220;          /* 背景(ダーク) */
-  --fg: #0f172a;          /* 背景(ライト) */
-  --text: #0b1324;        /* テキスト(ライト) */
-  --text-dim: #475569;    /* テキスト薄 */
-  --brand: #0ea5e9;       /* メインカラー */
-  --brand-2: #22c55e;     /* アクセント */
-  --card: #ffffff;        /* カード背景 */
+  --bg: #0b1220;
+  /* 背景(ダーク) */
+  --fg: #0f172a;
+  /* 背景(ライト) */
+  --text: #0b1324;
+  /* テキスト(ライト) */
+  --text-dim: #475569;
+  /* テキスト薄 */
+  --brand: #0ea5e9;
+  /* メインカラー */
+  --brand-2: #22c55e;
+  /* アクセント */
+  --card: #ffffff;
+  /* カード背景 */
   --shadow: 0 10px 25px rgba(2, 6, 23, 0.12);
   --radius: 16px;
 }
@@ -266,17 +273,6 @@ h1 {
   text-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
 }
 
-/* ※ h4は全体デザイン用。リンク集の細かい上書きは link-styles.css 側で行います */
-h4 {
-  font-family: "Poppins", system-ui, sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.3px;
-  line-height: 1.15;
-  font-size: clamp(32px, 4vw, 56px);
-  margin: 16px 0 8px;
-  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
-}
-
 .sub {
   font-size: clamp(16px, 2.2vw, 20px);
   opacity: 0.95;
@@ -510,7 +506,7 @@ footer {
   height: 100%;
 }
 
-/* --- ARIAで意味付けする“点なしリスト”（本文汎用。リンク集専用は link-styles.css） --- */
+/* --- ARIAで意味付けする“点なしリスト” --- */
 .plain-list {
   display: grid;
   gap: .35rem;
@@ -528,8 +524,102 @@ footer {
 }
 
 /* iPhone対策：reveal演出を完全オフ（アニメ無効） */
-.reveal,
-.reveal.in {
-  opacity: 1 !important;
-  transform: none !important;
+.reveal, .reveal.in { opacity: 1 !important; transform: none !important; }
+
+
+/* 追記 20250921 */
+/* === 私立大学リンク：文字大きめ＆2列（自動バランス） === */
+.link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-list a {
+  display: block;
+  font-weight: 600;
+  font-size: clamp(17px, 2.1vw, 20px); /* ←文字を大きく */
+  line-height: 1.65;
+  padding: 6px 8px;                  /* タップしやすい余白 */
+  border-radius: 10px;
+}
+
+.link-list a:hover {
+  background: rgba(14, 165, 233, 0.08);
+  text-decoration: none;
+}
+
+/* 2列化＆列バランス。liの分割回避で見た目を整える */
+.link-list.columns {
+  column-count: 3;                  /* ←PC/タブレットで2列 */
+  column-gap: 28px;                 /* 列間 */
+  column-fill: balance;
+}
+
+.link-list.columns li {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  margin: 0 0 4px;
+}
+
+/* 画面が狭いときは1列に戻す */
+@media (max-width: 760px) {
+  .link-list.columns {
+    column-count: 1;
+  }
+}
+
+/* --- iPad/Safari対応：2列＆文字拡大（優先度UP＋WebKitプレフィックス） --- */
+section#private-univ .link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section#private-univ .link-list a {
+  display: block;
+  font-weight: 600;
+  font-size: clamp(18px, 2.2vw, 21px);
+  line-height: 1.7;
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+
+section#private-univ .link-list a:hover {
+  background: rgba(14,165,233,0.08);
+  text-decoration: none;
+}
+
+/* 2列（Safariは -webkit- が必要な場合あり） */
+section#private-univ .link-list.columns {
+  -webkit-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 28px;
+  column-gap: 28px;
+  /* Safariのレイアウト安定化用 */
+  width: 100%;
+}
+
+/* 列内での分割回避（Safari向け指定を含む） */
+section#private-univ .link-list.columns li {
+  break-inside: avoid-column;
+  -webkit-column-break-inside: avoid;
+  margin: 0 0 4px;
+}
+
+/* 画面が狭いときは1列 */
+@media (max-width: 760px) {
+  section#private-univ .link-list.columns {
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+/* === 見出し調整：h4をh1の約1/2サイズに === */
+#public-univ h4.section-title {
+  /* h1: clamp(32px, 4vw, 56px) の約半分に相当 */
+  font-size: clamp(16px, 2vw, 28px);
+  font-weight: 600;         /* 視認性を少し上げる（お好みで 500/700 に） */
+  line-height: 1.25;
+  text-shadow: none;        /* 影を弱めたい場合は残してOK */
 }
