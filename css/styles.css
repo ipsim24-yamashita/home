@@ -570,13 +570,13 @@ footer {
 }
 
 /* --- iPad/Safari対応：2列＆文字拡大（優先度UP＋WebKitプレフィックス） --- */
-section#private-univ .link-list {
+section#schoollist .link-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-section#private-univ .link-list a {
+section#schoollist .link-list a {
   display: block;
   font-weight: 600;
   font-size: clamp(18px, 2.2vw, 21px);
@@ -585,13 +585,13 @@ section#private-univ .link-list a {
   border-radius: 10px;
 }
 
-section#private-univ .link-list a:hover {
+section#schoollist .link-list a:hover {
   background: rgba(14,165,233,0.08);
   text-decoration: none;
 }
 
 /* 2列（Safariは -webkit- が必要な場合あり） */
-section#private-univ .link-list.columns {
+section#schoollist .link-list.columns {
   -webkit-column-count: 2;
   column-count: 2;
   -webkit-column-gap: 28px;
@@ -601,7 +601,7 @@ section#private-univ .link-list.columns {
 }
 
 /* 列内での分割回避（Safari向け指定を含む） */
-section#private-univ .link-list.columns li {
+section#schoollist .link-list.columns li {
   break-inside: avoid-column;
   -webkit-column-break-inside: avoid;
   margin: 0 0 4px;
@@ -609,14 +609,14 @@ section#private-univ .link-list.columns li {
 
 /* 画面が狭いときは1列 */
 @media (max-width: 760px) {
-  section#private-univ .link-list.columns {
+  section#schoollist .link-list.columns {
     -webkit-column-count: 1;
     column-count: 1;
   }
 }
 
 /* === 見出し調整：h4をh1の約1/2サイズに === */
-#public-univ h4.section-title {
+#schoollist h4.section-title {
   /* h1: clamp(32px, 4vw, 56px) の約半分に相当 */
   font-size: clamp(16px, 2vw, 28px);
   font-weight: 600;         /* 視認性を少し上げる（お好みで 500/700 に） */
