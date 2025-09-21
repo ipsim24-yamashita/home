@@ -273,16 +273,6 @@ h1 {
   text-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
 }
 
-h4 {
-  font-family: "Poppins", system-ui, sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.3px;
-  line-height: 1.15;
-  font-size: clamp(32px, 4vw, 56px);
-  margin: 16px 0 8px;
-  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
-}
-
 .sub {
   font-size: clamp(16px, 2.2vw, 20px);
   opacity: 0.95;
@@ -623,4 +613,13 @@ section#private-univ .link-list.columns li {
     -webkit-column-count: 1;
     column-count: 1;
   }
+}
+
+/* === 見出し調整：h4をh1の約1/2サイズに === */
+#public-univ h4.section-title {
+  /* h1: clamp(32px, 4vw, 56px) の約半分に相当 */
+  font-size: clamp(16px, 2vw, 28px);
+  font-weight: 600;         /* 視認性を少し上げる（お好みで 500/700 に） */
+  line-height: 1.25;
+  text-shadow: none;        /* 影を弱めたい場合は残してOK */
 }
