@@ -23,7 +23,7 @@
         "・・・",
         "テスト範囲の問題を集めました",
         "繰り返し解きましょう",
-        "/// <span class='highlight-bluebold'><a href='https://drive.google.com/drive/folders/1-AFNfbeTwUdsb22F4a-TpWm2Db1FVCz8?usp=drive_link'>必修_切り抜き(生徒限定)</a></span> ///"
+        "/// <a href='https://drive.google.com/drive/folders/1-AFNfbeTwUdsb22F4a-TpWm2Db1FVCz8?usp=drive_link'>必修_切り抜き<span class='highlight-redbold'><生徒限定></span></a> ///"
       ]
     },
     {
@@ -31,7 +31,7 @@
       "size": 28,
       "title": "ipsim教材 の利用方法",
       "p": [
-        "<span class='highlight-bluebold'><< 生徒限定 >></span>",
+        "<span class='highlight-redbold'><< 生徒限定 >></span>",
         "スマホでipsim教材を",
         "閲覧(えつらん)できます!!",
         "Googleアカウントが必要です",
