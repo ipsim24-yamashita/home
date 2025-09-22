@@ -23,7 +23,7 @@
         "・・・",
         "テスト範囲の問題を集めました",
         "繰り返し解きましょう",
-        "/// <a href='https://drive.google.com/drive/folders/1-AFNfbeTwUdsb22F4a-TpWm2Db1FVCz8?usp=drive_link'>必修_切り抜き<span class='highlight-redbold'><生徒限定></span></a> ///"
+        "/// <a href='https://drive.google.com/drive/folders/1-AFNfbeTwUdsb22F4a-TpWm2Db1FVCz8?usp=drive_link'>必修_切り抜き<span class='highlight-redbold'><<生徒限定>></span></a> ///"
       ]
     },
     {
@@ -44,7 +44,7 @@
         "そのあと",
         "/// <a href='https://drive.google.com/drive/folders/153wFc-PrEnIIlIFbwwskTwes_qah87EZ'>このリンク(生徒限定)</a> ///  を押して",
         "共有をリクエスト",
-        "【<span class='highlight-redbold'>gmailアドレスをipsimへLINEで伝える</span>】",
+        "<span class='highlight-redbold'>gmailアドレスをipsimへLINEで伝える</span>",
         "〜スタッフが承認〜",
         "そのあと",
         "→ Google Drive を起動",
