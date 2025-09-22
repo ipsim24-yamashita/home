@@ -222,3 +222,14 @@ code {
 .page {
   page-break-after: always;
 }
+
+/* 本文を大きく読みやすく */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI",
+    "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+  font-size: 18px; /* ← 本文を大きく */
+  line-height: 1.6; /* ← 読みやすい行間 */
+  max-width: 80%; /* ← 横幅を画面の8割に制限 */
+  margin: 0 auto; /* ← 中央寄せ */
+  padding: 0 12px;
+}
