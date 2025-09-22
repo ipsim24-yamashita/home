@@ -668,7 +668,7 @@ section#schoollist .link-list.columns li {
 }
 
 /* カードの中身を緑字太文字にする */
-.highlight-bluebold {
+.highlight-greenbold {
   color: green;
   font-weight: bold;
 }
