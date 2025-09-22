@@ -37,7 +37,7 @@
     <title>ipsim | リンク</title>
 
     <!-- 外部CSS -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css?v=20250922a" />
   </head>
 
   <body>
@@ -316,16 +316,16 @@
                 <line x1="8" y1="0" x2="12" y2="2"/>
               </g>`
             );
-            case "ic-test":
-              return wrap(
-                `<g transform="translate(0,7.636) scale(0.1090909)" role="img" aria-label="TEST">
+          case "ic-test":
+            return wrap(
+              `<g transform="translate(0,7.636) scale(0.1090909)" role="img" aria-label="TEST">
                   <text x="110" y="40" text-anchor="middle" dominant-baseline="middle"
                         font-family='system-ui, -apple-system, "Noto Sans JP", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
                         font-size="80" font-weight="700" fill="currentColor" letter-spacing="2">
                     TEST
                   </text>
                 </g>`
-              );
+            );
           case "ic-lines":
             return wrap(
               `<g transform="translate(12,12) rotate(-45)" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"><line x1="-9" y1="0" x2="9" y2="0"/><line x1="-5.4" y1="-3.94" x2="5.4" y2="-3.94"/><line x1="-5.4" y1="3.94" x2="5.4" y2="3.94"/></g>`
