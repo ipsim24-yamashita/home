@@ -110,6 +110,7 @@
       "size": 28,
       "title": "数学解説",
       "p": [
+        "/// <a href='./docs/kaisetsu/root7.pdf'>教科書p78 平方根の整数部分</a> ///",
         "/// <a href='./docs/moshi/kaisetsu2508_math.pdf'>中3 8月模擬試験 数学</a> ///"
       ]
     },
