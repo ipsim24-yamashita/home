@@ -6,10 +6,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>
-      個別進学塾 ipsim 山下教室 / 猪名川パークプラザ教室 |
-      川西市/猪名川町の個別指導
-    </title>
     <meta
       name="description"
       content="川西市・猪名川町の個別進学塾 ipsim。東谷中・猪名川中エリアを中心に小中高の個別指導。定期テスト・実力テスト・高校入試に対応。山下教室／猪名川パークプラザ教室の営業時間・料金・アクセスをご案内。"
@@ -39,6 +35,45 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image:alt" content="個別進学塾 ipsimのロゴと教室案内" />
     <meta name="theme-color" content="#22c55e" />
+
+    <title>
+      個別進学塾 ipsim 山下教室 / 猪名川パークプラザ教室 |
+      川西市/猪名川町の個別指導
+    </title>
+
+    <!-- ヒーロー画像 読み込み高速化 -->
+    <script>
+      function startHero() {
+        const slides = document.querySelectorAll("#hero-slides .slide");
+        if (!slides.length) return;
+
+        let i = 0;
+        const NORMAL = 3500; // 通常の切替間隔
+        const FIRST_DELAY = 1200; // 初回だけ短め
+
+        function next() {
+          slides[i].classList.replace("opacity-100", "opacity-0");
+          i = (i + 1) % slides.length;
+          slides[i].classList.replace("opacity-0", "opacity-100");
+        }
+
+        // 初期描画が終わってから起動（ちらつき防止）
+        requestAnimationFrame(() => {
+          setTimeout(() => {
+            next();
+            setInterval(next, NORMAL);
+          }, FIRST_DELAY);
+        });
+      }
+    </script>
+
+    <!-- ヒーロー画像 読み込み高速化 -->
+    <link
+      rel="preload"
+      as="image"
+      href="pics/room01.jpg"
+      fetchpriority="high"
+    />
 
     <!-- スタイル -->
     <style>
@@ -939,5 +974,22 @@
         </li>
       </ul>
     </footer>
+
+    <!-- ヒーロー画像 読み込み高速化 -->
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        startHero();
+      });
+    </script>
+
+    <!-- ヒーロー画像 読み込み高速化 -->
+    <script>
+      // startHero()を呼ぶ前にチェック
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+          return;
+        startHero();
+      });
+    </script>
   </body>
 </html>
