@@ -1,284 +1,567 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="印象的なヒーロー画像から始まる、シンプルでおしゃれなランディングページの下書きテンプレート。" />
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#0ea5e9" />
-  
-  <!-- Open Graph / Twitter (必要に応じて編集) -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content=" " />
-  <meta property="og:description" content=" " /> 
-  <meta property="og:image" content="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop" />
-  <meta property="og:locale" content="ja_JP" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="印象的なヒーロー画像から始まる、シンプルでおしゃれなランディングページの下書きテンプレート。"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0ea5e9" />
 
-  <!-- Google Fonts（任意）-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Open Graph / Twitter (必要に応じて編集) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content=" " />
+    <meta property="og:description" content=" " />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop"
+    />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
 
-  <title> </title>
+    <!-- Google Fonts（任意）-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <style>
-    :root {
-      --bg: #0b1220;           /* 背景(ダーク) */
-      --fg: #0f172a;           /* 背景(ライト) */
-      --text: #0b1324;         /* テキスト(ライト) */
-      --text-dim: #475569;     /* テキスト薄 */
-      --brand: #0ea5e9;        /* メインカラー */
-      --brand-2: #22c55e;      /* アクセント */
-      --card: #ffffff;         /* カード背景 */
-      --shadow: 0 10px 25px rgba(2, 6, 23, 0.12);
-      --radius: 16px;
-    }
+    <title> </title>
 
-    @media (prefers-color-scheme: dark) {
+    <style>
       :root {
-        --fg: #0b1220;
-        --text: #e5e7eb;
-        --text-dim: #9ca3af;
-        --card: #0f172a;
-        --shadow: 0 10px 25px rgba(0,0,0,0.35);
+        --bg: #0b1220; /* 背景(ダーク) */
+        --fg: #0f172a; /* 背景(ライト) */
+        --text: #0b1324; /* テキスト(ライト) */
+        --text-dim: #475569; /* テキスト薄 */
+        --brand: #0ea5e9; /* メインカラー */
+        --brand-2: #22c55e; /* アクセント */
+        --card: #ffffff; /* カード背景 */
+        --shadow: 0 10px 25px rgba(2, 6, 23, 0.12);
+        --radius: 16px;
       }
-    }
 
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body {
-      margin: 0;
-      font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Poppins', sans-serif;
-      color: var(--text);
-      background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 60%, #eef2ff 100%);
-    }
-    @media (prefers-color-scheme: dark) {
-      body { background: radial-gradient(1200px 600px at 50% -10%, #0b1220 0%, #020617 60%, #000 100%); }
-    }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fg: #0b1220;
+          --text: #e5e7eb;
+          --text-dim: #9ca3af;
+          --card: #0f172a;
+          --shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+        }
+      }
 
-    /* アクセシビリティ */
-    a { color: var(--brand); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    :focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; border-radius: 8px; }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic",
+          Meiryo, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+          "Poppins", sans-serif;
+        color: var(--text);
+        background: linear-gradient(
+          180deg,
+          #f8fafc 0%,
+          #f1f5f9 60%,
+          #eef2ff 100%
+        );
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: radial-gradient(
+            1200px 600px at 50% -10%,
+            #0b1220 0%,
+            #020617 60%,
+            #000 100%
+          );
+        }
+      }
 
-    /* コンテナ */
-    .container {
-      width: min(1100px, 92vw);
-      margin: 0 auto;
-    }
+      /* アクセシビリティ */
+      a {
+        color: var(--brand);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      :focus-visible {
+        outline: 3px solid var(--brand);
+        outline-offset: 2px;
+        border-radius: 8px;
+      }
 
-    /* スキップリンク */
-    .skip-link {
-      position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;
-    }
-    .skip-link:focus { left: 16px; top: 16px; width: auto; height: auto; padding: 8px 12px; background: var(--brand); color: #fff; border-radius: 8px; z-index: 9999; }
+      /* コンテナ */
+      .container {
+        width: min(1100px, 92vw);
+        margin: 0 auto;
+      }
 
-    /* ヘッダー */
-    header {
-      position: sticky; top: 0; z-index: 50;
-      background: rgba(255,255,255,0.6);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(2,6,23,0.06);
-    }
-    @media (prefers-color-scheme: dark) {
-      header { background: rgba(2,6,23,0.55); border-bottom: 1px solid rgba(255,255,255,0.06); }
-    }
-    .nav {
-      display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0;
-    }
-    .brand {
-      display: inline-flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .2px; color: var(--text);
-    }
-    .brand .logo { width: 28px; height: 28px; border-radius: 10px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); box-shadow: var(--shadow); }
+      /* スキップリンク */
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+      .skip-link:focus {
+        left: 16px;
+        top: 16px;
+        width: auto;
+        height: auto;
+        padding: 8px 12px;
+        background: var(--brand);
+        color: #fff;
+        border-radius: 8px;
+        z-index: 9999;
+      }
 
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; align-items: center; }
-    nav a { font-weight: 500; color: var(--text-dim); }
-    nav a:hover { color: var(--text); }
+      /* ヘッダー */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(2, 6, 23, 0.06);
+      }
+      @media (prefers-color-scheme: dark) {
+        header {
+          background: rgba(2, 6, 23, 0.55);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 14px 0;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        color: var(--text);
+      }
+      .brand .logo {
+        width: 28px;
+        height: 28px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, var(--brand), var(--brand-2));
+        box-shadow: var(--shadow);
+      }
 
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px; padding: 12px 16px; border-radius: 999px; border: 1px solid rgba(2,6,23,.08);
-      background: linear-gradient(180deg, #ffffff, #f8fafc);
-      box-shadow: var(--shadow);
-      color: var(--text); font-weight: 600; letter-spacing: .2px;
-      transition: transform .15s ease, box-shadow .15s ease, background .3s ease;
-    }
-    .btn:hover { transform: translateY(-1px); }
-    .btn-primary { background: linear-gradient(135deg, var(--brand), #38bdf8); color: #fff; border-color: transparent; }
-    .btn-primary:hover { filter: brightness(1.05); }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      nav a {
+        font-weight: 500;
+        color: var(--text-dim);
+      }
+      nav a:hover {
+        color: var(--text);
+      }
 
-    /* モバイルメニュー */
-    .menu-toggle { display: none; }
-    @media (max-width: 760px) {
-      .menu-toggle { display: inline-flex; }
-      nav ul { display: none; position: absolute; right: 16px; top: 64px; background: var(--card); padding: 12px; border-radius: 12px; box-shadow: var(--shadow); flex-direction: column; width: 220px; border: 1px solid rgba(2,6,23,.06); }
-      nav ul.open { display: flex; }
-    }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 16px;
+        border-radius: 999px;
+        border: 1px solid rgba(2, 6, 23, 0.08);
+        background: linear-gradient(180deg, #ffffff, #f8fafc);
+        box-shadow: var(--shadow);
+        color: var(--text);
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        transition: transform 0.15s ease, box-shadow 0.15s ease,
+          background 0.3s ease;
+      }
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+      .btn-primary {
+        background: linear-gradient(135deg, var(--brand), #38bdf8);
+        color: #fff;
+        border-color: transparent;
+      }
+      .btn-primary:hover {
+        filter: brightness(1.05);
+      }
 
-    /* ヒーロー */
-    .hero {
-      position: relative; min-height: 72vh; display: grid; place-items: center; overflow: clip; isolation: isolate;
-      border-bottom-left-radius: 28px; border-bottom-right-radius: 28px;
-    }
-    .hero__bg {
-      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: saturate(1.05) contrast(1.05);
-      transform: scale(1.02);
-    }
-    .hero::before {
-      content: ""; position: absolute; inset: 0; background:
-        radial-gradient(1200px 500px at 70% -10%, rgba(14,165,233,.45), rgba(14,165,233,0) 60%),
-        linear-gradient(180deg, rgba(2,6,23,.15), rgba(2,6,23,.55));
-      mix-blend-mode: multiply; pointer-events: none;
-    }
-    .hero .container { position: relative; z-index: 2; text-align: center; color: #fff; }
-    .eyebrow { display: inline-block; padding: 6px 10px; border-radius: 999px; background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.2); backdrop-filter: blur(6px); font-size: 14px; letter-spacing: .2px; }
-    h1 {
-      font-family: 'Poppins', system-ui, sans-serif; font-weight: 700; letter-spacing: .3px; line-height: 1.15;
-      font-size: clamp(32px, 4vw, 56px); margin: 16px 0 8px;
-      text-shadow: 0 8px 30px rgba(0,0,0,.35);
-    }
-    .sub {
-      font-size: clamp(16px, 2.2vw, 20px); opacity: .95; max-width: 800px; margin: 0 auto 22px; line-height: 1.8;
-      text-shadow: 0 6px 20px rgba(0,0,0,.35);
-    }
-    .hero-actions { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+      /* モバイルメニュー */
+      .menu-toggle {
+        display: none;
+      }
+      @media (max-width: 760px) {
+        .menu-toggle {
+          display: inline-flex;
+        }
+        nav ul {
+          display: none;
+          position: absolute;
+          right: 16px;
+          top: 64px;
+          background: var(--card);
+          padding: 12px;
+          border-radius: 12px;
+          box-shadow: var(--shadow);
+          flex-direction: column;
+          width: 220px;
+          border: 1px solid rgba(2, 6, 23, 0.06);
+        }
+        nav ul.open {
+          display: flex;
+        }
+      }
 
-    /* セクション共通 */
-    section { padding: 64px 0; }
-    .section-title { font-size: clamp(22px, 2.8vw, 32px); margin: 0 0 18px; letter-spacing: .2px; }
-    .section-lead { color: var(--text-dim); margin-bottom: 28px; }
+      /* ヒーロー */
+      .hero {
+        position: relative;
+        min-height: 72vh;
+        display: grid;
+        place-items: center;
+        overflow: clip;
+        isolation: isolate;
+        border-bottom-left-radius: 28px;
+        border-bottom-right-radius: 28px;
+      }
+      .hero__bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(1.05) contrast(1.05);
+        transform: scale(1.02);
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+            1200px 500px at 70% -10%,
+            rgba(14, 165, 233, 0.45),
+            rgba(14, 165, 233, 0) 60%
+          ),
+          linear-gradient(180deg, rgba(2, 6, 23, 0.15), rgba(2, 6, 23, 0.55));
+        mix-blend-mode: multiply;
+        pointer-events: none;
+      }
+      .hero .container {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: #fff;
+      }
+      .eyebrow {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.18);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(6px);
+        font-size: 14px;
+        letter-spacing: 0.2px;
+      }
+      h1 {
+        font-family: "Poppins", system-ui, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        line-height: 1.15;
+        font-size: clamp(32px, 4vw, 56px);
+        margin: 16px 0 8px;
+        text-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+      }
+      .sub {
+        font-size: clamp(16px, 2.2vw, 20px);
+        opacity: 0.95;
+        max-width: 800px;
+        margin: 0 auto 22px;
+        line-height: 1.8;
+        text-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+      }
+      .hero-actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
 
-    /* カードグリッド */
-    .grid { display: grid; gap: 18px; }
-    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    @media (max-width: 960px) { .grid-3 { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 640px) { .grid-3 { grid-template-columns: 1fr; } }
+      /* セクション共通 */
+      section {
+        padding: 64px 0;
+      }
+      .section-title {
+        font-size: clamp(22px, 2.8vw, 32px);
+        margin: 0 0 18px;
+        letter-spacing: 0.2px;
+      }
+      .section-lead {
+        color: var(--text-dim);
+        margin-bottom: 28px;
+      }
 
-    .card {
-      background: var(--card); border: 1px solid rgba(2,6,23,.06); border-radius: var(--radius); box-shadow: var(--shadow);
-      padding: 20px; transition: transform .2s ease, box-shadow .2s ease; overflow: hidden; position: relative;
-    }
-    .card:hover { transform: translateY(-3px); }
-    .icon {
-      width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center; background: linear-gradient(135deg, rgba(14,165,233,.15), rgba(34,197,94,.15)); border: 1px solid rgba(2,6,23,.06);
-    }
+      /* カードグリッド */
+      .grid {
+        display: grid;
+        gap: 18px;
+      }
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      @media (max-width: 960px) {
+        .grid-3 {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 640px) {
+        .grid-3 {
+          grid-template-columns: 1fr;
+        }
+      }
 
-    /* 2カラム */
-    .cols { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items: center; }
-    @media (max-width: 900px) { .cols { grid-template-columns: 1fr; } }
-    .mock {
-      aspect-ratio: 16/10; background: linear-gradient(180deg, #e2e8f0, #f8fafc); border: 1px solid rgba(2,6,23,.06);
-      border-radius: 16px; box-shadow: var(--shadow); position: relative; overflow: hidden;
-    }
-    @media (prefers-color-scheme: dark) { .mock { background: linear-gradient(180deg, #0b1220, #0f172a); } }
+      .card {
+        background: var(--card);
+        border: 1px solid rgba(2, 6, 23, 0.06);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 20px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        overflow: hidden;
+        position: relative;
+      }
+      .card:hover {
+        transform: translateY(-3px);
+      }
+      .icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(
+          135deg,
+          rgba(14, 165, 233, 0.15),
+          rgba(34, 197, 94, 0.15)
+        );
+        border: 1px solid rgba(2, 6, 23, 0.06);
+      }
 
-    /* CTA */
-    .cta {
-      background: radial-gradient(600px 200px at 10% 0%, rgba(14,165,233,.15), rgba(14,165,233,0) 70%),
-                  radial-gradient(600px 200px at 90% 0%, rgba(34,197,94,.15), rgba(34,197,94,0) 70%),
-                  linear-gradient(180deg, #ffffff, #f8fafc);
-      border-top: 1px solid rgba(2,6,23,.06);
-      border-bottom: 1px solid rgba(2,6,23,.06);
-    }
-    @media (prefers-color-scheme: dark) {
-      .cta { background: radial-gradient(600px 200px at 10% 0%, rgba(14,165,233,.18), rgba(14,165,233,0) 70%),
-                      radial-gradient(600px 200px at 90% 0%, rgba(34,197,94,.18), rgba(34,197,94,0) 70%),
-                      linear-gradient(180deg, #0b1220, #020617); }
-    }
+      /* 2カラム */
+      .cols {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 28px;
+        align-items: center;
+      }
+      @media (max-width: 900px) {
+        .cols {
+          grid-template-columns: 1fr;
+        }
+      }
+      .mock {
+        aspect-ratio: 16/10;
+        background: linear-gradient(180deg, #e2e8f0, #f8fafc);
+        border: 1px solid rgba(2, 6, 23, 0.06);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+      }
+      @media (prefers-color-scheme: dark) {
+        .mock {
+          background: linear-gradient(180deg, #0b1220, #0f172a);
+        }
+      }
 
-    /* フッター */
-    footer { padding: 44px 0; color: var(--text-dim); }
-    .footer-grid { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 18px; }
-    @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr; text-align: center; } }
-    .sns { display: flex; gap: 12px; }
-    .sns a { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 10px; background: var(--card); border: 1px solid rgba(2,6,23,.06); box-shadow: var(--shadow); }
+      /* CTA */
+      .cta {
+        background: radial-gradient(
+            600px 200px at 10% 0%,
+            rgba(14, 165, 233, 0.15),
+            rgba(14, 165, 233, 0) 70%
+          ),
+          radial-gradient(
+            600px 200px at 90% 0%,
+            rgba(34, 197, 94, 0.15),
+            rgba(34, 197, 94, 0) 70%
+          ),
+          linear-gradient(180deg, #ffffff, #f8fafc);
+        border-top: 1px solid rgba(2, 6, 23, 0.06);
+        border-bottom: 1px solid rgba(2, 6, 23, 0.06);
+      }
+      @media (prefers-color-scheme: dark) {
+        .cta {
+          background: radial-gradient(
+              600px 200px at 10% 0%,
+              rgba(14, 165, 233, 0.18),
+              rgba(14, 165, 233, 0) 70%
+            ),
+            radial-gradient(
+              600px 200px at 90% 0%,
+              rgba(34, 197, 94, 0.18),
+              rgba(34, 197, 94, 0) 70%
+            ),
+            linear-gradient(180deg, #0b1220, #020617);
+        }
+      }
 
-    /* アニメーション（Intersection Observer） */
-    .reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
-    .reveal.in { opacity: 1; transform: translateY(0); }
+      /* フッター */
+      footer {
+        padding: 44px 0;
+        color: var(--text-dim);
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 18px;
+      }
+      @media (max-width: 720px) {
+        .footer-grid {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+      }
+      .sns {
+        display: flex;
+        gap: 12px;
+      }
+      .sns a {
+        display: inline-grid;
+        place-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: var(--card);
+        border: 1px solid rgba(2, 6, 23, 0.06);
+        box-shadow: var(--shadow);
+      }
 
-    /* 省エネ対応 */
-    @media (prefers-reduced-motion: reduce) {
-      .btn, .card { transition: none; }
-      .reveal { opacity: 1; transform: none; }
-    }
-    
-  </style>
-</head>
-<body>
-  <a href="#main" class="skip-link">本文へスキップ</a>
+      /* アニメーション（Intersection Observer） */
+      .reveal {
+        opacity: 0;
+        transform: translateY(12px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      .reveal.in {
+        opacity: 1;
+        transform: translateY(0);
+      }
 
-  <header>
-    <div class="container nav">
+      /* 省エネ対応 */
+      @media (prefers-reduced-motion: reduce) {
+        .btn,
+        .card {
+          transition: none;
+        }
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">本文へスキップ</a>
 
-    </div>
-  </header>
+    <header>
+      <div class="container nav"></div>
+    </header>
 
-  <!-- ヒーロー：一番上に美しい風景画像 -->
-  <section class="hero" aria-label="印象的な風景">
-    <img class="hero__bg" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2000&auto=format&fit=crop" alt="美しい風景（山と湖）" />
-    <div class="container">
-      <h1> under constraction </h1>
+    <!-- ヒーロー：一番上に美しい風景画像 -->
+    <section class="hero" aria-label="印象的な風景">
+      <img
+        class="hero__bg"
+        src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2000&auto=format&fit=crop"
+        alt="美しい風景（山と湖）"
+      />
+      <div class="container">
+        <h1>under constraction</h1>
 
-      <div class="hero-actions">
-
+        <div class="hero-actions"></div>
       </div>
-    </div>
-  </section>
-
-  <main id="main">
-    <section id="features" class="container reveal" aria-labelledby="features-title">
-      <h2 id="features-title" class="section-title"> </h2>
-
     </section>
 
+    <main id="main">
+      <section
+        id="features"
+        class="container reveal"
+        aria-labelledby="features-title"
+      >
+        <h2 id="features-title" class="section-title"></h2>
+      </section>
+    </main>
 
-  </main>
-
-  <footer>
-    <div class="container footer-grid">
-      <small>© <span id="y"></span> </small>
-      <div class="sns" aria-label=" ">
+    <footer>
+      <div class="container footer-grid">
+        <small>© <span id="y"></span> </small>
+        <div class="sns" aria-label=" "></div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script>
-  <!--
-    // 年表示
-    document.getElementById('y').textContent = new Date().getFullYear();
-  -->
-      
-    // モバイルメニュー
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.getElementById('menu-list');
-    toggle?.addEventListener('click', () => {
-      const open = menu.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(open));
-    });
+    <script>
+      <!--
+      // 年表示
+      document.getElementById("y").textContent = new Date().getFullYear();
+      -->
 
-    // スムーススクロール（同一ページ内）
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const id = a.getAttribute('href');
-        if (id && id.length > 1) {
-          e.preventDefault();
-          document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
-          menu?.classList.remove('open');
-          toggle?.setAttribute('aria-expanded', 'false');
-        }
+      // モバイルメニュー
+      const toggle = document.querySelector(".menu-toggle");
+      const menu = document.getElementById("menu-list");
+      toggle?.addEventListener("click", () => {
+        const open = menu.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", String(open));
       });
-    });
 
-    // スクロール時アニメーション
-    const io = new IntersectionObserver((entries) => {
-      for (const el of entries) {
-        if (el.isIntersecting) { el.target.classList.add('in'); io.unobserve(el.target); }
-      }
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  </script>
-</body>
+      // スムーススクロール（同一ページ内）
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const id = a.getAttribute("href");
+          if (id && id.length > 1) {
+            e.preventDefault();
+            document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+            menu?.classList.remove("open");
+            toggle?.setAttribute("aria-expanded", "false");
+          }
+        });
+      });
+
+      // スクロール時アニメーション
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const el of entries) {
+            if (el.isIntersecting) {
+              el.target.classList.add("in");
+              io.unobserve(el.target);
+            }
+          }
+        },
+        { threshold: 0.12 }
+      );
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+    </script>
+  </body>
 </html>
