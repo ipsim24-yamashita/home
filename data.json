@@ -3,14 +3,11 @@
     {
       "icon": "ic-lines",
       "size": 28,
-      "title": "10月 模擬試験 (中3)",
-      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
-      "items": [
-        "10/19(日) @外部会場",
-        "<span class='u-indent'>中3 兵庫Vもし第3回</span>",
-        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///",
-        "/// <a href='https://vmoshi-oyakudachi.com/wp-content/uploads/2025年度-兵庫県-第4版.pdf'>兵庫県 コード番号</a> ///",
-        "/// <a href='https://vmoshi-oyakudachi.com/wp-content/uploads/2025年度-大阪府-第4版.pdf'>大阪府 コード番号</a> ///"
+      "title": "中3 模擬試験 見直し '25秋 10月",
+      "p": [
+        "模擬試験の見直しをしましょう",
+        "中学3年生 /// <a href='https://drive.google.com/file/d/1WII2Lhlb8_Y5CLY2geFGymv--nay5i1h/view?usp=drive_link'> 国語</a> / <a 'https://drive.google.com/file/d/1kiR5uFIgn_gmn9sNlWoW0RI0fVKP3ObD/view?usp=drive_link'> 数学</a> / <a href='https://drive.google.com/file/d/1MmgVbvO3UQTskOuTJZkht3IF3CREX3oj/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1SixEa3jdD66Hmofgs7kMMSGLYVGHpPfh/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1sE5jUNQ-e4halvz0p7tQcs_QoKqezIEP/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-hyogo3v3'> リスニング(53641)</a> ///",
+        "<span class='highlight-bluebold'>10月以降は生徒限定</span>"
       ]
     },
     {
@@ -168,6 +165,19 @@
     }
   ],
   "ended": [
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "10月 模擬試験 (中3)",
+      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
+      "items": [
+        "10/19(日) @外部会場",
+        "<span class='u-indent'>中3 兵庫Vもし第3回</span>",
+        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///",
+        "/// <a href='https://vmoshi-oyakudachi.com/wp-content/uploads/2025年度-兵庫県-第4版.pdf'>兵庫県 コード番号</a> ///",
+        "/// <a href='https://vmoshi-oyakudachi.com/wp-content/uploads/2025年度-大阪府-第4版.pdf'>大阪府 コード番号</a> ///"
+      ]
+    },
     {
       "icon": "ic-test",
       "size": 28,
