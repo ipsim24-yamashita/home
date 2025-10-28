@@ -20,6 +20,15 @@
         "男子 数学 45 → 63  <span class='highlight-redbold'>+18</span>",
         "女子 国語 48 → 67  <span class='highlight-redbold'>+19</span>",
         "女子 数学 52 → 60  <span class='highlight-redbold'>+8</span>",
+        "おめでとうございます！"
+      ]
+    },
+    {
+      "icon": "ic-lightbulb",
+      "size": 28,
+      "title": "模擬試験 偏差値UP",
+      "p": [
+        "中2 偏差値UP 実例 その2",
         "男子 英語 45 → 53  <span class='highlight-redbold'>+8</span>",
         "女子 英語 61 → 70  <span class='highlight-redbold'>+9</span>",
         "男子 数学 57 → 69  <span class='highlight-redbold'>+12</span>",
