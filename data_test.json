@@ -1,0 +1,349 @@
+{
+  "ongoing": [
+    {
+      "icon": "ic-lightbulb",
+      "size": 28,
+      "title": "模擬試験 偏差値UP",
+      "p": [
+        "中2 偏差値UP 実例 その1",
+        "女子 数学 38 → 60  +22",
+        "女子 社会 47 → 57  +10",
+        "男子 国語 47 → 73  +26",
+        "女子 理科 47 → 64  +17",
+        "男子 英語 49 → 64  +15",
+        "男子 国語 37 → 58  +21",
+        "女子 5教科 48 → 60  +12",
+        "男子 社会 60 → 73  +13",
+        "女子 国語 57 → 66  +9",
+        "女子 数学 58 → 70  +12",
+        "女子 社会 54 → 67  +13",
+        "男子 数学 45 → 63  +18",
+        "女子 国語 48 → 67  +19",
+        "女子 数学 52 → 60  +8",
+        "男子 英語 45 → 53  +8",
+        "女子 英語 61 → 70  +9",
+        "男子 数学 57 → 69  +12",
+        "男子 理科 44 → 58  +14",
+        "男子 英語 55 → 63  +8",
+        "女子 国語 46 → 61  +15",
+        "女子 国語 49 → 59  +10",
+        "女子 数学 45 → 54  +9",
+        "男子 5教科 50 → 66  +16",
+        "女子 英語 52 → 61  +9",
+        "女子 5教科 48 → 55  +7",
+        "男子 国語 46 → 51  +5",
+        "男子 数学 38 → 54  +16",
+        "男子 国語 40 → 52  +12",
+        "おめでとうございます！"
+      ]
+    },
+    {
+      "icon": "ic-pencil",
+      "size": 28,
+      "title": "テスト対策 [期末]",
+      "p": ["1時間55分", "3時間50分 ロング"],
+      "items": [
+        "11/4(火)〜18(火) テスト対策",
+        "11/17(月),18(火),19(水) 東谷中学校 期末テスト"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "中3 模擬試験 見直し '25秋 10月",
+      "p": [
+        "模擬試験の見直しをしましょう",
+        "中学3年生 /// <a href='https://drive.google.com/file/d/1WII2Lhlb8_Y5CLY2geFGymv--nay5i1h/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1kiR5uFIgn_gmn9sNlWoW0RI0fVKP3ObD/view?usp=drive_link'> 数学</a> / <a href='https://drive.google.com/file/d/1MmgVbvO3UQTskOuTJZkht3IF3CREX3oj/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1SixEa3jdD66Hmofgs7kMMSGLYVGHpPfh/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1sE5jUNQ-e4halvz0p7tQcs_QoKqezIEP/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-hyogo3v3'> リスニング(53641)</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-test",
+      "size": 28,
+      "title": "英語小テスト",
+      "p": [
+        "/// <a href='./docs/mini_test/UL5.html'>Unit5 / Lesson5</a> ///",
+        "/// <a href='./docs/mini_test/UL4.html'>Unit4 / Lesson4</a> ///",
+        "/// <a href='./docs/mini_test/UL3.html'>Unit3 / Lesson3</a> ///",
+        "/// <a href='./docs/mini_test/UL2.html'>Unit2 / Lesson2</a> ///",
+        "/// <a href='./docs/mini_test/UL1.html'>Unit1 / Lesson1</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-lightbulb",
+      "size": 28,
+      "title": "テキスト 訂正",
+      "p": [
+        "2乗に比例する関数",
+        "中点連結定理",
+        "角の二等分線",
+        "/// <a href='./docs/gene3.pdf'>GENESIS 中3数学</a> ///",
+        "お手持ちのテキストに",
+        "載っていない場合",
+        "ご利用ください"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "生物解説",
+      "p": [
+        "3年 二学期中間テスト範囲",
+        "学校プリント 遺伝分野",
+        "/// <a href='./docs/kaisetsu/iden_p.pdf'>問題</a> ///",
+        "/// <a href='./docs/kaisetsu/iden_q.pdf'>解説</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "数学解説",
+      "p": [
+        "/// <a href='./docs/kaisetsu/root7.pdf'>教科書p78 平方根の整数部分</a> ///",
+        "/// <a href='./docs/moshi/kaisetsu2508_math.pdf'>中3 8月模擬試験 数学</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-pencil",
+      "size": 28,
+      "title": "通常授業",
+      "p": ["2時間25分", "9/2(火)〜5(金) 通常授業", "9/30(火)〜 通常授業"]
+    },
+    {
+      "icon": "ic-clock",
+      "size": 22,
+      "title": "通常授業 時間割",
+      "items": [
+        "A 15:50〜18:15",
+        "B 16:20〜18:45",
+        "C 16:50〜19:15",
+        "D 17:20〜19:45",
+        "E 17:50〜20:15",
+        "F 18:20〜20:45",
+        "G 18:50〜21:10"
+      ]
+    },
+    {
+      "icon": "ic-clock",
+      "size": 22,
+      "title": "テスト対策 時間割",
+      "items": [
+        "TA 15:50〜17:45",
+        "TB 16:20〜18:15",
+        "TC 16:50〜18:45",
+        "TD 17:20〜19:15",
+        "TE 17:50〜19:45",
+        "TF 18:20〜20:15",
+        "TG 18:50〜20:45",
+        "TP 13:00〜16:50",
+        "TQ 17:00〜20:50"
+      ]
+    },
+    {
+      "icon": "ic-pencil",
+      "size": 28,
+      "title": "中3受験期 通常授業",
+      "p": ["1時間55分", "(火) (水) (木) (金)", "2学期から開始"]
+    },
+    {
+      "icon": "ic-sparkles",
+      "size": 22,
+      "title": "中3秋期講習",
+      "p": ["4時間50分", "14:00〜18:50"],
+      "items": [
+        "8/30(土)",
+        "9/6(土)",
+        "10/4(土),11(土),25(土)",
+        "11/29(土)",
+        "12/6(土),13(土)"
+      ]
+    },
+    {
+      "icon": "ic-bed",
+      "size": 22,
+      "title": "休校",
+      "items": ["11/19(水)〜24(月)"]
+    },
+    {
+      "icon": "ic-music",
+      "size": 30,
+      "title": "英語テキスト音声",
+      "p": [
+        "/// <a href='https://listening.bunri.co.jp'>音声配信サービス onhai</a> ///"
+      ],
+      "items": [
+        "必修テキスト 1年 GXJ9Z",
+        "必修テキスト 2年 G3UKU",
+        "必修テキスト 3年 GKUEZ",
+        "能勢2年 GQXFF",
+        "Winpass 1年 FHMKV",
+        "Winpass 2年 FPNQC",
+        "Winpass 3年 FHPJW"
+      ]
+    },
+    {
+      "icon": "ic-book",
+      "size": 22,
+      "title": "Winpass デジタルテキスト",
+      "items": [
+        "/// <a href='https://dwinpass.jp/viewer/067c76ed96ce4f0ead8f4c93dba04e8b?index=%2Fviewer%2F067c76ed96ce4f0ead8f4c93dba04e8b&print=0&canvas=0&page=2'>Winpass 英語 1年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/ef888f1a11874765bd5b51b1ede76cbe?index=%2Fviewer%2Fef888f1a11874765bd5b51b1ede76cbe&print=0&canvas=0&page=2'>Winpass 英語 2年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/3d9cdb7f8bcf488c838b61f18b503751?index=%2Fviewer%2F3d9cdb7f8bcf488c838b61f18b503751&print=0&canvas=0&page=2'>Winpass 英語 3年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/c8ea6235a9154055a0852e8747034916?index=%2Fviewer%2Fc8ea6235a9154055a0852e8747034916&print=0&canvas=0&page=2'>Winpass 数学 1年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/6d7c8bf4b7154ee0a6df121cc7745622?index=%2Fviewer%2F6d7c8bf4b7154ee0a6df121cc7745622&print=0&canvas=0&page=2'>Winpass 数学 2年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/937ed3d30b9b4746a0a90666b1f5cc54?index=%2Fviewer%2F937ed3d30b9b4746a0a90666b1f5cc54&print=0&canvas=0&page=2'>Winpass 数学 3年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/dee54c07c69e4025afc6a44dc5c6e156?index=%2Fviewer%2Fdee54c07c69e4025afc6a44dc5c6e156&print=0&canvas=0&page=2'>Winpass 理科 1年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/03bc25b72b914ad39b827dec45917131?index=%2Fviewer%2F03bc25b72b914ad39b827dec45917131&print=0&canvas=0&page=2'>Winpass 理科 2年</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/2a31ccf2f116416b95fee5dce4a4530b?index=%2Fviewer%2F2a31ccf2f116416b95fee5dce4a4530b&print=0&canvas=0&page=2'>Winpass 理科 全</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/f0e52242f3a044ae9c3aa73b892abefe?index=%2Fviewer%2Ff0e52242f3a044ae9c3aa73b892abefe&print=0&canvas=0&page=2'>Winpass 社会 地理</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/cf112fe8dae24b198acd566d1b0b4813?index=%2Fviewer%2Fcf112fe8dae24b198acd566d1b0b4813&print=0&canvas=0&page=2'>Winpass 社会 歴史</a> ///",
+        "/// <a href='https://dwinpass.jp/viewer/c9fbc72b89854b628142e34a7eb42088?index=%2Fviewer%2Fc9fbc72b89854b628142e34a7eb42088&print=0&canvas=0&page=2'>Winpass 社会 全</a> ///"
+      ]
+    }
+  ],
+  "ended": [
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "10月 模擬試験 (中3)",
+      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
+      "items": [
+        "10/19(日) @外部会場",
+        "<span class='u-indent'>中3 兵庫Vもし第3回</span>",
+        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///",
+        "/// <a href='https://vmoshi-oyakudachi.com/wp-content/uploads/2025年度-兵庫県-第4版.pdf'>兵庫県 コード番号</a> ///",
+        "/// <a href='https://vmoshi-oyakudachi.com/wp-content/uploads/2025年度-大阪府-第4版.pdf'>大阪府 コード番号</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-test",
+      "size": 28,
+      "title": "中間テスト範囲表",
+      "p": [
+        "2025年度 2学期 中間テスト",
+        "/// <a href='./docs/teiki_test/2025-S2-T1-1.pdf'>1年生</a> ///",
+        "/// <a href='./docs/teiki_test/2025-S2-T1-2.pdf'>2年生</a> ///",
+        "/// <a href='./docs/teiki_test/2025-S2-T1-3.pdf'>3年生</a> ///",
+        "・・・",
+        "テスト範囲の問題を集めました",
+        "繰り返し解きましょう",
+        "/// <a href='https://drive.google.com/drive/folders/1-AFNfbeTwUdsb22F4a-TpWm2Db1FVCz8?usp=drive_link'>必修_切り抜き<span class='highlight-redbold'><<生徒限定>></span></a> ///"
+      ]
+    },
+    {
+      "icon": "ic-pencil",
+      "size": 28,
+      "title": "テスト対策 [中間]",
+      "p": ["1時間55分", "3時間50分 ロング"],
+      "items": [
+        "9/9(火)〜23(火) テスト対策",
+        "9/22(月),24(水) 東谷中学校 中間テスト"
+      ]
+    },
+    {
+      "icon": "ic-lightbulb",
+      "size": 28,
+      "title": "ipsim教材 の利用方法",
+      "p": [
+        "<span class='highlight-redbold'><< 生徒限定 >></span>",
+        "スマホでipsim教材を",
+        "閲覧(えつらん)できます!!",
+        "Googleアカウントが必要です",
+        "〜以下は自分のスマホで〜",
+        "〜操作してください〜",
+        "Google Drive をダウンロード",
+        "/// <a href='https://play.google.com/store/apps/details?id=com.google.android.apps.docs&pcampaignid=web_share'>Google Play Store</a> /// Android",
+        "/// <a href='https://apps.apple.com/jp/app/google-%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96-%E5%AE%89%E5%85%A8%E3%81%AA%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3-%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8/id507874739'>Apple App Store</a> /// iPhone",
+        "Google Drive へログイン",
+        "そのあと",
+        "<span class='highlight-redbold'>gmailアドレスを</span>ipsimへ<span class='highlight-greenbold'>LINE</span>で<span class='highlight-redbold'>伝える</span>",
+        "〜スタッフが承認〜",
+        "そのあと",
+        "→ Google Drive を起動",
+        "→ 共有中",
+        "→ ipsim教材",
+        "☆自宅学習にお役立てください"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "模擬試験 見直し '25夏",
+      "p": [
+        "模擬試験の見直しをしましょう",
+        "小学4年生 /// <a href='https://drive.google.com/file/d/1U7sndAeyNvsIFkNaXoQfNPM0-HxuauS3/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1D3kKn0z-ADIOhV4Rz0rpBQKexhF7rG1u/view?usp=drive_link'> 算数 </a> ///",
+        "小学5年生 /// <a href='https://drive.google.com/file/d/1NucxTj_UKL15_pEfElcnhewfxqeOj6HO/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1tqFazPIVbhctt6SYiej4vLIZQaX9EUMq/view?usp=drive_link'> 算数 </a> / <a href='https://drive.google.com/file/d/1Ob7xQPSyfN1lN9oQ6tPXF5aAYTzWcVBx/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/16iiWFfaNuovf-Q6UqACDgCVurN2YfENR/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1Qdev29vbufgBXK-Fzbw8cqRII5TyIEdS/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-shinken5s3'>リスニング(33125)</a> ///",
+        "小学6年生 /// <a href='https://drive.google.com/file/d/1ltZyT85yBi2TyId5hzE72ckAtA3X5_mb/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1PvXm5otDxL00EnPqDlPCTjgRMR7aH5eS/view?usp=drive_link'> 算数</a> / <a href='https://drive.google.com/file/d/1ApyDVfEQUQItE63jrG2kZspIamF2zMRe/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1LPXztUKKpTcKStoDmvBPmcy6k7HMCql3/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1BRedSJDLCGGaCUz4Ikdh6eOzF7qVmadx/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-shinken6s3'>リスニング(33125)</a> ///",
+        "中学1年生 /// <a href='https://drive.google.com/file/d/1278ZcftYWT0CQrmGEJG2IIvVwvhtpTV0/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1xCiQDEzAWwjsSqhcKPzwZyQm6OJvO0qx/view?usp=drive_link'> 数学</a> / <a href='https://drive.google.com/file/d/1Hp8nK9uNKbYtnF4NKLBIxBLmoL5F1uMb/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1JFENvJpgNJMgDfUgIYpdS4Lv0ubV55yV/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1yZD9K-ZQ1M1wc2PUn4NPASWpIsgfKzK9/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-shinken1s3'> リスニング(33125)</a> ///",
+        "中学2年生 /// <a href='https://drive.google.com/file/d/1t96Tpe_GivPu1_ZEq7jC9R3OsIr2t_PD/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1m7EPw9k6kw1hytnYKfRBYcZ7i1GomCDQ/view?usp=drive_link'> 数学</a> / <a href='https://drive.google.com/file/d/14yIzt59rkBB--2xBHSm7cBe0wuLM8Yvj/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1xuJjtBhkzo7DGmrRJ_m12Rg3IOwTKirX/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1glYTCzJp_3YCy5hHO4vOsTilyMt_wVGi/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-shinken2s3'> リスニング(33125)</a> ///",
+        "中学3年生 /// <a href='https://drive.google.com/file/d/11gpMRGpChnDBYulWWubUK9J6Ct8LOuga/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1A7dfiZ-_ONIr7C5W080J2JCOx-9PMaI7/view?usp=drive_link'> 数学</a> / <a href='https://drive.google.com/file/d/1DCv7OCwkzUekdCLMFDmnvYuH4mk05lNf/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1B6hn7wi45HhA1nId0o1VvQh0V7I2uy42/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1cR6lS1wr_85be3_ePDsN8hGXPRRhpohO/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-hyogo3v2'> リスニング(52397)</a> ///",
+        "<span class='highlight-bluebold'>10月以降は生徒限定</span>"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "模擬試験 学習手引き",
+      "p": [
+        "8月 模擬試験 (中3) の付録",
+        "/// <a href='https://vmoshi-oyakudachi.com/wp-content/uploads/2022/11/3V3kokugo.pdf'>国語 問題</a> ///",
+        "/// <a href='https://vmoshi-oyakudachi.com/wp-content/uploads/2022/11/3V3sugaku.pdf'>数学 問題</a> ///",
+        "/// <a href='https://vmoshi-oyakudachi.com/wp-content/uploads/2022/11/3V3syakai.pdf'>社会 問題</a> ///",
+        "/// <a href='https://vmoshi-oyakudachi.com/wp-content/uploads/2022/11/3V3rika.pdf'>理科 問題</a> ///",
+        "/// <a href='https://vmoshi-oyakudachi.com/wp-content/uploads/2022/11/3V3eigo.pdf'>英語 問題</a> ///",
+        "/// <a href='https://vmoshi-oyakudachi.com/wp-content/uploads/2022/11/3V3kaitou.pdf'>五教科 解答</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "8月 模擬試験",
+      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
+      "items": [
+        "8/23(土) @山下教室",
+        "<span class='u-indent'>小学生, 中1, 中2 進研Sテスト第3回</span>",
+        "/// <a href='./docs/moshi/annai2508.html'>山下教室 実施案内</a> ///",
+        "8/24(日) @雲雀丘学園",
+        "<span class='u-indent'>中3 兵庫Vもし第2回</span>",
+        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-sparkles",
+      "size": 22,
+      "title": "夏期講習",
+      "items": ["7/21(月)〜8/8(金)", "8/18(月)〜8/22(金)"]
+    }
+  ],
+  "future": [
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "11月 模擬試験 (中3)",
+      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
+      "items": [
+        "11/30(日) @外部会場",
+        "<span class='u-indent'>中3 兵庫Vもし第4回</span>",
+        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-sparkles",
+      "size": 22,
+      "title": "冬期講習",
+      "items": ["12/22(月)〜12/27(土)", "1/5(月)〜1/9(金)"]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "1月 模擬試験",
+      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
+      "items": [
+        "1/10(土) @山下教室",
+        "<span class='u-indent'>小学生, 中1, 中2 進研Sテスト第5回</span>",
+        "1/11(日) @外部会場",
+        "<span class='u-indent'>中3 兵庫Vもし第5回</span>",
+        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///"
+      ]
+    }
+  ]
+}
