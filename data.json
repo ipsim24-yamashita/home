@@ -1,6 +1,15 @@
 {
   "ongoing": [
     {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "中3数学 練習問題",
+      "p": [
+        "/// <a href='./docs/rensyu/nijikansu_P'>問題</a> ///",
+        "/// <a href='./docs/rensyu/nijikansu_K'>解答</a> ///"
+      ]
+    },
+    {
       "icon": "ic-lightbulb",
       "size": 28,
       "title": "模擬試験 偏差値UP",
