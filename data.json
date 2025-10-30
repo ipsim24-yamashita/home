@@ -10,6 +10,15 @@
       ]
     },
     {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "中2数学 練習問題",
+      "p": [
+        "/// <a href='./docs/rensyu/1jiP.pdf'>上位レベル 連立方程式の利用、1次関数 問題</a> ///",
+        "/// <a href='./docs/rensyu/1jiK.pdf'>上位レベル 連立方程式の利用、1次関数 解答</a> ///"
+      ]
+    },
+    {
       "icon": "ic-lightbulb",
       "size": 28,
       "title": "模擬試験 偏差値UP",
