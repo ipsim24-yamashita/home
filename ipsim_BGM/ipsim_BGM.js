@@ -1,5 +1,5 @@
 async function loadAudios() {
-  const container = document.getElementById('video-container');
+  const container = document.getElementById('bgm-container');
 
   try {
     const response = await fetch('./ipsim_BGM.json');
