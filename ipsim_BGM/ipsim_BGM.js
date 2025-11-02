@@ -13,7 +13,12 @@ async function loadAudios() {
       card.innerHTML = `
         <h3 class="font-semibold text-lg text-gray-700 mb-2">${audio.title}</h3>
         <p class="text-sm text-gray-600 mb-4">${audio.grade}・${audio.subject}</p>
-        <audio controls loop autoplay class="mx-auto w-full max-w-[300px]">
+        <audio
+          controls
+          autoplay
+          loop
+          class="mx-auto w-full max-w-[300px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[800px]"
+        >
           <source src="${audio.url}" type="audio/mpeg">
           お使いのブラウザはaudioタグに対応していません。
         </audio>
