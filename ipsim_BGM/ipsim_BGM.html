@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ipsim | BGM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- #region head style TailwindCSS custom -->
+    <style id="TailwindCSS Custom" type="text/tailwindcss">
+      /* 柔らかい影 */
+      .text-shadow-white {
+        text-shadow: 2px 2px 1px rgba(255, 255, 255, 1);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+    <header
+      class="relative flex items-center justify-center py-6 bg-blue-400 text-white font-bold text-2xl"
+    >
+      <!-- ロゴ -->
+      <img
+        src="data/logo.png"
+        alt="ロゴ"
+        class="absolute left-6 top-1/2 -translate-y-1/2 h-4 md:h-6 drop-shadow-lg"
+      />
+
+      <!-- タイトル -->
+      <h1 class="text-center">
+        ipsim
+        <span class="text-red-500 text-shadow-white">BGM</span>
+        プレーヤー
+      </h1>
+    </header>
+
+    <main
+      id="video-container"
+      class="max-w-4xl mx-auto p-4 grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+    ></main>
+
+    <script src="./ipsim_BGM.js"></script>
+  </body>
+</html>
