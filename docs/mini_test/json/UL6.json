@@ -1,0 +1,185 @@
+{
+  "baseAudioSubdir": "UL6/",
+  "sections": [
+    {
+      "title": "中1",
+      "units": [
+        {
+          "title": "Unit 6 文法のまとめ (him, her, Whose ~ ?, Which ~ ?)",
+          "items": [
+            {
+              "ja": "あちらは純です。あなたは彼を知っていますか。",
+              "en": "That is Jun. Do you know him?",
+              "stem": "en_01_06_001"
+            },
+            {
+              "ja": "あちらはアナです。あなたは彼女を知っていますか。",
+              "en": "That is Anna. Do you know her?",
+              "stem": "en_01_06_002"
+            },
+            {
+              "ja": "これは誰のチケットですか。それは私のものです。",
+              "en": "Whose ticket is this? - It is mine.",
+              "stem": "en_01_06_003"
+            },
+            {
+              "ja": "あなたは英語と日本語のどちらを話しますか。私は英語を話します。",
+              "en": "Which do you speak, English or Japanese? - I speak English.",
+              "stem": "en_01_06_004"
+            },
+            {
+              "ja": "あなたはふつうジュースと紅茶のどちらを飲みますか。",
+              "en": "Which do you usually drink, juice or tea?",
+              "stem": "en_01_06_005"
+            },
+            {
+              "ja": "私はときどき公園で彼女に会います。",
+              "en": "I sometimes see her in the park.",
+              "stem": "en_01_06_006"
+            },
+            {
+              "ja": "そのノートは私のものではありません。",
+              "en": "The notebook is not mine.",
+              "stem": "en_01_06_007"
+            },
+            {
+              "ja": "これは誰の地図ですか。それはメグのものです。",
+              "en": "Whose map is this? - It's Meg's.",
+              "stem": "en_01_06_008"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "中2",
+      "units": [
+        {
+          "title": "Lesson 6 文法のまとめ (-er, -est, more, most, as ... as ~, like ... better than ~, like ... the best)",
+          "items": [
+            {
+              "ja": "シンガポールは東京よりも小さいです。",
+              "en": "Singapore is smaller than Tokyo.",
+              "stem": "en_02_06_008"
+            },
+            {
+              "ja": "シンガポールは東南アジアで一番小さい国です。",
+              "en": "Singapore is the smallest country in Southeast Asia.",
+              "stem": "en_02_06_009"
+            },
+            {
+              "ja": "観光は買い物よりも人気があります。",
+              "en": "Sightseeing is more popular than shopping.",
+              "stem": "en_02_06_010"
+            },
+            {
+              "ja": "観光はリストの中で最も人気のある活動です。",
+              "en": "Sightseeing is the most popular activity on the list.",
+              "stem": "en_02_06_011"
+            },
+            {
+              "ja": "このネズミはピーナッツt同じくらい小さいです。",
+              "en": "This mouse is as small as a peanut.",
+              "stem": "en_02_06_012"
+            },
+            {
+              "ja": "私はトラが一番好きです。",
+              "en": "I like tigers the best.",
+              "stem": "en_02_06_013"
+            },
+            {
+              "ja": "この湖はあの湖と同じくらい広いです。",
+              "en": " ",
+              "stem": "en_02_06_014"
+            },
+            {
+              "ja": "私はこの映画がいちばん好きです。",
+              "en": " ",
+              "stem": "en_02_06_015"
+            },
+            {
+              "ja": "この映画は５つの中でいちばん興奮させます。",
+              "en": " ",
+              "stem": "en_02_06_016"
+            },
+            {
+              "ja": "あなたの計画は私のものよりも魅力的です。",
+              "en": " ",
+              "stem": "en_02_06_017"
+            },
+            {
+              "ja": "彼は家族の中で最も忙しいです。",
+              "en": " ",
+              "stem": "en_02_06_018"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "中3",
+      "units": [
+        {
+          "title": "Lesson 5 文法のまとめ (関係代名詞 that, which, who, want A to V)",
+          "items": [
+            {
+              "ja": " ",
+              "en": " ",
+              "stem": "en_03_06_018"
+            },
+            {
+              "ja": " ",
+              "en": " ",
+              "stem": "en_03_06_019"
+            },
+            {
+              "ja": " ",
+              "en": " ",
+              "stem": "en_03_06_020"
+            },
+            {
+              "ja": " ",
+              "en": " ",
+              "stem": "en_03_06_021"
+            },
+            {
+              "ja": " ",
+              "en": " ",
+              "stem": "en_03_06_022"
+            },
+            {
+              "ja": " ",
+              "en": " ",
+              "stem": "en_03_06_023"
+            },
+            {
+              "ja": " ",
+              "en": " ",
+              "stem": "en_03_06_024"
+            },
+            {
+              "ja": " ",
+              "en": " ",
+              "stem": "en_03_06_025"
+            },
+            {
+              "ja": " ",
+              "en": " ",
+              "stem": "en_03_06_026"
+            },
+            {
+              "ja": " ",
+              "en": " ",
+              "stem": "en_03_06_027"
+            },
+            {
+              "ja": " ",
+              "en": " ",
+              "stem": "en_03_06_028"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
