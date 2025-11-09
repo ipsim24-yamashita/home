@@ -34,6 +34,17 @@
     {
       "icon": "ic-lines",
       "size": 28,
+      "title": "11月 模擬試験 (中3)",
+      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
+      "items": [
+        "11/30(日) @雲雀丘高校or箕面自由学園or大商学園",
+        "<span class='u-indent'>中3 兵庫Vもし第4回</span>",
+        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
       "title": "中2数学 練習問題",
       "p": [
         "/// <a href='./docs/rensyu/1jiP.pdf'>上位レベル 連立方程式の利用、1次関数 問題</a> ///",
@@ -148,7 +159,8 @@
       "title": "中3 模擬試験 見直し '25秋 10月",
       "p": [
         "模擬試験の見直しをしましょう",
-        "中学3年生 /// <a href='https://drive.google.com/file/d/1WII2Lhlb8_Y5CLY2geFGymv--nay5i1h/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1kiR5uFIgn_gmn9sNlWoW0RI0fVKP3ObD/view?usp=drive_link'> 数学</a> / <a href='https://drive.google.com/file/d/1MmgVbvO3UQTskOuTJZkht3IF3CREX3oj/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1SixEa3jdD66Hmofgs7kMMSGLYVGHpPfh/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1sE5jUNQ-e4halvz0p7tQcs_QoKqezIEP/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-hyogo3v3'> リスニング(53641)</a> ///"
+        "中学3年生 /// <a href='https://drive.google.com/file/d/1WII2Lhlb8_Y5CLY2geFGymv--nay5i1h/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1kiR5uFIgn_gmn9sNlWoW0RI0fVKP3ObD/view?usp=drive_link'> 数学</a> / <a href='https://drive.google.com/file/d/1MmgVbvO3UQTskOuTJZkht3IF3CREX3oj/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1SixEa3jdD66Hmofgs7kMMSGLYVGHpPfh/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1sE5jUNQ-e4halvz0p7tQcs_QoKqezIEP/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-hyogo3v3'> リスニング(53641)</a> ///",
+        "<span class='highlight-redbold'><< 生徒限定 >></span>"
       ]
     },
     {
@@ -360,7 +372,7 @@
         "中学1年生 /// <a href='https://drive.google.com/file/d/1278ZcftYWT0CQrmGEJG2IIvVwvhtpTV0/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1xCiQDEzAWwjsSqhcKPzwZyQm6OJvO0qx/view?usp=drive_link'> 数学</a> / <a href='https://drive.google.com/file/d/1Hp8nK9uNKbYtnF4NKLBIxBLmoL5F1uMb/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1JFENvJpgNJMgDfUgIYpdS4Lv0ubV55yV/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1yZD9K-ZQ1M1wc2PUn4NPASWpIsgfKzK9/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-shinken1s3'> リスニング(33125)</a> ///",
         "中学2年生 /// <a href='https://drive.google.com/file/d/1t96Tpe_GivPu1_ZEq7jC9R3OsIr2t_PD/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1m7EPw9k6kw1hytnYKfRBYcZ7i1GomCDQ/view?usp=drive_link'> 数学</a> / <a href='https://drive.google.com/file/d/14yIzt59rkBB--2xBHSm7cBe0wuLM8Yvj/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1xuJjtBhkzo7DGmrRJ_m12Rg3IOwTKirX/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1glYTCzJp_3YCy5hHO4vOsTilyMt_wVGi/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-shinken2s3'> リスニング(33125)</a> ///",
         "中学3年生 /// <a href='https://drive.google.com/file/d/11gpMRGpChnDBYulWWubUK9J6Ct8LOuga/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1A7dfiZ-_ONIr7C5W080J2JCOx-9PMaI7/view?usp=drive_link'> 数学</a> / <a href='https://drive.google.com/file/d/1DCv7OCwkzUekdCLMFDmnvYuH4mk05lNf/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1B6hn7wi45HhA1nId0o1VvQh0V7I2uy42/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1cR6lS1wr_85be3_ePDsN8hGXPRRhpohO/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-hyogo3v2'> リスニング(52397)</a> ///",
-        "<span class='highlight-bluebold'>10月以降は生徒限定</span>"
+        "<span class='highlight-redbold'><< 生徒限定 >></span>"
       ]
     },
     {
@@ -399,17 +411,6 @@
     }
   ],
   "future": [
-    {
-      "icon": "ic-lines",
-      "size": 28,
-      "title": "11月 模擬試験 (中3)",
-      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
-      "items": [
-        "11/30(日) @外部会場",
-        "<span class='u-indent'>中3 兵庫Vもし第4回</span>",
-        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///"
-      ]
-    },
     {
       "icon": "ic-sparkles",
       "size": 22,
