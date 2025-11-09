@@ -25,21 +25,21 @@
     {
       "icon": "ic-lines",
       "size": 28,
-      "title": "中3数学 練習問題",
-      "p": [
-        "/// <a href='./docs/rensyu/nijikansu_P.pdf'>上位レベル 2次関数 問題</a> ///",
-        "/// <a href='./docs/rensyu/nijikansu_K.pdf'>上位レベル 2次関数 解答</a> ///"
-      ]
-    },
-    {
-      "icon": "ic-lines",
-      "size": 28,
       "title": "11月 模擬試験 (中3)",
       "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
       "items": [
         "11/30(日) @雲雀丘高校or箕面自由学園or大商学園",
         "<span class='u-indent'>中3 兵庫Vもし第4回</span>",
         "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "中3数学 練習問題",
+      "p": [
+        "/// <a href='./docs/rensyu/nijikansu_P.pdf'>上位レベル 2次関数 問題</a> ///",
+        "/// <a href='./docs/rensyu/nijikansu_K.pdf'>上位レベル 2次関数 解答</a> ///"
       ]
     },
     {
