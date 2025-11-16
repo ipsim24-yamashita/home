@@ -36,6 +36,17 @@
     {
       "icon": "ic-lines",
       "size": 28,
+      "title": "中3地学",
+      "p": [
+        "3年 二学期期末テスト範囲",
+        "地学分野 南中高度",
+        "/// <a href='./docs/kaisetsu/nanchu_p.pdf'>問題</a> ///",
+        "/// <a href='./docs/kaisetsu/nanchu_k.pdf'>解説</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
       "title": "中3数学 練習問題",
       "p": [
         "/// <a href='./docs/rensyu/nijikansu_P.pdf'>上位レベル 2次関数 問題</a> ///",
