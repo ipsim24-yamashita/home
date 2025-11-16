@@ -36,6 +36,17 @@
     {
       "icon": "ic-lines",
       "size": 28,
+      "title": "中2理科",
+      "p": [
+        "二学期期末テスト範囲",
+        "地学分野 フェーン現象",
+        "/// <a href='./docs/kaisetsu/foehn_p.pdf'>問題</a> ///",
+        "/// <a href='./docs/kaisetsu/foehn_k.pdf'>解答</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
       "title": "中3理科",
       "p": [
         "二学期期末テスト範囲",
