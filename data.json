@@ -1,26 +1,23 @@
 {
   "ongoing": [
     {
-      "icon": "ic-test",
-      "size": 28,
-      "title": "期末テスト範囲表",
-      "p": [
-        "2025年度 2学期 期末テスト",
-        "/// <a href='./docs/teiki_test/2025-S2-T2-1.pdf'>1年生</a> ///",
-        "/// <a href='./docs/teiki_test/2025-S2-T2-2.pdf'>2年生</a> ///",
-        "/// <a href='./docs/teiki_test/2025-S2-T2-3.pdf'>3年生</a> ///",
-        "・・・",
-        "テスト範囲の問題を集めました",
-        "繰り返し解きましょう",
-        "/// <a href='https://drive.google.com/drive/folders/1v6UhUFoaYSyYV-48s62FfQ9igGvuUvLp?usp=share_link'>必修_切り抜き<span class='highlight-redbold'><<生徒限定>></span></a> ///"
-      ]
+      "icon": "ic-sparkles",
+      "size": 22,
+      "title": "冬期講習",
+      "items": ["12/22(月)〜12/27(土)", "1/5(月)〜1/9(金)"]
     },
     {
-      "icon": "ic-pencil",
+      "icon": "ic-lines",
       "size": 28,
-      "title": "テスト対策 [期末]",
-      "p": ["1時間55分", "3時間50分 ロング"],
-      "items": ["11/4(火)〜18(火) テスト対策", "11/17(月),18(火),19(水) 東谷中学校 期末テスト"]
+      "title": "1月 模擬試験",
+      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
+      "items": [
+        "1/10(土) @山下教室",
+        "<span class='u-indent'>小学生, 中1, 中2 進研Sテスト第5回</span>",
+        "1/11(日) @外部会場",
+        "<span class='u-indent'>中3 兵庫Vもし第5回</span>",
+        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///"
+      ]
     },
     {
       "icon": "ic-lines",
@@ -28,7 +25,7 @@
       "title": "11月 模擬試験 (中3)",
       "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
       "items": [
-        "11/30(日) @雲雀丘高校or箕面自由学園or大商学園",
+        "11/30(日) @雲雀丘高校",
         "<span class='u-indent'>中3 兵庫Vもし第4回</span>",
         "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///"
       ]
@@ -176,16 +173,6 @@
       ]
     },
     {
-      "icon": "ic-lines",
-      "size": 28,
-      "title": "中3 模擬試験 見直し '25秋 10月",
-      "p": [
-        "模擬試験の見直しをしましょう",
-        "中学3年生 /// <a href='https://drive.google.com/file/d/1WII2Lhlb8_Y5CLY2geFGymv--nay5i1h/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1kiR5uFIgn_gmn9sNlWoW0RI0fVKP3ObD/view?usp=drive_link'> 数学</a> / <a href='https://drive.google.com/file/d/1MmgVbvO3UQTskOuTJZkht3IF3CREX3oj/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1SixEa3jdD66Hmofgs7kMMSGLYVGHpPfh/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1sE5jUNQ-e4halvz0p7tQcs_QoKqezIEP/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-hyogo3v3'> リスニング(53641)</a> ///",
-        "<span class='highlight-redbold'><< 生徒限定 >></span>"
-      ]
-    },
-    {
       "icon": "ic-test",
       "size": 28,
       "title": "英語小テスト",
@@ -323,12 +310,44 @@
   ],
   "ended": [
     {
+      "icon": "ic-test",
+      "size": 28,
+      "title": "期末テスト範囲表",
+      "p": [
+        "2025年度 2学期 期末テスト",
+        "/// <a href='./docs/teiki_test/2025-S2-T2-1.pdf'>1年生</a> ///",
+        "/// <a href='./docs/teiki_test/2025-S2-T2-2.pdf'>2年生</a> ///",
+        "/// <a href='./docs/teiki_test/2025-S2-T2-3.pdf'>3年生</a> ///",
+        "・・・",
+        "テスト範囲の問題を集めました",
+        "繰り返し解きましょう",
+        "/// <a href='https://drive.google.com/drive/folders/1v6UhUFoaYSyYV-48s62FfQ9igGvuUvLp?usp=share_link'>必修_切り抜き<span class='highlight-redbold'><<生徒限定>></span></a> ///"
+      ]
+    },
+    {
+      "icon": "ic-pencil",
+      "size": 28,
+      "title": "テスト対策 [期末]",
+      "p": ["1時間55分", "3時間50分 ロング"],
+      "items": ["11/4(火)〜18(火) テスト対策", "11/17(月),18(火),19(水) 東谷中学校 期末テスト"]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "中3 模擬試験 見直し '25秋 10月",
+      "p": [
+        "模擬試験の見直しをしましょう",
+        "中学3年生 /// <a href='https://drive.google.com/file/d/1WII2Lhlb8_Y5CLY2geFGymv--nay5i1h/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/1kiR5uFIgn_gmn9sNlWoW0RI0fVKP3ObD/view?usp=drive_link'> 数学</a> / <a href='https://drive.google.com/file/d/1MmgVbvO3UQTskOuTJZkht3IF3CREX3oj/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1SixEa3jdD66Hmofgs7kMMSGLYVGHpPfh/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1sE5jUNQ-e4halvz0p7tQcs_QoKqezIEP/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-hyogo3v3'> リスニング(53641)</a> ///",
+        "<span class='highlight-redbold'><< 生徒限定 >></span>"
+      ]
+    },
+    {
       "icon": "ic-lines",
       "size": 28,
       "title": "10月 模擬試験 (中3)",
       "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
       "items": [
-        "10/19(日) @外部会場",
+        "10/19(日) @雲雀丘高校",
         "<span class='u-indent'>中3 兵庫Vもし第3回</span>",
         "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///",
         "/// <a href='https://vmoshi-oyakudachi.com/wp-content/uploads/2025年度-兵庫県-第4版.pdf'>兵庫県 コード番号</a> ///",
