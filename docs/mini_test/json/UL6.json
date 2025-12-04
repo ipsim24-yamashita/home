@@ -60,57 +60,57 @@
             {
               "ja": "シンガポールは東京よりも小さいです。",
               "en": "Singapore is smaller than Tokyo.",
-              "stem": "en_02_06_008"
+              "stem": "en_02_06_001"
             },
             {
               "ja": "シンガポールは東南アジアで一番小さい国です。",
               "en": "Singapore is the smallest country in Southeast Asia.",
-              "stem": "en_02_06_009"
+              "stem": "en_02_06_002"
             },
             {
               "ja": "観光は買い物よりも人気があります。",
               "en": "Sightseeing is more popular than shopping.",
-              "stem": "en_02_06_010"
+              "stem": "en_02_06_003"
             },
             {
               "ja": "観光はリストの中で最も人気のある活動です。",
               "en": "Sightseeing is the most popular activity on the list.",
-              "stem": "en_02_06_011"
+              "stem": "en_02_06_004"
             },
             {
-              "ja": "このネズミはピーナッツt同じくらい小さいです。",
+              "ja": "このネズミはピーナッツ同じくらい小さいです。",
               "en": "This mouse is as small as a peanut.",
-              "stem": "en_02_06_012"
+              "stem": "en_02_06_005"
             },
             {
               "ja": "私はトラが一番好きです。",
               "en": "I like tigers the best.",
-              "stem": "en_02_06_013"
+              "stem": "en_02_06_006"
             },
             {
               "ja": "この湖はあの湖と同じくらい広いです。",
-              "en": " ",
-              "stem": "en_02_06_014"
+              "en": "This lake is as large as that one.",
+              "stem": "en_02_06_007"
             },
             {
               "ja": "私はこの映画がいちばん好きです。",
-              "en": " ",
-              "stem": "en_02_06_015"
+              "en": "I like this movie the best.",
+              "stem": "en_02_06_008"
             },
             {
               "ja": "この映画は５つの中でいちばん興奮させます。",
-              "en": " ",
-              "stem": "en_02_06_016"
+              "en": "This movie is the most exciting of the five.",
+              "stem": "en_02_06_009"
             },
             {
               "ja": "あなたの計画は私のものよりも魅力的です。",
-              "en": " ",
-              "stem": "en_02_06_017"
+              "en": "Your plan is more attractive than mine.",
+              "stem": "en_02_06_010"
             },
             {
               "ja": "彼は家族の中で最も忙しいです。",
-              "en": " ",
-              "stem": "en_02_06_018"
+              "en": "He is the busiest in his family.",
+              "stem": "en_02_06_011"
             }
           ]
         }
@@ -120,62 +120,52 @@
       "title": "中3",
       "units": [
         {
-          "title": "Lesson 5 文法のまとめ (関係代名詞 that, which, who, want A to V)",
+          "title": "Lesson 6 文法のまとめ (関係代名詞(目的格) that, which, 後置修飾(名詞を説明する文))",
           "items": [
             {
-              "ja": " ",
-              "en": " ",
-              "stem": "en_03_06_018"
+              "ja": "私がフリーマーケットで見つけたかわいいレードルを見てください。",
+              "en": "Look at the cute ladle which I found at the flea market.",
+              "stem": "en_03_06_001"
             },
             {
-              "ja": " ",
-              "en": " ",
-              "stem": "en_03_06_019"
+              "ja": "私はゲームで使う紙コップを探しているところです。",
+              "en": "I am looking for paper cups we will use for the game.",
+              "stem": "en_03_06_002"
             },
             {
-              "ja": " ",
-              "en": " ",
-              "stem": "en_03_06_020"
+              "ja": "これはきのう私が見たDVDです。",
+              "en": "This is the DVD which I watched yesterday.",
+              "stem": "en_03_06_003"
             },
             {
-              "ja": " ",
-              "en": " ",
-              "stem": "en_03_06_021"
+              "ja": "メアリーが函館で撮った写真を見ましょう。",
+              "en": "Let's look at the pictures which Mary took in Hakodate.",
+              "stem": "en_03_06_004"
             },
             {
-              "ja": " ",
-              "en": " ",
-              "stem": "en_03_06_022"
+              "ja": "彼がいま乗っている自転車は彼のものではありません。",
+              "en": "The bike which he is riding now is not his.",
+              "stem": "en_03_06_005"
             },
             {
-              "ja": " ",
-              "en": " ",
-              "stem": "en_03_06_023"
+              "ja": "これはあなたから借りた本です。",
+              "en": "This is the book which I borrowed from you.",
+              "stem": "en_03_06_006"
             },
             {
-              "ja": " ",
-              "en": " ",
-              "stem": "en_03_06_024"
+              "ja": "私は父が捕った魚を料理しているところです。",
+              "en": "I am cooking the fish which my father caught.",
+              "stem": "en_03_06_007"
             },
             {
-              "ja": " ",
-              "en": " ",
-              "stem": "en_03_06_025"
+              "ja": "これは、私が今朝作った弁当(lunch)です。",
+              "en": "This is the lunch which I made this morning.",
+              "stem": "en_03_06_008"
             },
             {
-              "ja": " ",
-              "en": " ",
-              "stem": "en_03_06_026"
-            },
-            {
-              "ja": " ",
-              "en": " ",
-              "stem": "en_03_06_027"
-            },
-            {
-              "ja": " ",
-              "en": " ",
-              "stem": "en_03_06_028"
+              "ja": "私はきのう、あなたがよく知っている女性に会いました。(thatを使う)",
+              "en": "I met a woman that you know well yesterday.",
+              "stem": "en_03_06_009"
             }
           ]
         }
