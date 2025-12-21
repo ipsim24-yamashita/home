@@ -1,5 +1,5 @@
 {
-  "baseAudioSubdir": "UL6/",
+  "baseAudioSubdir": "UL7/",
   "sections": [
     {
       "title": "中1",
@@ -160,7 +160,7 @@
           "items": [
             {
               "ja": "もし私がごみ袋を持っていれば、私はごみを拾うだろうに。",
-              "en": "If I had some some trash bags, I would pick up the trash.",
+              "en": "If I had some trash bags, I would pick up the trash.",
               "stem": "en_03_07_001"
             },
             {
