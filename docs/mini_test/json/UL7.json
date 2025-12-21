@@ -1,0 +1,226 @@
+{
+  "baseAudioSubdir": "UL6/",
+  "sections": [
+    {
+      "title": "中1",
+      "units": [
+        {
+          "title": "Unit 7 文法のまとめ （現在進行形（肯定文、疑問文）、感嘆文）",
+          "items": [
+            {
+              "en": "I am watching TV now.",
+              "ja": "私は今、テレビを見ています。",
+              "stem": "en_01_07_001"
+            },
+            {
+              "en": "Are you walking around a lake? Yes, I am. [No, I am not.]",
+              "ja": "あなたは湖のまわりを歩いていますか。ーはい、そうです。 ［いいえ、ちがいます。］",
+              "stem": "en_01_07_002"
+            },
+            {
+              "en": "What are people doing? They are taking pictures.",
+              "ja": "人々は何をしていますか。彼らは写真を撮っています。",
+              "stem": "en_01_07_003"
+            },
+            {
+              "en": "How interesting!",
+              "ja": "なんておもしろいのでしょう！",
+              "stem": "en_01_07_004"
+            },
+            {
+              "en": "What a funny excuse!",
+              "ja": "なんておかしな言い訳なのでしょう！",
+              "stem": "en_01_07_005"
+            },
+            {
+              "en": "Is Kana eating fish?",
+              "ja": "香奈はは魚を食べているのですか。",
+              "stem": "en_01_07_006"
+            },
+            {
+              "en": "We are enjoying the tour now.",
+              "ja": "私たちは今、ツアーを楽しんでいるところです。",
+              "stem": "en_01_07_007"
+            },
+            {
+              "en": "What a long movie!",
+              "ja": "なんて長い映画なのでしょう！",
+
+              "stem": "en_01_07_008"
+            },
+            {
+              "en": "What is the boy doing?",
+              "ja": "その男の子は何をしているのですか。",
+              "stem": "en_01_07_009"
+            },
+            {
+              "en": "What a nice umbrella!",
+              "ja": "なんてすてきな傘なのでしょう！",
+              "stem": "en_01_07_010"
+            },
+            {
+              "en": "They are practicing basketball now.",
+              "ja": "彼らは今、バスケットボールの練習をしています。",
+              "stem": "en_01_07_011"
+            },
+            {
+              "en": "What is your mother doing now?",
+              "ja": "あなたのお母さんは今、何をしていますか。",
+              "stem": "en_01_07_012"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "中2",
+      "units": [
+        {
+          "title": "Lesson 7 文法のまとめ （現在完了形（経験用法、疑問文、否定文）、tell + A + that）",
+          "items": [
+            {
+              "ja": "私は以前、中華街であの飾りを見たことがあります。",
+              "en": "I have seen that decoration in Chinatown before.",
+              "stem": "en_02_07_001"
+            },
+            {
+              "ja": "私の姉は何度も中華街を訪れたことがあります。",
+              "en": "My sister has visited Chinatown many times.",
+              "stem": "en_02_07_002"
+            },
+            {
+              "ja": "あなたは今までに工芸茶を飲んだことがありますか。",
+              "en": "Have you ever tried flowering tea?",
+              "stem": "en_02_07_003"
+            },
+            {
+              "ja": "ーはい、あります。/いいえ、ありません。",
+              "en": "— Yes, I have. / No, I have not.",
+              "stem": "en_02_07_004"
+            },
+            {
+              "ja": "私は一度も工芸茶を飲んだことがありません。",
+              "en": "I have never tried flowering tea.",
+              "stem": "en_02_07_005"
+            },
+            {
+              "ja": "ブライアンは私にそれは幸福をもたらすと言いました。",
+              "en": "Brian told me that it brings happiness.",
+              "stem": "en_02_07_006"
+            },
+            {
+              "ja": "私たちは以前、その話を耳にしたことがあります。",
+              "en": "We have heard the story before.",
+              "stem": "en_02_07_007"
+            },
+            {
+              "ja": "彼らは一度も野球をしたことがありません。",
+              "en": "They have never played baseball.",
+              "stem": "en_02_07_008"
+            },
+            {
+              "ja": "ボブは私に彼の友達が日本に住んでいると言いました。",
+              "en": "Bob told me that his friend lives in Japan.",
+              "stem": "en_02_07_009"
+            },
+            {
+              "ja": "あなたの弟は今までにクッキーを焼いたことがありますか。",
+              "en": "Has your brother ever baked cookies?",
+              "stem": "en_02_07_010"
+            },
+            {
+              "ja": "私の母は私にこの町に大きな公園があると言いました。",
+              "en": "My mother told me (that) there is a big[large]park in this town.",
+              "stem": "en_02_07_011"
+            },
+            {
+              "ja": "あなたは今までにあなたの衣服を寄付したことがありますか。",
+              "en": "Have you ever donated your clothes?",
+              "stem": "en_02_07_012"
+            },
+            {
+              "ja": "私の妹は5回、彼女の鍵をなくしたことがあります。",
+              "en": "My sister has lost her key five times.",
+              "stem": "en_02_07_013"
+            },
+            {
+              "ja": "私は一度も頭痛がしたことがありません。",
+              "en": "I have never had a headache.",
+              "stem": "en_02_07_014"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "中3",
+      "units": [
+        {
+          "title": "Lesson 7 文法のまとめ (仮定法、I wish、If I were you)",
+          "items": [
+            {
+              "ja": "もし私がごみ袋を持っていれば、私はごみを拾うだろうに。",
+              "en": "If I had some some trash bags, I would pick up the trash.",
+              "stem": "en_03_07_001"
+            },
+            {
+              "ja": "おそうじロボットがあればいいのになあ。",
+              "en": "I wish I had a cleaning robot.",
+              "stem": "en_03_07_002"
+            },
+            {
+              "ja": "お料理ロボットを作れればいいのになあ。",
+              "en": "I wish I could make a cooking robot.",
+              "stem": "en_03_07_003"
+            },
+            {
+              "ja": "もし私があなたなら、海外で勉強するだろう。",
+              "en": "If I were you, I would study abroad.",
+              "stem": "en_03_07_004"
+            },
+            {
+              "ja": "私があなたを手伝えたらいいのになあ。",
+              "en": "I wish I could help you.",
+              "stem": "en_03_07_005"
+            },
+            {
+              "ja": "中国の文化についてもっと知っていればいいのになあ。",
+              "en": "I wish I knew more about Chinese culture.",
+              "stem": "en_03_07_006"
+            },
+            {
+              "ja": "もし私があなただったら、あの漢字の読み方をたずねるだろう。",
+              "en": "If I were you, I would ask how to read that kanji.",
+              "stem": "en_03_07_007"
+            },
+            {
+              "ja": "1週間が10日あれば、もっと英語を勉強するのになあ。",
+              "en": "If a week had ten days, I would study English more.",
+              "stem": "en_03_07_008"
+            },
+            {
+              "ja": "そのパーティーに参加できればいいのですが。",
+              "en": "I wish I could join the party.",
+              "stem": "en_03_07_009"
+            },
+            {
+              "ja": "もっとすてきなカバンを持っていればいいのになあ。",
+              "en": "I wish I had a better bag.",
+              "stem": "en_03_07_010"
+            },
+            {
+              "ja": "もしトムがコンピュータを持っていれば、私は彼にメールを送ることができるのに。",
+              "en": "If Tom had a computer, I could send him an e-mail.",
+              "stem": "en_03_07_011"
+            },
+            {
+              "ja": "もし私があなたなら、そのすてきな腕時計を買うだろう。",
+              "en": "If I were you, I would buy the nice watch.",
+              "stem": "en_03_07_012"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
