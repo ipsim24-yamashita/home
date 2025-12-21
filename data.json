@@ -40,6 +40,16 @@
       ]
     },
     {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "中3 模擬試験 見直し '25冬 11月",
+      "p": [
+        "模擬試験の見直しをしましょう",
+        "中学3年生 /// <a href='https://drive.google.com/file/d/1Nd4FY81YM8tRNGpiYhqN2SS-hxi8nVZi/view?usp=drive_link'> 国語</a> / <a href='https://drive.google.com/file/d/14xS2XSWYpTe27mQOaTWTXL7KVSzTwt4u/view?usp=drive_link'> 数学</a> / <a href='https://drive.google.com/file/d/1jC2ChTU99aV2LHo-EAk9lSo-xaV_m9QC/view?usp=drive_link'> 社会</a> / <a href='https://drive.google.com/file/d/1s0VKmwInnDPQPmSRlGv0InuL6ZoIxuNR/view?usp=drive_link'> 理科</a> / <a href='https://drive.google.com/file/d/1LgxxV1h-wAKg9VLfYakH1u7b80rTS-mQ/view?usp=drive_link'> 英語</a> / <a href='https://vmoshi-oyakudachi.com/2025-hyogo3v4'> リスニング(54795)</a> ///",
+        "<span class='highlight-redbold'><< 生徒限定 >></span>"
+      ]
+    },
+    {
       "icon": "ic-lightbulb",
       "size": 28,
       "title": "テキスト 訂正",
