@@ -1,6 +1,18 @@
 {
   "ongoing": [
     {
+      "icon": "ic-lines",
+      "size": 28,
+      "title": "1月 模擬試験",
+      "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
+      "items": [
+        "1/10(土) @山下教室",
+        "<span class='u-indent'>小学生, 中1, 中2 進研Sテスト第5回</span>",
+        "/// <a href='./docs/moshi/annai2601.html'>山下教室 実施案内</a> ///",
+        "/// <a href='./docs/moshi/hensachi.html'>高校 受験難易度</a> ///"
+      ]
+    },
+    {
       "icon": "ic-sparkles",
       "size": 22,
       "title": "冬期講習",
