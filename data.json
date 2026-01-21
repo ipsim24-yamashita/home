@@ -3,6 +3,13 @@
     {
       "icon": "ic-lines",
       "size": 28,
+      "title": "1月 受験高校アンケート模擬試験",
+      "p": ["受験する高校を答えてください。"],
+      "items": ["/// <a href='https://forms.gle/JW4vtLXfufUkGE5V9'>こちらから</a> ///"]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
       "title": "1月 模擬試験 中2〜小4",
       "p": ["/// <a href='./docs/moshi/whatson25.pdf'>出題範囲</a> ///"],
       "items": [
