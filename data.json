@@ -5,9 +5,7 @@
       "size": 28,
       "title": "二学期の通知表",
       "p": ["下記リンクから二学期の通知表を入力してください"],
-      "items": [
-        "/// <a href='https://capricious-chinchilla-c87.notion.site/17a9fb38aff781089095dee832806d38'>こちらから</a> ///"
-      ]
+      "items": ["/// <a href='https://forms.gle/oGZ9tkWGKUCJjF9r8'>こちらから</a> ///"]
     },
     {
       "icon": "ic-lines",
