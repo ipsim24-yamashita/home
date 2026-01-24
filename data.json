@@ -3,6 +3,15 @@
     {
       "icon": "ic-lines",
       "size": 28,
+      "title": "二学期の通知表",
+      "p": ["下記リンクから二学期の通知表を入力してください"],
+      "items": [
+        "/// <a href='https://capricious-chinchilla-c87.notion.site/17a9fb38aff781089095dee832806d38'>こちらから</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-lines",
+      "size": 28,
       "title": "1月 受験高校アンケート模擬試験",
       "p": ["受験する高校を答えてください。"],
       "items": ["/// <a href='https://forms.gle/JW4vtLXfufUkGE5V9'>こちらから</a> ///"]
