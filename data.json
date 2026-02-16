@@ -36,6 +36,15 @@
       ]
     },
     {
+      "icon": "ic-test",
+      "size": 28,
+      "title": "公立高校入試分析 2025年度",
+      "p": [
+        "正答率による徹底分析！！",
+        "/// <a href='./docs/nyuushibunseki.pdf'>ここからチェック</a> ///"
+      ]
+    },
+    {
       "icon": "ic-lines",
       "size": 28,
       "title": "1月 受験高校アンケート模擬試験",
