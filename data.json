@@ -3,6 +3,17 @@
     {
       "icon": "ic-test",
       "size": 28,
+      "title": "NEW ipsim | リンク",
+      "p": [
+        "2025年度 3学期 学年末テスト",
+        "/// <a href='http://ipsim.local'>http://ipsim.local</a> ///",
+        "または",
+        "/// <a href='http://192.168.68.147'>http://192.168.68.147</a> ///"
+      ]
+    },
+    {
+      "icon": "ic-test",
+      "size": 28,
       "title": "学年末テスト範囲表",
       "p": [
         "2025年度 3学期 学年末テスト",
